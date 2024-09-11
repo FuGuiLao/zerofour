@@ -183,7 +183,7 @@ export default async function Home() {
            Zerofour is a global private security and intelligence agency.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We assist governments, corporations, and high-profile individuals. Zerofour goes where government resources simply can't or won't. We protect critical facilities, assets, and personnel effectively and efficiently around the globe. Our team brings unparalleled dedication and passion for creating a safer world and upholding the highest standards of compliance, quality, and integrity. Zerofour is a leading global provider of private security, logistics operations, risk management, and humanitarian, training, and operational support services to government and commercial clients worldwide.
+            We assist governments, corporations, and high-profile individuals.
           </p>
         </FadeIn>
       </Container>
