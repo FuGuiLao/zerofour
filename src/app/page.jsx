@@ -68,9 +68,7 @@ function CaseStudies({ caseStudies }) {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+         Zerofour goes where government resources simply can't or won't. We protect critical facilities, assets, and personnel effectively and efficiently around the globe. Our team brings unparalleled dedication and passion for creating a safer world and upholding the highest standards of compliance, quality, and integrity.
         </p>
       </SectionIntro>
       <Container className="mt-16">
