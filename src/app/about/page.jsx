@@ -37,17 +37,14 @@ function Culture() {
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Zerofour only employs the most experienced operators" invert>
+            Our network of special operators from the world's elite military units, combined with seasoned intelligence professionals, allows Zerofour to operate at the highest level to serve our clients.
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="We respond to our clients' needs in an ever changing environment" invert>
+            WZerofour prioritizes what you think is urgent regardless of the location or timeframe. We inject critical operational expertise and maintain flexibility to serve our clients across the globe.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Our depth of service means that Zerofour is your trusted partner" invert>
+        From protecting personnel and facilities, logistics support, operational security, risk management, training, and internal and criminal investigations, we can support our clients' ever evolving needs.
           </GridListItem>
         </GridList>
       </Container>
