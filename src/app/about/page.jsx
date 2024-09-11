@@ -38,13 +38,13 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Zerofour only employs the most experienced operators" invert>
-            Our network of special operators from the world's elite military units, combined with seasoned intelligence professionals, allows Zerofour to operate at the highest level to serve our clients.
+            Our network of special operators from the world@@@@@s elite military units, combined with seasoned intelligence professionals, allows Zerofour to operate at the highest level to serve our clients.
           </GridListItem>
-          <GridListItem title="We respond to our clients' needs in an ever changing environment" invert>
+          <GridListItem title="We respond to our clients@@@@@ needs in an ever changing environment" invert>
             WZerofour prioritizes what you think is urgent regardless of the location or timeframe. We inject critical operational expertise and maintain flexibility to serve our clients across the globe.
           </GridListItem>
           <GridListItem title="Our depth of service means that Zerofour is your trusted partner" invert>
-        From protecting personnel and facilities, logistics support, operational security, risk management, training, and internal and criminal investigations, we can support our clients' ever evolving needs.
+        From protecting personnel and facilities, logistics support, operational security, risk management, training, and internal and criminal investigations, we can support our clients@@@@@ ever evolving needs.
           </GridListItem>
         </GridList>
       </Container>
