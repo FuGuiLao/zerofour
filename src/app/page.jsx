@@ -64,7 +64,7 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="At Zerofour, our number one priority is to secure success for our clients"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
@@ -180,7 +180,7 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-           Zerofour is a global private security and intelligence agency.
+           Zerofour is a global private security and intelligence agency
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             We assist governments, corporations, and high-profile individuals. Zerofour is a leading global provider of private security, logistics operations, risk management, and humanitarian, training, and operational support services to government and commercial clients worldwide.
