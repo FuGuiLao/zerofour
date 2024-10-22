@@ -16,5 +16,21 @@ export function Logo({
   ...props
 }) {
   return (
-    )
+    <svg
+      viewBox="0 0 130 32"
+      aria-hidden="true"
+      className={clsx(fillOnHover && 'group/logo', className)}
+      {...props}
+    >
+      <Logomark
+        preserveAspectRatio="xMinYMid meet"
+        invert={invert}
+        filled={filled}
+      />
+      <path
+        className={invert ? 'fill-white' : 'fill-neutral-950'}
+        d=""
+      />
+    </svg>
+  )
 }
