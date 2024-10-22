@@ -47,7 +47,15 @@ export function Offices({ invert = false, ...props }) {
           (212) 585-3912
         </Office>
       </li>
-
+<li>
+        <Office name="Shanghai" invert={invert}>
+          29/F, Shanghai Tower, No. 501 Middle Yincheng Road
+          <br />
+          Lujiazui, Pudong District
+          <br />
+          Shanghai, 200120, China
+        </Office>
+      </li>
     </ul>
   )
 }
