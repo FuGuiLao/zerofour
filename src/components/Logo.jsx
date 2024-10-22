@@ -9,7 +9,7 @@ export function Logo({
 }) {
   return (
     <img
-      src="/images/zerofour-logo.png" // Update this path to point to your PNG file
+      src="/images/zerofour.png" // Update this path to point to your PNG file
       alt="Logo"
       className={clsx(
         fillOnHover && 'group/logo',
