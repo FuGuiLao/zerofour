@@ -49,11 +49,11 @@ export function Offices({ invert = false, ...props }) {
       </li>
 <li>
         <Office name="Shanghai" invert={invert}>
-          29/F, Shanghai Tower, No. 501 Middle Yincheng Road
+          29/F Shanghai Tower
           <br />
-          Lujiazui, Pudong District
+          No. 501 Middle Yincheng Road
           <br />
-          Shanghai, 200120, China
+          Pudong, Shanghai, 200120, China
         </Office>
       </li>
     </ul>
