@@ -209,7 +209,7 @@ export function Logo({
     <svg
       viewBox="0 0 501.5 73.9"
       aria-hidden="true"
-      style={marginLeft: “100px"}
+      style={{ marginLeft: “100px" }}
       className={clsx(fillOnHover && 'group/logo', className)}
       {...props}
     >
