@@ -119,7 +119,7 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help to identify and respond to both known and emerging threats."
+        title="Zerofour can identify and respond to both known and emerging threats."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
