@@ -28,7 +28,7 @@ function Culture() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        title="Precision and decisive action, driven by trust and unwavering commitment."
         invert
       >
         <p>
@@ -38,10 +38,10 @@ function Culture() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Zerofour only employs the most experienced operators" invert>
-            Our network of special operators from the world@@@@@s elite military units, combined with seasoned intelligence professionals, allows Zerofour to operate at the highest level to serve our clients.
+            Our network of special operators from the world&#39;s elite military units, combined with seasoned intelligence professionals, allows Zerofour to operate at the highest level to serve our clients.
           </GridListItem>
-          <GridListItem title="We respond to our clients@@@@@ needs in an ever changing environment" invert>
-            WZerofour prioritizes what you think is urgent regardless of the location or timeframe. We inject critical operational expertise and maintain flexibility to serve our clients across the globe.
+          <GridListItem title="We respond to our clients&#39; needs in an ever changing environment" invert>
+            Zerofour prioritizes what you think is urgent regardless of the location or timeframe. We inject critical operational expertise and maintain flexibility to serve our clients across the globe.
           </GridListItem>
           <GridListItem title="Our depth of service means that Zerofour is your trusted partner" invert>
         From protecting personnel and facilities, logistics support, operational security, risk management, training, and internal and criminal investigations, we can support our clients@@@@@ ever evolving needs.
@@ -192,24 +192,18 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            "Zerofour is defined by integrity, discretion, and excellence. We are committed to protecting our clients with precision and professionalism, ensuring their safety and security across the globe. Our team operates with a relentless pursuit of knowledge, adapting to evolving threats and leveraging intelligence to provide strategic, reliable solutions. We value trust, respect, and collaboration, fostering a work environment where expertise and innovation thrive.”
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            "Our staff is composed of seasoned professionals with backgrounds in law enforcement, military, and intelligence services, bringing a wealth of experience and expertise to our agency. Their diverse skills, honed through years of service, provide us with a comprehensive approach to security and intelligence operations. This elite team applies their rigorous training, strategic thinking, and real-world experience to deliver unmatched protection and insight, ensuring our clients receive the highest level of service.”
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="100+" label="Operators worldwide" />
+          <StatListItem value="5" label="Continents served" />
+          <StatListItem value="Over $1B" label="Assets protected" />
         </StatList>
       </Container>
 
@@ -220,7 +214,7 @@ export default async function About() {
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        intro="“Our team of seasoned professionals, with backgrounds in law enforcement, military, and intelligence, has one mission: to safeguard our clients and ensure their peace of mind across the globe. From conducting risk assessments to implementing tailored security solutions, we are dedicated to delivering exceptional service."
         pages={blogArticles}
       />
 
