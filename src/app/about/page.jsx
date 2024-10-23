@@ -192,10 +192,10 @@ export default async function About() {
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Zerofour is defined by integrity, discretion, and excellence. We are committed to protecting our clients with precision and professionalism, ensuring their safety and security across the globe. Our team operates with a relentless pursuit of knowledge, adapting to evolving threats and leveraging intelligence to provide strategic, reliable solutions. We value trust, respect, and collaboration, fostering a work environment where expertise and innovation thrive.
+            Zerofour is defined by integrity, discretion, and excellence. We are committed to protecting our clients with precision and professionalism, ensuring their safety and security across the globe. Our team operates with a relentless pursuit of knowledge, adapting to evolving threats and leveraging intelligence to provide strategic solutions. We value trust, respect, and collaboration, fostering a work environment where expertise and innovation thrive.
           </p>
           <p>
-            Our staff is composed of seasoned professionals with backgrounds in law enforcement, military, and intelligence services, bringing a wealth of experience and expertise to our agency. Their diverse skills, honed through years of service, provide us with a comprehensive approach to security and intelligence operations. This elite team applies their rigorous training, strategic thinking, and real-world experience to deliver unmatched protection and insight, ensuring our clients receive the highest level of service.
+            Our team is composed of seasoned professionals with backgrounds in law enforcement, military, and intelligence services, bringing a wealth of experience and expertise to our agency. Their diverse skills, honed through years of service, provide us with a comprehensive approach to security and intelligence operations. This elite team applies their rigorous training, strategic thinking, and real-world experience to deliver unmatched protection and insight, ensuring our clients receive the highest level of service.
           </p>
         </div>
       </PageIntro>
