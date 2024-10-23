@@ -205,8 +205,8 @@ export function Logo({
   fillOnHover = false,
   ...props
 }) {
-  return {
-/*(
+  return (
+    {/* 
     <svg
       viewBox="0 0 501.5 73.9"
       aria-hidden="true
