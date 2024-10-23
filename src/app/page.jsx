@@ -37,7 +37,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We’ve worked with some amazing clients
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -119,12 +119,11 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="We help you identify, explore and respond to known and unknown threats."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          Our forward-thinking services span a broad range of synergistic solutions, including private security, investigations, social intelligence, advanced training capabilities, logistics and life support, UAV systems, global tracking technology, information security services, and crisis response mitigation.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -139,25 +138,21 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Risk Management & Crisis Response">
+              Zerofour provides risk management and advisory services to facilitate our clients’ business operations and support their decision-making and project-planning processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Security">
+              Zerofour is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime, and cyber operations. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Logistics & Support Services">
+             One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients' day-to-day operations.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Training">
+              Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors, training staff, and consultants are skilled professionals with extensive backgrounds in security management and diplomacy in post-conflict environments.
             </ListItem>
+  					<ListItem title="Technolog">
+              From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour’s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
+  					</ListItem>
           </List>
         </div>
       </Container>
@@ -194,9 +189,7 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+         Thanks to their unmatched expertise and discreet professionalism, our organization has successfully navigated complex security challenges worldwide, ensuring our people and assets remain protected at all times.
       </Testimonial>
 
       <Services />
