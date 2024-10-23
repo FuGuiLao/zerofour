@@ -147,9 +147,7 @@ export default async function Work() {
         title="Proven solutions for real-world problems."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          At Zerofour, we use the breadth and depth of our expertise to. provide tailored security and intelligence solutions to clients across diverse industries worldwide. From protecting high-profile individuals to mitigating corporate risks and conducting complex investigations, our strategic approach and commitment to excellence have consistently delivered results.
         </p>
       </PageIntro>
 
@@ -159,8 +157,7 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+      We approached <em>Zerofour</em> because their reputation is unmatched, and they delivered with precision and expertise, proving why they are the industry leaders.
       </Testimonial>
 
       <Clients />
