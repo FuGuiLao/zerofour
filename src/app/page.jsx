@@ -192,7 +192,7 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-         Thanks to their unmatched expertise and discreet professionalism, our organization has successfully navigated complex security challenges worldwide, ensuring our people and assets remain protected at all times.
+         Thanks to Zerofour&#39;s unmatched expertise and discreet professionalism, our organization has successfully navigated complex security challenges worldwide, ensuring our people and assets remain protected.
       </Testimonial>
 
       <Services />
