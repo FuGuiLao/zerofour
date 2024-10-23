@@ -44,7 +44,7 @@ function Culture() {
             Zerofour prioritizes what you think is urgent regardless of the location or timeframe. We inject critical operational expertise and maintain flexibility to serve our clients across the globe.
           </GridListItem>
           <GridListItem title="Our depth of service means that Zerofour is your trusted partner" invert>
-        From protecting personnel and facilities, logistics support, operational security, risk management, training, and internal and criminal investigations, we can support our clients@@@@@ ever evolving needs.
+        From protecting personnel and facilities, logistics support, operational security, risk management, training, and internal and criminal investigations, we can support our clients&#39; ever evolving needs.
           </GridListItem>
         </GridList>
       </Container>
