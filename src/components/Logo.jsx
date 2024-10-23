@@ -238,6 +238,17 @@ export function Logo({
         invert={invert}
         filled={filled}
       />
+        <defs>     <style>       .cls-1 {         letter-spacing: 0em;       }
+ 
+      .cls-2 {         fill: #231f20;         font-family: MonaSans-Medium, 'Mona Sans';         font-size: 100px;         font-variation-settings: 'wdth' 100, 'wght' 500, 'slnt' 0;         font-weight: 500;       }
+ 
+      .cls-3 {         letter-spacing: -.12em;       }
+ 
+      .cls-4 {         letter-spacing: -.01em;       }
+ 
+      .cls-5 {         letter-spacing: -.02em;       }
+ 
+      .cls-6 {         letter-spacing: 0em;       }     </style>   </defs>
       <text class="cls-2" transform="translate(0 86.45) scale(1.25 1)"><tspan class="cls-6" x="0" y="0">Z</tspan><tspan x="63.4" y="0">e</tspan><tspan class="cls-5" x="118.3" y="0">r</tspan><tspan x="154.3" y="0">o</tspan><tspan class="cls-4" x="213.2" y="0">f</tspan><tspan class="cls-1" x="243.7" y="0">ou</tspan><tspan class="cls-3" x="363.6" y="0">r</tspan><tspan class="cls-1" x="389.5" y="0">.</tspan></text> 
     </svg>
   )
