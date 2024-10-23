@@ -153,6 +153,9 @@ function Services() {
   					<ListItem title="Technolog">
               From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
   					</ListItem>
+            <ListItem title="Humanitarian">
+              With strong operational experience, robust program management skills, rapid response capabilities, and a global network of local partners and expertise, Zerofour aids humanitarian objectives worldwide. We offer a broad spectrum of services to promote positive sustainable change.
+            </ListItem>
           </List>
         </div>
       </Container>
