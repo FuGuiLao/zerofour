@@ -5,7 +5,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-    <svg width="200" height="220" viewBox="0 0 471.73 517.77" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 943.46 1035.54" aria-hidden="true" {...props}>
       <rect
         clipPath={`url(#${id}-clip)`}
         className={clsx(
