@@ -147,7 +147,7 @@ export default async function Work() {
         title="Proven solutions for real-world problems."
       >
         <p>
-          At Zerofour, we use the breadth and depth of our expertise to. provide tailored security and intelligence solutions to clients across diverse industries worldwide. From protecting high-profile individuals to mitigating corporate risks and conducting complex investigations, our strategic approach and commitment to excellence have consistently delivered results.
+          At Zerofour, we use the breadth and depth of our expertise to provide tailored security and intelligence solutions to clients across diverse industries worldwide. From protecting high-profile individuals to mitigating corporate risks and conducting complex investigations, our strategic approach and commitment to excellence have consistently delivered results.
         </p>
       </PageIntro>
 
