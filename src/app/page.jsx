@@ -142,7 +142,7 @@ function Services() {
               Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
             </ListItem>
             <ListItem title="Security">
-              Zerofour is a trusted and experienced provider of security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
+              Zerofour is a trusted and experienced provider of comprehesive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
             </ListItem>
             <ListItem title="Logistics & Support Services">
              One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
