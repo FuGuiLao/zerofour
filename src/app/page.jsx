@@ -139,19 +139,19 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Risk Management & Crisis Response">
-              Zerofour provides risk management and advisory services to facilitate our clients’ business operations and support their decision-making and project-planning processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
+              Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making and project-planning processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
             </ListItem>
             <ListItem title="Security">
               Zerofour is a trusted and experienced provider of security services in high-risk environments, remote areas and emerging markets in support of land-based, aviation, maritime, and cyber operations. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
             </ListItem>
             <ListItem title="Logistics & Support Services">
-             One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients' day-to-day operations.
+             One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
             </ListItem>
             <ListItem title="Training">
               Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors, training staff, and consultants are skilled professionals with extensive backgrounds in security management and diplomacy in post-conflict environments.
             </ListItem>
   					<ListItem title="Technolog">
-              From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour’s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
+              From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
   					</ListItem>
           </List>
         </div>
