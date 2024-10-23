@@ -21,7 +21,11 @@ export function Logomark({ invert = false, filled = false, ...props }) {
         strokeWidth="1.5"
       />
       <defs>
-           <g>
+        <clipPath id={`${id}-clip`}>
+          <use href={`#${id}-path`} />
+        </clipPath>
+      </defs>
+<g>
       <g className="cls-7">
         <rect x={350.91} y={363.61} width={26.15} height={98.04} />
       </g>
@@ -211,10 +215,6 @@ export function Logomark({ invert = false, filled = false, ...props }) {
         </g>
       </g>
     </g>
-        <clipPath id={`${id}-clip`}>
-          <use href={`#${id}-path`} />
-        </clipPath>
-      </defs>
     </svg>
   )
 }
