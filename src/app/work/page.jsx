@@ -157,7 +157,7 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
-      We approached <em>Zerofour</em> because their reputation is unmatched, and they delivered with precision and expertise, proving why they are the industry leaders.
+      We approached Zerofour because their reputation is unmatched, and they delivered with precision and expertise, proving why they are the industry leaders.
       </Testimonial>
 
       <Clients />
