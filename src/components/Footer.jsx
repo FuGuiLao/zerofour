@@ -124,7 +124,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            Copyright © {new Date().getFullYear()} Zerofour Inc. All Rights Reserved.   
+            © {new Date().getFullYear()} Zerofour Inc. All Rights Reserved.   
           </p>
         </div>
       </FadeIn>
