@@ -31,10 +31,6 @@ const navigation = [
       { title: 'Contact us', href: '/contact' },
     ],
   },
-  {
-    title: 'Connect',
-    links: socialMediaProfiles,
-  },
 ]
 
 function Navigation() {
