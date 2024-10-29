@@ -23,7 +23,7 @@ export default async function Blog() {
     <>
       <PageIntro eyebrow="Blog" title="The latest articles and news">
         <p>
-          Stay up-to-date with the latest industry developments as our intelligence team uncovers innovative ways to apply proven security strategies and methodologies.
+          Stay up-to-date with the latest industry developments as our team uncovers innovative ways to apply proven security strategies and methodologies.
         </p>
       </PageIntro>
 
