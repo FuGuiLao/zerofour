@@ -207,7 +207,7 @@ export function Logo({
   ...props
 }) {
   return (
- <img src={logoZerofour} alt="Zerofour Logo" className="w-auto h-auto" {...props} />
+
  <h2 className="font-display text-3xl font-medium text-neutral-950 [text-wrap:balance] sm:text-4xl ml-10">Zerofour.</h2>
   )
 }
