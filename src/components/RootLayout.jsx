@@ -39,7 +39,7 @@ function ArrowIcon(props) {
   return (
     <svg viewBox="0 0 16 6" aria-hidden="true" {...props}>
       <path
-        fill="currentColor"
+        fill="neutral-900"
         fillRule="evenodd"
         clipRule="evenodd"
         d="M16 3 10 .5v2H0v1h10v2L16 3Z"
@@ -261,7 +261,7 @@ function RootLayoutInner({ children }) {
           <button
             type="submit"
             aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-300 text-white transition hover:bg-neutral-300"
+            className="flex aspect-square h-full items-center justify-center rounded-xl bg-white text-white transition hover:bg-white"
           >
             <ArrowIcon className="w-4" />
           </button>
