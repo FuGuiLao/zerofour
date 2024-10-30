@@ -48,24 +48,13 @@ function Discover() {
     <Section title="Discover" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          We initiate a thorough understanding of your specific needs, risks, and objectives. This stage begins with an in-depth consultation, where we listen closely to understand your concerns and gather essential information. By fostering <strong className="font-semibold text-neutral-950">open communication</strong>, we ensure that no aspect of your security needs is overlooked, and we begin to build a foundation of trust and clarity that guides our entire process.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          Our team of experts then conducts a detailed assessment, analyzing both current and potential risks that could impact your safety, assets, or operations. Utilizing sophisticated intelligence tools, data analysis, and insights from our global network, we identify vulnerabilities and opportunities, allowing us to gain a nuanced <strong className="font-semibold text-neutral-950">perspective</strong> of your environment and the unique challenges you face. This deep dive enables us to design a strategy specifically aligned with your objectives.
         </p>
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          With a complete picture of your needs, our team <strong className="font-semibold text-neutral-950">collaborates</stong> to refine the scope of your security strategy. By the end of the Discover phase, we present you with a comprehensive overview of our findings and preliminary recommendations. This proactive approach enables you to feel confident that your security requirements are fully understood and that our solutions will be precisely tailored to address them.
         </p>
       </div>
 
@@ -73,12 +62,12 @@ function Discover() {
         Included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Assessment</TagListItem>
+        <TagListItem>Analysis</TagListItem>
+        <TagListItem>Insight</TagListItem>
+        <TagListItem>Consultation</TagListItem>
+        <TagListItem>Intelligence</TagListItem>
+        <TagListItem>Understanding</TagListItem>
       </TagList>
     </Section>
   )
@@ -230,9 +219,7 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Our approach is grounded in precision, confidentiality, and tailored strategies to ensure each client’s unique security needs are met. By leveraging cutting-edge intelligence and proactive security measures, we deliver robust solutions that safeguard assets, people, and information worldwide.
         </p>
       </PageIntro>
 
