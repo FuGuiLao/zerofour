@@ -103,7 +103,6 @@ function Deliver() {
     <Section title="Execute" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-         {' '}<strong className="font-semibold text-neutral-950">
        This is where our strategy comes to life. With careful precision, we implement each element of the plan developed in the previous stages, ensuring a {' '}<strong className="font-semibold text-neutral-950">seamless integration</strong>{' '} of security measures across all identified areas. Our experienced teams work in tandem to monitor, respond, and adapt, providing a dynamic, layered security presence that aligns with your ongoing operations. By deploying resources strategically, we maximize effectiveness and maintain a low profile, safeguarding your environment without disruption.
          </p>
         <p>
