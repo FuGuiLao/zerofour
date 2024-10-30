@@ -196,8 +196,6 @@ export function Logomark({ invert = false, filled = false, ...props }) {
       </g>
     </g>
       </svg>
-  )
-  )
 }
 
 export function Logo({
