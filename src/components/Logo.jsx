@@ -1,5 +1,4 @@
 import { useId } from 'react'
-import clsx from 'clsx'
 
 export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
@@ -13,24 +12,25 @@ export function Logomark({ invert = false, filled = false, ...props }) {
     >
       <rect
         clipPath={`url(#${id}-clip)`}
-        className={clsx(
-          'h-8 transition-all duration-300',
-          filled ? 'w-8' : 'w-0 group-hover/logo:w-8',
-          invert ? 'fill-neutral-950' : 'fill-white' // Apply conditional fill here
-        )}
+        style={{
+          fill: invert ? '#171717' : '#ffffff', // Neutral-950 is #171717 in hex
+          transition: 'fill 0.3s ease'
+        }}
+        width={filled ? 8 : 0} // Adjust width as needed or remove if not dynamic
       />
       <use
         href={`#${id}-path`}
-        className={clsx(
-          'fill-none stroke-[1.5]', // Default styles
-          invert ? 'stroke-neutral-950' : 'stroke-white' // Conditional stroke color
-        )}
+        style={{
+          stroke: invert ? '#171717' : '#ffffff', // Direct stroke color
+          strokeWidth: '1.5'
+        }}
       />
       <defs>
         <clipPath id={`${id}-clip`}>
           <use href={`#${id}-path`} />
         </clipPath>
       </defs>
+
 
     <g>
       <rect x={350.45} y={363.41} width={26.15} height={98.04} opacity={0.5} />
