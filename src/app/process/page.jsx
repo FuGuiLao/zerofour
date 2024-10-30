@@ -103,31 +103,14 @@ function Deliver() {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+         {' '}<strong className="font-semibold text-neutral-950">
+       This is where our strategy comes to life. With careful precision, we implement each element of the plan developed in the previous stages, ensuring a {' '}<strong className="font-semibold text-neutral-950">seamless integration</strong>{' '} of security measures across all identified areas. Our experienced teams work in tandem to monitor, respond, and adapt, providing a dynamic, layered security presence that aligns with your ongoing operations. By deploying resources strategically, we maximize effectiveness and maintain a low profile, safeguarding your environment without disruption.
+         </p>
+        <p>
+          During this phase, we rely on real-time data and {' '}<strong className="font-semibold text-neutral-950">continuous monitoring</strong>{' '} to assess the effectiveness of our security measures. Our advanced intelligence systems allow us to stay one step ahead, responding swiftly to any developing threats or unexpected changes. Should adjustments be necessary, our team adapts rapidly, recalibrating our approach to ensure that each layer of protection remains effective and that no gaps emerge in your security framework.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
-        </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          Throughout the execution process, communication with our clients remains a priority. We keep you informed of our actions, findings, and any updates to your security posture. By maintaining this {' '}<strong className="font-semibold text-neutral-950">open line of communication</strong>{' }'}, we ensure that you remain confident in the protection you receive, and we’re always ready to address any concerns that may arise. This collaborative, proactive approach enables us to deliver security solutions that are as resilient as they are responsive.
         </p>
       </div>
 
@@ -135,17 +118,14 @@ function Deliver() {
         Included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+        <ListItem title="Deployment of Resources">
+          Trained teams and state-of-the-art technology are deployed strategically for maximum security impact.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="Real-Time Monitoring">
+        Continuous surveillance and data analysis enable proactive responses to evolving threats.
         </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem title="Client Communication">
+          Regular updates keep you informed and assured that your security remains fully optimized.
         </ListItem>
       </List>
     </Section>
