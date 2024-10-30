@@ -10,13 +10,13 @@ export function Logomark({ invert = false, filled = false, ...props }) {
         clipPath={`url(#${id}-clip)`}
         className={clsx(
           'h-8 transition-all duration-300',
-          invert ? 'fill-white' : 'fill-neutral-950',
+          invert ? 'fill-neutral-950' : 'fill-white',
           filled ? 'w-8' : 'w-0 group-hover/logo:w-8',
         )}
       />
       <use
         href={`#${id}-path`}
-        className={invert ? 'stroke-white' : 'stroke-neutral-950'}
+        className={invert ? 'stroke-neutral-950' : 'stroke-white'}
         fill="none"
         strokeWidth="1.5"
       />
