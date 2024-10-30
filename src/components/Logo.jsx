@@ -1,4 +1,5 @@
 import { useId } from 'react'
+import logoZerofour from '@/images/zerofour.png'
 import clsx from 'clsx'
 
 export function Logomark({ invert = false, filled = false, ...props }) {
@@ -205,7 +206,8 @@ export function Logo({
   fillOnHover = false,
   ...props
 }) {
-  return (
+  return 
+ <img src={logoZerofour} alt="Zerofour Logo" className="w-auto h-auto" {...props} />
   <h2 className="font-display text-3xl font-medium text-neutral-950 [text-wrap:balance] sm:text-4xl ml-10">Zerofour.</h2>
   )
 }
