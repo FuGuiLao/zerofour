@@ -243,10 +243,10 @@ function RootLayoutInner({ children }) {
 
 
     <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+      <h2 className="font-display text-sm font-semibold tracking-wider text-white">
         Learn more about Zerofour
       </h2>
-      <p className="mt-4 text-sm text-neutral-700">
+      <p className="mt-4 text-sm text-white">
         Enter your email address and we will reach out to schedule a consultation.
       </p>
       <div className="relative mt-6">
