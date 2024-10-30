@@ -5,7 +5,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 471.73 517.77" aria-hidden="true" {...props}>
       <rect
         clipPath={`url(#${id}-clip)`}
         className={clsx(
@@ -21,6 +21,10 @@ export function Logomark({ invert = false, filled = false, ...props }) {
         strokeWidth="1.5"
       />
       <defs>
+          <clipPath id={`${id}-clip`}>
+          <use href={`#${id}-path`} />
+        </clipPath>
+      </defs>
       <g>
       <rect x={350.45} y={363.41} width={26.15} height={98.04} opacity={0.5} />
       <g>
@@ -191,10 +195,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
       </g>
     </g>
 
-        <clipPath id={`${id}-clip`}>
-          <use href={`#${id}-path`} />
-        </clipPath>
-      </defs>
+    
     </svg>
   )
 }
