@@ -246,7 +246,7 @@ function RootLayoutInner({ children }) {
       <h2 className="font-display text-sm font-semibold tracking-wider text-white">
         Learn more about Zerofour
       </h2>
-      <p className="mt-4 text-sm text-white">
+      <p className="mt-4 text-sm text-neutral-300">
         Enter your email address and we will reach out to schedule a consultation.
       </p>
       <div className="relative mt-6">
@@ -255,13 +255,13 @@ function RootLayoutInner({ children }) {
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-300 ring-4 ring-transparent transition placeholder:text-neutral-300 focus:border-neutral-300 focus:outline-none focus:ring-neutral-300/5"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
             type="submit"
             aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
+            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-300 text-white transition hover:bg-neutral-300"
           >
             <ArrowIcon className="w-4" />
           </button>
