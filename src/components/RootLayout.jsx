@@ -65,7 +65,7 @@ function Header({
             filled={logoHovered}
           />
           <Logo
-            className="hidden h-10 sm:block"
+            className="hidden h-20 sm:block"
             invert={invert}
             filled={logoHovered}
           />
