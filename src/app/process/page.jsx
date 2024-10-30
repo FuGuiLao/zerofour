@@ -78,32 +78,21 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          Our team formulates a customized strategy based on the detailed insights and data gathered during the Discover phase. Every element of your security solution is carefully designed to address the specific risks, assets, and operational needs identified in the initial assessment. We prioritize a balanced approach, creating a plan that is robust yet adaptable, ensuring you are equipped to handle evolving challenges with confidence.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          The planning process involves collaboration among our in-house experts, who bring specialized knowledge in fields such as cybersecurity, physical security, and risk mitigation. Together, we develop a multi-layered approach that combines cutting-edge technology, intelligence analysis, and industry best practices to form a cohesive and efficient security framework. This stage includes a comprehensive review to confirm that every potential scenario and contingency is accounted for.
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          Once the plan is established, we present it to you in detail, outlining each component of the strategy and how it aligns with your objectives. Your feedback is crucial at this stage, and we work closely with you to refine any elements, ensuring that the final plan is fully aligned with your expectations. This collaborative approach provides clarity, allowing you to feel assured that your security strategy is well-conceived, actionable, and tailored precisely to your needs.
         </p>
       </div>
 
       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
+        author={{ name: 'Confidential', role: 'Corporate Security Director' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
+        The planning phase was incredibly thorough and collaborative. They presented a well-structured, detailed approach that felt fully aligned with our needs. Their expertise and adaptability left us feeling secure and well-prepared for any eventuality.
       </Blockquote>
     </Section>
   )
