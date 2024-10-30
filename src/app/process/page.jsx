@@ -54,7 +54,7 @@ function Discover() {
           Our team of experts then conducts a detailed assessment, analyzing both current and potential risks that could impact your safety, assets, or operations. Utilizing sophisticated intelligence tools, data analysis, and insights from our global network, we identify vulnerabilities and opportunities, allowing us to gain a nuanced {' '}<strong className="font-semibold text-neutral-950">perspective</strong>{' '} of your environment and the unique challenges you face. This deep dive enables us to design a strategy specifically aligned with your objectives.
         </p>
         <p>
-          With a complete picture of your needs, our team {' '}<strong className="font-semibold text-neutral-950">collaborates</stong>{' '} to refine the scope of your security strategy. By the end of the Discover phase, we present you with a comprehensive overview of our findings and preliminary recommendations. This proactive approach enables you to feel confident that your security requirements are fully understood and that our solutions will be precisely tailored to address them.
+          With a complete picture of your needs, our team {' '}<strong className="font-semibold text-neutral-950">collaborates</strong>{' '} to refine the scope of your security strategy. By the end of the Discover phase, we present you with a comprehensive overview of our findings and preliminary recommendations. This proactive approach enables you to feel confident that your security requirements are fully understood and that our solutions will be precisely tailored to address them.
         </p>
       </div>
 
