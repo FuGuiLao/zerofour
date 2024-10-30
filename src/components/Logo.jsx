@@ -5,26 +5,33 @@ export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-    <svg viewBox="0 0 471.73 517.77" className="w-full h-auto md:w-1/2 lg:w-1/3" aria-hidden="true" {...props}>
+    <svg
+      viewBox="0 0 471.73 517.77"
+      className="w-full h-auto md:w-1/2 lg:w-1/3"
+      aria-hidden="true"
+      {...props}
+    >
       <rect
         clipPath={`url(#${id}-clip)`}
         className={clsx(
           'h-8 transition-all duration-300',
-          invert ? 'fill-neutral-950' : 'fill-white',
           filled ? 'w-8' : 'w-0 group-hover/logo:w-8',
+          invert ? 'fill-neutral-950' : 'fill-white' // Apply conditional fill here
         )}
       />
       <use
         href={`#${id}-path`}
-        className={invert ? 'stroke-neutral-950' : 'stroke-white'}
-        fill="none"
-        strokeWidth="1.5"
+        className={clsx(
+          'fill-none stroke-[1.5]', // Default styles
+          invert ? 'stroke-neutral-950' : 'stroke-white' // Conditional stroke color
+        )}
       />
       <defs>
         <clipPath id={`${id}-clip`}>
           <use href={`#${id}-path`} />
         </clipPath>
       </defs>
+
     <g>
       <rect x={350.45} y={363.41} width={26.15} height={98.04} opacity={0.5} />
       <g>
