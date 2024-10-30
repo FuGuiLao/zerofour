@@ -14,7 +14,7 @@ import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
 
 
-import { FadeIn } from '@/components/FadeIn'
+
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -250,7 +250,7 @@ function RootLayoutInner({ children }) {
             aria-label="Submit"
             className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
           >
-            <ArrowIcon className="w-4" />
+         
           </button>
         </div>
       </div>
