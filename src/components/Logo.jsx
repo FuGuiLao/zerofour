@@ -206,6 +206,6 @@ export function Logo({
   ...props
 }) {
   return (
-  <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">Zerofour.</h2>
+  <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl ml-10">Zerofour.</h2>
   )
 }
