@@ -215,13 +215,25 @@ export function Logo({
     viewBox="0 0 501.5 73.9"
     {...props}
   >
-    <defs>
-      <style>
-        {
-          "\n\xA0\xA0\xA0\xA0\xA0 .b {\n\xA0\xA0\xA0\xA0\xA0\xA0\xA0 fill: #231f20;\n\xA0\xA0\xA0\xA0\xA0 }\n\xA0\xA0\xA0 "
-        }
-      </style>
-    </defs>
+       <rect
+        clipPath={`url(#${id}-clip)`}
+        className={clsx(
+          'h-8 transition-all duration-300',
+          invert ? 'fill-white' : 'fill-neutral-950',
+          filled ? 'w-8' : 'w-0 group-hover/logo:w-8',
+        )}
+      />
+      <use
+        href={`#${id}-path`}
+        className={invert ? 'stroke-white' : 'stroke-neutral-950'}
+        fill="none"
+        strokeWidth="1.5"
+      />
+      <defs>
+          <clipPath id={`${id}-clip`}>
+          <use href={`#${id}-path`} />
+        </clipPath>
+      </defs>
     <path
       className="b"
       d="M0,72.9v-9.1L51.88,9.5H2V0h67v9.1L16.88,63.4h53.5v9.5H0Z"
