@@ -255,7 +255,7 @@ function RootLayoutInner({ children }) {
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"
-          className="block w-full rounded-2xl border border-white bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-300 ring-4 ring-transparent transition placeholder:text-neutral-300 focus:border-neutral-300 focus:outline-none focus:ring-neutral-300/5"
+          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-300 ring-4 ring-transparent transition placeholder:text-neutral-300 focus:border-neutral-300 focus:outline-none focus:ring-neutral-300/5"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
