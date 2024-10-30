@@ -185,43 +185,33 @@ function Values() {
       </div>
 
       <SectionIntro
-        eyebrow="Our values"
+        eyebrow="Our core principles"
         title="Balancing reliability and innovation"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+         At our agency, we commit to the highest standards of professionalism, confidentiality, and integrity. Each member of our team is dedicated to safeguarding and empowering our clients worldwide through innovative, discreet, and reliable security solutions.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem title="Integrity">
+            We operate with unwavering honesty and ethics, ensuring every decision prioritizes transparency and the highest moral standards.
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+          <GridListItem title="Discretion">
+            We uphold absolute confidentiality, handling all information with the utmost sensitivity to protect our clients’ interests.
           </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+          <GridListItem title="Reliability">
+           Our team is steadfastly dependable, providing consistent, trusted solutions that our clients can count on in every situation.
           </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+          <GridListItem title="Vigilance">
+           We maintain a proactive stance, constantly monitoring and assessing risks to anticipate challenges and provide preemptive solutions.
           </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+          <GridListItem title="Innovation">
+           We embrace cutting-edge technology and creative problem-solving, staying ahead of emerging threats to safeguard our clients effectively.
           </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+          <GridListItem title="Commitment">
+            TWe are deeply devoted to every mission, applying unwavering dedication to achieving the best outcomes for our clients’ security and peace of mind.
           </GridListItem>
         </GridList>
       </Container>
