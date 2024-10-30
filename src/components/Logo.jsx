@@ -6,7 +6,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-    <img>logoZerofour</img>
+   image={{ src: logoZerofour }}
   )
 }
 
