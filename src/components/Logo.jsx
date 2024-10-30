@@ -6,7 +6,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-   image={{ src: logoZerofour }}
+    <img src={logoZerofour} alt="Zerofour Logo" {...props} />
   )
 }
 
@@ -18,8 +18,8 @@ export function Logo({
   ...props
 }) {
   return (
-   <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-           Zerofour.
-          </h1>
+    <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+      Zerofour.
+    </h1>
   )
 }
