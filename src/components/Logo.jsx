@@ -1,12 +1,11 @@
 import { useId } from 'react'
-import logoZerofour from '@/images/zerofour.png'
 import clsx from 'clsx'
 
 export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-   <svg viewBox="0 0 471.73 517.77" className="w-full h-auto md:w-1/2 lg:w-1/3" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 471.73 517.77" className="w-full h-auto md:w-1/2 lg:w-1/3" aria-hidden="true" {...props}>
       <rect
         clipPath={`url(#${id}-clip)`}
         className={clsx(
@@ -196,6 +195,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
       </g>
     </g>
       </svg>
+  )
 }
 
 export function Logo({
@@ -206,8 +206,18 @@ export function Logo({
   ...props
 }) {
   return (
-    <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-      Zerofour.
-    </h2>
+    <svg
+      viewBox="0 0 501.5 73.9"
+      aria-hidden="true"
+      className={clsx(fillOnHover && 'group/logo', className)}
+      {...props}
+    >
+      <Logomark
+        preserveAspectRatio="xMinYMid meet"
+        invert={invert}
+        filled={filled}
+      />
+        <path class="b" d=""/> 
+      </svg>
   )
 }
