@@ -1,5 +1,4 @@
 import { useId } from 'react'
-import logoZerofour from '@/images/zerofour.png'
 import clsx from 'clsx'
 
 export function Logomark({ invert = false, filled = false, ...props }) {
@@ -207,7 +206,18 @@ export function Logo({
   ...props
 }) {
   return (
-
- <h2 className="font-display text-3xl font-medium text-neutral-950 [text-wrap:balance] sm:text-4xl ml-10"></h2>
+    <svg
+      viewBox="0 0 501.5 73.9"
+      aria-hidden="true"
+      className={clsx(fillOnHover && 'group/logo', className)}
+      {...props}
+    >
+      <Logomark
+        preserveAspectRatio="xMinYMid meet"
+        invert={invert}
+        filled={filled}
+      />
+        <path class="b" d=""/> 
+      </svg>
   )
 }
