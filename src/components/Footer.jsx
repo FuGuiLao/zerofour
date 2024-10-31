@@ -120,8 +120,12 @@ export function Footer() {
             <Logo className="h-10" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © {new Date().getFullYear()} Zerofour Inc. All Rights Reserved.</br>
-            Data Security | Privacy Policy | Terms of Use
+            © {new Date().getFullYear()} Zerofour Inc. All Rights Reserved.<br />
+             <a href="/terms-of-use.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+          |
+          <a href="/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          |
+          <a href="/data-security.pdf" target="_blank" rel="noopener noreferrer">Data Security</a>
           </p>
         </div>
       </FadeIn>
