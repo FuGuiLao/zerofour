@@ -198,7 +198,7 @@ compliant and utilize the strongest industry recognized security, including TLS 
         <p>All client data is redundantly stored multiple times in multiple physical locations to ensure the highest level of data
 integrity and the entire network is housed in SAS70 Type II data centers.</p>
 <p>To give notice, or if you have any questions or comments about data security, please contact us in writing.</p>
-          <p>&nbsp;</p>
+      <br />
 Zerofour Inc.<br />
 515 S. Flower Street 18th Floor<br />
 Los Angeles, CA 90071
