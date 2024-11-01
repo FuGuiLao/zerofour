@@ -210,7 +210,8 @@ of such disclosure.</p>
 of data sent to your computer browser from our web server and stored on your computer&#39;s hard drive. The data identifies
 you as a unique user and facilitates your ongoing access to and use of this website. Cookies also help us diagnose problems
 with our server and the Site.</p>
-<br />
+          <p>To give notice, or if you have any questions or comments about our terms and conditions, please contact us in writing.</p>
+        <br />
 Zerofour Inc.<br />
 515 S. Flower Street 18th Floor<br />
 Los Angeles, CA 90071
