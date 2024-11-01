@@ -188,11 +188,19 @@ export default async function About() {
       <PageIntro eyebrow="Data Security" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Zerofour is defined by integrity, discretion, and excellence. We are committed to protecting our clients with precision and professionalism, ensuring their safety and security across the globe. Our team operates with a relentless pursuit of knowledge, adapting to evolving threats and leveraging intelligence to provide strategic solutions. We value trust, respect, and collaboration, fostering a work environment where expertise and innovation thrive.
+            Zerofour Inc. (collectively “Zerofour,” or “We,” “Us.” Or “Our”) uses innovative technology to enhance our connection
+with our clients.          
           </p>
-          <p>
-            Our team is composed of seasoned professionals with backgrounds in law enforcement, military, and intelligence services, bringing a wealth of experience and expertise to our agency. Their diverse skills, honed through years of service, provide us with a comprehensive approach to security and intelligence operations. This elite team applies their rigorous training, strategic thinking, and real-world experience to deliver unmatched protection and insight, ensuring our clients receive the highest level of service.
-          </p>
+          <p>Our systems are built upon proven technology and enterprise software framework to ensure it meets the requirements of the
+most security-sensitive organizations. Just like enterprise software and banking institutions, our systems are GDPR
+compliant and utilize the strongest industry recognized security, including TLS 1.2 with AES 256-bit SSL encryption.
+             </p>
+        <p></p>All client data is redundantly stored multiple times in multiple physical locations to ensure the highest level of data
+integrity and the entire network is housed in SAS70 Type II data centers.</p>
+<p></p>To give notice, or if you have any questions or comments about data security, please contact us.</p>
+Zerofour Inc.<br />
+515 S. Flower Street 18th Floor<br />
+Los Angeles, CA 90071
         </div>
       </PageIntro>
     </>
