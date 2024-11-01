@@ -188,7 +188,7 @@ export default async function About() {
       <PageIntro eyebrow="Terms of Use" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-          
+          </p>
 <br />
 Zerofour Inc.<br />
 515 S. Flower Street 18th Floor<br />
