@@ -187,8 +187,50 @@ export default async function About() {
     <>
       <PageIntro eyebrow="Terms of Use" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>
-          </p>
+          By entering the Zerofour Inc. (collectively "Zerofour," or "We," "Us," or "Our") website (the "Site"), you accept and agree
+to follow the terms and conditions described in this User Agreement. This User Agreement is a binding agreement between
+you and Zerofour, and governs your access and use of the Site, which includes any information, data, tools, products,
+services, and other content (together, "Content") available on or through the Site. You may contact Zerofour at the address
+provided below with questions about the terms and conditions of this User Agreement.
+PLEASE READ THIS USER AGREEMENT ("USER AGREEMENT") CAREFULLY BEFORE ENTERING THE SITE.
+EACH TIME YOU ENTER THE SITE, YOUR USE INDICATES YOUR FULL ACCEPTANCE OF AND AGREEMENT
+TO ABIDE BY THIS USER AGREEMENT IN ITS THEN CURRENT FORM. IF YOU DO NOT ACCEPT THE TERMS
+AND CONDITIONS STATED IN THIS USER AGREEMENT, PLEASE EXIT THE SITE.
+Limited License to Use the Site
+The Site is owned by Zerofour. The Site is protected by one or more copyrights, patents, database rights, trademarks,
+servicemarks, and/or other intellectual property and proprietary rights that are owned by Zerofour, its affiliates and/or third
+parties. Zerofour grants you a limited right to use the Site only for your own private, non-commercial informational
+purposes only, and to print pages from the Site only in connection with that use. You may not modify, distribute, transmit,
+perform, reproduce, publish, license, create derivative works from, transfer or sell any text, graphics, logos and other
+source-identifying symbols, designs, icons, images, or other information, software, or code obtained from the Site. You are
+prohibited from removing any copyright, trademark or other proprietary notice or legend contained on (or printed from) the
+Site or on any printed pages. In addition, you are prohibited from decomposing, decompiling, reverse engineering,
+disassembling, or otherwise deconstructing all or any portion of the Site.
+Any data that you transmit to the Site (including without limitation personally identifiable information) becomes the
+property of Zerofour and may be used by Zerofour for any lawful purpose without restriction, subject to the Privacy Policy.
+All materials at the Site are meant to be reviewed in their entirety, including any footnotes, legal disclaimers, restrictions or
+disclosures, and any copyright or proprietary notices. Any disclaimers, restrictions, or disclosures apply to any partial
+document or material in the same manner as they do the whole, and will be deemed incorporated in the portion of any
+material or document that you consult or download.
+Your continuing right to use the Site is subject to your agreement to abide by this User Agreement in its entirety, as well as
+any other rules, procedures, policies, terms, or conditions that govern all or any portion of the Site. At any time and for any
+reason we may revoke your right to use all or any portion of the Site.
+No Reliance
+All content provided on this Site is for informational purposes only. No statements contained on this Site should be
+construed as a guarantee or assurance of future performance or future results. There are various risks you assume when
+reviewing the content on this Site. Dated content speaks only as of the date indicated. We may modify the content on this
+Site at any time and without notice to you. We make reasonable efforts to provide accurate content, but at times we may not
+promptly update or correct the Site even if we are aware that it is inaccurate, outdated or otherwise inappropriate. In
+addition, we do not endorse the opinions of, or warrant the accuracy of facts or other content contributed by any third party.
+You agree that we are not liable for any action you take or decision you make in reliance on any content on the Site.
+Nothing on the Site is intended to be, and you should not consider anything on the Site to be legal advice. You are
+encouraged to discuss information that you learn from the Site with your financial, legal or tax advisors, and others with
+whom you share legal decisions.
+Your Representations and Warranties
+You represent and warrant that you have full authority and all rights necessary to enter into and fully perform all of your
+obligations pursuant to this User Agreement. You represent and warrant that you have not and you will not enter into any
+agreement or perform any act which might contravene the purposes and/or effects of this User Agreement. You represent
+and warrant that you will not delete any content from the Site
 <br />
 Zerofour Inc.<br />
 515 S. Flower Street 18th Floor<br />
