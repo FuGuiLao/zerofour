@@ -175,7 +175,7 @@ function Team() {
 }
 
 export const metadata = {
-  title: 'Data Security',
+  title: 'Privacy Policy',
   description:
     'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
 }
@@ -185,7 +185,7 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="Data Security" title="">
+      <PageIntro eyebrow="Privacy Policy" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
           Zerofour Inc. (collectively "Zerofour," or "We," "Us," or "Our") believes that protecting the privacy of current, former, and
