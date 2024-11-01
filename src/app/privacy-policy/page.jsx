@@ -193,7 +193,7 @@ the privacy of such information in our possession.</p>
           
 <p>We collect nonpublic personal information about current and prospective clients from the following sources: information
 we receive from current and prospective clients on retainer agreements and related documents (for example, name, address,
-social security number, date of birth); and information about client's transactions with Zerofour and its affiliates. Zerofour
+social security number, date of birth); and information about client&#39;s transactions with Zerofour and its affiliates. Zerofour
 may use nonpublic personal information for its own internal purposes or on behalf of its affiliates as permitted by law or
 regulation.</p>
           
@@ -207,7 +207,7 @@ personal information about current, former and prospective clients that is in ou
 with this policy, we will give advance notice of the proposed change so that the client will have the opportunity to &#34;opt out&#34;
 of such disclosure.</p>
 <p>This website may use &#34;cookies,&#34; which may automatically collect certain information and data. &#34;Cookies&#34; are small pieces
-of data sent to your computer browser from our web server and stored on your computer's hard drive. The data identifies
+of data sent to your computer browser from our web server and stored on your computer&#39;s hard drive. The data identifies
 you as a unique user and facilitates your ongoing access to and use of this website. Cookies also help us diagnose problems
 with our server and the Site.</p>
 <br />
