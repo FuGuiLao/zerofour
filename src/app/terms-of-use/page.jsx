@@ -175,7 +175,7 @@ function Team() {
 }
 
 export const metadata = {
-  title: 'About Us',
+  title: 'Terms of Use',
   description:
     'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
 }
@@ -185,40 +185,38 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
-        <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
-        </p>
+      <PageIntro eyebrow="Terms of Use" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Zerofour is defined by integrity, discretion, and excellence. We are committed to protecting our clients with precision and professionalism, ensuring their safety and security across the globe. Our team operates with a relentless pursuit of knowledge, adapting to evolving threats and leveraging intelligence to provide strategic solutions. We value trust, respect, and collaboration, fostering a work environment where expertise and innovation thrive.
-          </p>
-          <p>
-            Our team is composed of seasoned professionals with backgrounds in law enforcement, military, and intelligence services, bringing a wealth of experience and expertise to our agency. Their diverse skills, honed through years of service, provide us with a comprehensive approach to security and intelligence operations. This elite team applies their rigorous training, strategic thinking, and real-world experience to deliver unmatched protection and insight, ensuring our clients receive the highest level of service.
-          </p>
+          Zerofour Inc. (collectively &#34;Zerofour,&#34; or &#34;We,&#34; &#34;Us,&#34; or &#34;Our&#34;) believes that protecting the privacy of current, former, and
+prospective clients and their personal information is of the utmost importance, and we are fully committed to maintaining
+the privacy of such information in our possession.</p>
+          
+<p>We collect nonpublic personal information about current and prospective clients from the following sources: information
+we receive from current and prospective clients on retainer agreements and related documents (for example, name, address,
+social security number, date of birth); and information about client's transactions with Zerofour and its affiliates. Zerofour
+may use nonpublic personal information for its own internal purposes or on behalf of its affiliates as permitted by law or
+regulation.</p>
+          
+<p>In general, we restrict access of current, former, and prospective clients' nonpublic personal information to our personnel,
+our affiliates and their personnel, our service providers, our outside counsel, and our outside auditors who need to know
+that information in order to ensure compliance with applicable laws and regulations or provide services to our clients.</p>
+
+  <p>We maintain physical, electronic, and procedural controls in keeping with Federal standards to safeguard the nonpublic
+personal information about current, former and prospective clients that is in our possession.</p>
+<p>If, at any time in the future, it is necessary to disclose any of a client's personal information in a way that is inconsistent
+with this policy, we will give advance notice of the proposed change so that the client will have the opportunity to "opt out"
+of such disclosure.</p>
+<p>This website may use "cookies," which may automatically collect certain information and data. "Cookies" are small pieces
+of data sent to your computer browser from our web server and stored on your computer's hard drive. The data identifies
+you as a unique user and facilitates your ongoing access to and use of this website. Cookies also help us diagnose problems
+with our server and the Site.</p>
+<br />
+Zerofour Inc.<br />
+515 S. Flower Street 18th Floor<br />
+Los Angeles, CA 90071
         </div>
       </PageIntro>
-      <Container className="mt-16">
-        <StatList>
-          <StatListItem value="100+" label="Operators worldwide" />
-          <StatListItem value="5" label="Continents served" />
-          <StatListItem value="Over $1B" label="Assets protected" />
-        </StatList>
-      </Container>
-
-      <Culture />
-
-    
-
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of seasoned professionals, with backgrounds in law enforcement, military, and intelligence, has one mission: to safeguard our clients and ensure their peace of mind across the globe. From conducting risk assessments to implementing tailored security solutions, we are dedicated to delivering exceptional service."
-        pages={blogArticles}
-      />
-
-      <ContactSection />
     </>
   )
 }
