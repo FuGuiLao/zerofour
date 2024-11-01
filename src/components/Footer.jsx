@@ -121,7 +121,7 @@ export function Footer() {
           </Link>
           <p className="text-sm text-neutral-700">
             © {new Date().getFullYear()} Zerofour Inc. All Rights Reserved.<br />
-             <a href="/pdf/terms-of-use.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a> | <a href="/pdf/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | <a href="data-security.pdf" target="_blank" rel="noopener noreferrer">Data Security</a>
+             <a href="/pdf/terms-of-use.pdf" target="_blank" rel="noopener noreferrer">Terms of Use</a> | <a href="/pdf/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | <a href="/pdf/data-security.pdf" target="_blank" rel="noopener noreferrer">Data Security</a>
           </p>
         </div>
       </FadeIn>
