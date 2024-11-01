@@ -187,13 +187,13 @@ export default async function About() {
     <>
       <PageIntro eyebrow="Terms of Use" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>By entering the Zerofour Inc. (collectively "Zerofour," or "We," "Us," or "Our") website (the "Site"), you accept and agree
+          <p>By entering the Zerofour Inc. (collectively &#34;Zerofour,&#34; or &#34;We,&#34; &#34;Us,&#34; or &#34;Our&#34;) website (the &#34;Site&#34;), you accept and agree
 to follow the terms and conditions described in this User Agreement. This User Agreement is a binding agreement between
 you and Zerofour, and governs your access and use of the Site, which includes any information, data, tools, products,
-services, and other content (together, "Content") available on or through the Site. You may contact Zerofour at the address
+services, and other content (together, &#34;Content&#34;) available on or through the Site. You may contact Zerofour at the address
 provided below with questions about the terms and conditions of this User Agreement.</p>
 
-            <p>PLEASE READ THIS USER AGREEMENT ("USER AGREEMENT") CAREFULLY BEFORE ENTERING THE SITE.
+            <p>PLEASE READ THIS USER AGREEMENT (&#34;USER AGREEMENT&#34;) CAREFULLY BEFORE ENTERING THE SITE.
 EACH TIME YOU ENTER THE SITE, YOUR USE INDICATES YOUR FULL ACCEPTANCE OF AND AGREEMENT
 TO ABIDE BY THIS USER AGREEMENT IN ITS THEN CURRENT FORM. IF YOU DO NOT ACCEPT THE TERMS
 AND CONDITIONS STATED IN THIS USER AGREEMENT, PLEASE EXIT THE SITE.</p>
@@ -258,11 +258,11 @@ hyperlink to, the Site. If you access any third party website through the Site o
 Hyperlinks to or from the Site do not constitute third party endorsement of, sponsorship by or affiliation with us.</p>
 
       <p>No Warranty<br />
-Zerofour disclaims all warranties with respect to the site that the law allows it to disclaim. The Site is provided "as is" and
-"as available." We disclaim all representations and warranties, express or implied, of any kind with respect to the Site
+Zerofour disclaims all warranties with respect to the site that the law allows it to disclaim. The Site is provided &#34;as is&#34; and
+&#34;as available.&#34; We disclaim all representations and warranties, express or implied, of any kind with respect to the Site
 including warranties of merchantability, fitness for a particular purpose and non-infringement of intellectual property and
 proprietary rights. Without limiting our general disclaimer, we do not warrant the availability, accuracy, completeness,
-timeliness, functionality, reliability, sequencing, or speed of delivery of the Site or any part of the content. Zerofour's
+timeliness, functionality, reliability, sequencing, or speed of delivery of the Site or any part of the content. Zerofour&#39;s
 liability with respect to the site is limited to the maximum extent permitted by law.</p>
 
         <p>Limitation of Liability<br />
@@ -279,9 +279,9 @@ limitations shall apply only to the extent legally enforceable in the applicable
 You will be responsible for any liability to Zerofour that arises out of your breach of this User Agreement or your use of the
 Site. You agree to indemnify, defend and hold harmless Zerofour and its affiliates, agents, employees and third party
 sources from and against any and all suits, losses, claims, demands, liabilities, damages, costs and expenses (including
-reasonable attorneys' fees) that arise from or relate to your use of the Site, your breach of this User Agreement or any
+reasonable attorneys&#39; fees) that arise from or relate to your use of the Site, your breach of this User Agreement or any
 representation, warranty, or covenant made by you in this User Agreement, your violation of any applicable law, statute,
-ordinance, regulation or of any third party's rights, or claims asserted by third parties which, if proven, would place you in
+ordinance, regulation or of any third party&#39;s rights, or claims asserted by third parties which, if proven, would place you in
 breach of representations, warranties, covenants, or other provisions contained in this User Agreement.</p>
 
             <p>Updates to the Site and Modifications to the User Agreement
