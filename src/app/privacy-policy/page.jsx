@@ -191,15 +191,18 @@ export default async function About() {
           Zerofour Inc. (collectively "Zerofour," or "We," "Us," or "Our") believes that protecting the privacy of current, former, and
 prospective clients and their personal information is of the utmost importance, and we are fully committed to maintaining
 the privacy of such information in our possession.</p>
+          
 <p>We collect nonpublic personal information about current and prospective clients from the following sources: information
 we receive from current and prospective clients on retainer agreements and related documents (for example, name, address,
 social security number, date of birth); and information about client's transactions with Zerofour and its affiliates. Zerofour
 may use nonpublic personal information for its own internal purposes or on behalf of its affiliates as permitted by law or
 regulation.</p>
+          
 <p>In general, we restrict access of current, former, and prospective clients' nonpublic personal information to our personnel,
 our affiliates and their personnel, our service providers, our outside counsel, and our outside auditors who need to know
-that information in order to ensure compliance with applicable laws and regulations or provide services to our clients.
-<p>We maintain physical, electronic, and procedural controls in keeping with Federal standards to safeguard the nonpublic
+that information in order to ensure compliance with applicable laws and regulations or provide services to our clients.</p>
+
+  <p>We maintain physical, electronic, and procedural controls in keeping with Federal standards to safeguard the nonpublic
 personal information about current, former and prospective clients that is in our possession.</p>
 <p>If, at any time in the future, it is necessary to disclose any of a client's personal information in a way that is inconsistent
 with this policy, we will give advance notice of the proposed change so that the client will have the opportunity to "opt out"
