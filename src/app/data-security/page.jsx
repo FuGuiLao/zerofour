@@ -175,7 +175,7 @@ function Team() {
 }
 
 export const metadata = {
-  title: 'About Us',
+  title: 'Data Security',
   description:
     'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
 }
@@ -185,11 +185,7 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
-        <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
-        </p>
+      <PageIntro eyebrow="Data Security" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
             Zerofour is defined by integrity, discretion, and excellence. We are committed to protecting our clients with precision and professionalism, ensuring their safety and security across the globe. Our team operates with a relentless pursuit of knowledge, adapting to evolving threats and leveraging intelligence to provide strategic solutions. We value trust, respect, and collaboration, fostering a work environment where expertise and innovation thrive.
@@ -199,26 +195,6 @@ export default async function About() {
           </p>
         </div>
       </PageIntro>
-      <Container className="mt-16">
-        <StatList>
-          <StatListItem value="100+" label="Operators worldwide" />
-          <StatListItem value="5" label="Continents served" />
-          <StatListItem value="Over $1B" label="Assets protected" />
-        </StatList>
-      </Container>
-
-      <Culture />
-
-    
-
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of seasoned professionals, with backgrounds in law enforcement, military, and intelligence, has one mission: to safeguard our clients and ensure their peace of mind across the globe. From conducting risk assessments to implementing tailored security solutions, we are dedicated to delivering exceptional service."
-        pages={blogArticles}
-      />
-
-      <ContactSection />
     </>
   )
 }
