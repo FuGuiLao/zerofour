@@ -188,29 +188,7 @@ export default async function About() {
       <PageIntro eyebrow="Terms of Use" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-          Zerofour Inc. (collectively &#34;Zerofour,&#34; or &#34;We,&#34; &#34;Us,&#34; or &#34;Our&#34;) believes that protecting the privacy of current, former, and
-prospective clients and their personal information is of the utmost importance, and we are fully committed to maintaining
-the privacy of such information in our possession.</p>
           
-<p>We collect nonpublic personal information about current and prospective clients from the following sources: information
-we receive from current and prospective clients on retainer agreements and related documents (for example, name, address,
-social security number, date of birth); and information about client's transactions with Zerofour and its affiliates. Zerofour
-may use nonpublic personal information for its own internal purposes or on behalf of its affiliates as permitted by law or
-regulation.</p>
-          
-<p>In general, we restrict access of current, former, and prospective clients' nonpublic personal information to our personnel,
-our affiliates and their personnel, our service providers, our outside counsel, and our outside auditors who need to know
-that information in order to ensure compliance with applicable laws and regulations or provide services to our clients.</p>
-
-  <p>We maintain physical, electronic, and procedural controls in keeping with Federal standards to safeguard the nonpublic
-personal information about current, former and prospective clients that is in our possession.</p>
-<p>If, at any time in the future, it is necessary to disclose any of a client's personal information in a way that is inconsistent
-with this policy, we will give advance notice of the proposed change so that the client will have the opportunity to "opt out"
-of such disclosure.</p>
-<p>This website may use "cookies," which may automatically collect certain information and data. "Cookies" are small pieces
-of data sent to your computer browser from our web server and stored on your computer's hard drive. The data identifies
-you as a unique user and facilitates your ongoing access to and use of this website. Cookies also help us diagnose problems
-with our server and the Site.</p>
 <br />
 Zerofour Inc.<br />
 515 S. Flower Street 18th Floor<br />
