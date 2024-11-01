@@ -197,6 +197,7 @@ export default async function About() {
           <p>
             Our team is composed of seasoned professionals with backgrounds in law enforcement, military, and intelligence services, bringing a wealth of experience and expertise to our agency. Their diverse skills, honed through years of service, provide us with a comprehensive approach to security and intelligence operations. This elite team applies their rigorous training, strategic thinking, and real-world experience to deliver unmatched protection and insight, ensuring our clients receive the highest level of service.
           </p>
+          <p>Zerofour is a registered United States federal government prime contractor (8JMN8) and a licensed private patrol operator (PPO122263) and private investigation agency (PI187883) with the State of California.</p>
         </div>
       </PageIntro>
       <Container className="mt-16">
