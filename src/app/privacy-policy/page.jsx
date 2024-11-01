@@ -187,8 +187,7 @@ export default async function About() {
     <>
       <PageIntro eyebrow="Privacy Policy" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>
-          Zerofour Inc. (collectively "Zerofour," or "We," "Us," or "Our") believes that protecting the privacy of current, former, and
+          <p>Zerofour Inc. (collectively "Zerofour," or "We," "Us," or "Our") believes that protecting the privacy of current, former, and
 prospective clients and their personal information is of the utmost importance, and we are fully committed to maintaining
 the privacy of such information in our possession.</p>
           
