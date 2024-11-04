@@ -173,6 +173,7 @@ export default async function Home() {
 
   return (
     <>
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
