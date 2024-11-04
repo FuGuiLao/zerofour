@@ -17,7 +17,7 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import imageLaptop from '@/images/laptop.jpg'
+import imageSetvices from '@/images/services.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
@@ -131,7 +131,7 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageLaptop}
+                src={imageServices}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
