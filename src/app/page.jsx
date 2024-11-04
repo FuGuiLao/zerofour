@@ -17,7 +17,7 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import imageSetvices from '@/images/services.jpg'
+import imageServices from '@/images/services.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
