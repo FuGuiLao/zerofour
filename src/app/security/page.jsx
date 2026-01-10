@@ -52,7 +52,7 @@ function Executive() {
         </p>
         <p>
           Our protection personnel are drawn from current and former law enforcement and military backgrounds, bringing real-world experience in close protection, dignitary security, and high-risk operations. Teams are trained to maintain constant situational awareness while blending seamlessly into the client’s environment. Services may include advance work and site surveys, secure transportation coordination, route planning, liaison with local authorities when appropriate, and residential protection support. Zerofour emphasizes adaptability, ensuring our teams can respond quickly to evolving threat conditions or client requirements.        </p>
-        <p>
+      </p><p>
           Every executive protection assignment is tailored to the client’s lifestyle, risk tolerance, and operational priorities. Whether supporting short-term travel, ongoing personal security, or family protection requirements, our focus remains on minimizing disruption while maximizing safety. Clients benefit from experienced leadership, clear communication, and protection strategies designed to preserve privacy, reputation, and continuity of daily operations.
         </p>
       </div>
