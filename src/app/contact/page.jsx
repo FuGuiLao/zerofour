@@ -51,6 +51,7 @@ function ContactForm() {
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
+
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Name" name="name" autoComplete="name" />
           <TextInput
@@ -66,6 +67,7 @@ function ContactForm() {
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
+
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
@@ -78,9 +80,22 @@ function ContactForm() {
             </fieldset>
           </div>
         </div>
+
         <Button type="submit" className="mt-10">
           Let’s work together
         </Button>
+
+        {/* Added CTA */}
+        <div className="mt-12 rounded-4xl bg-neutral-950 px-6 py-12">
+          <h3 className="font-display text-2xl font-medium text-white [text-wrap:balance]">
+            Tell us more about your needs
+          </h3>
+          <div className="mt-6">
+            <Button href="/contact" invert>
+              Contact Us
+            </Button>
+          </div>
+        </div>
       </form>
     </FadeIn>
   )
@@ -93,7 +108,8 @@ function ContactDetails() {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We respond to our clients&#39; needs and have a number of ways to connect with us across the globe.
+        Prefer doing things in person? We respond to our clients&apos; needs and
+        have a number of ways to connect with us across the globe.
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
