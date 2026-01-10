@@ -85,17 +85,22 @@ function ContactForm() {
           Let’s work together
         </Button>
 
-        {/* Added CTA */}
+        {/* Replaced previous CTA and email input with "Our offices" section */}
         <div className="mt-12 rounded-4xl bg-neutral-950 px-6 py-12">
-          <h3 className="font-display text-2xl font-medium text-white [text-wrap:balance]">
-            Tell us more about your needs
+          <h3 className="font-display text-base font-semibold text-white">
+            Our offices
           </h3>
+          <p className="mt-6 text-base text-white/80">
+            Prefer doing things in person? We respond to our clients' needs and have a number of ways to connect with us across the globe.
+          </p>
           <div className="mt-6">
             <Button href="/contact" invert>
               Contact Us
             </Button>
           </div>
         </div>
+
+        {/* Removed email input box entirely, replaced with button only */}
       </form>
     </FadeIn>
   )
