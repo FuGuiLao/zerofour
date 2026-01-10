@@ -82,11 +82,11 @@ function ContactForm() {
         </div>
 
         <Button type="submit" className="mt-10">
-          Let’s work together
+          Let&#39;s work together
         </Button>
 
         {/* CTA Section replaced with "Our offices" text and Contact Us button */}
-        <div className="mt-12 rounded-4xl bg-neutral-950 px-6 py-12">
+        <div className="mt-12">
           <h3 className="font-display text-base font-semibold text-white">
             Our offices
           </h3>
@@ -147,14 +147,14 @@ function ContactDetails() {
 
 export const metadata = {
   title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  description: 'Let&#39;s work together. We can&#39;t wait to hear from you.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow="Contact us" title="Let&#39;s work together">
+        <p>We can&#39;t wait to hear from you.</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
