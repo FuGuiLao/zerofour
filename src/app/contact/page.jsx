@@ -86,7 +86,7 @@ function ContactForm() {
         </Button>
 
         {/* Top CTA: Our offices under the main button */}
-        <div className="mt-12 rounded-4xl bg-neutral-950 px-6 py-12">
+        <div className="mt-12 rounded-4xl border border-neutral-300 bg-transparent px-6 py-12">
           <h3 className="font-display text-base font-semibold text-white">
             Our offices
           </h3>
@@ -94,8 +94,8 @@ function ContactForm() {
             Prefer doing things in person? We respond to our clients&#39; needs and have a number of ways to connect with us across the globe.
           </p>
           <div className="mt-6">
-            <Button href="/contact" invert>
-              Contact Us
+            <Button type="submit" className="mt-10">
+              Schedule a Consultation Now
             </Button>
           </div>
         </div>
