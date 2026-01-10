@@ -86,11 +86,11 @@ function ContactForm() {
         </Button>
 
         {/* Top CTA: Our offices under the main button */}
-        <div className="mt-12 rounded-4xl border border-neutral-300 bg-transparent px-6 py-12">
-          <h3 className="font-display text-base font-semibold text-white">
+        <div className="mt-12 rounded-2xl border border-neutral-300 bg-transparent px-6 py-12">
+          <h3 className="font-display text-base font-semibold text-neutral-950">
             Our offices
           </h3>
-          <p className="mt-6 text-base text-white/80">
+          <p className="mt-6 text-base text-neutral-600">
             Prefer doing things in person? We respond to our clients&#39; needs and have a number of ways to connect with us across the globe.
           </p>
           <div className="mt-6">
