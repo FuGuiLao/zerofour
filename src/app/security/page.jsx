@@ -43,18 +43,17 @@ function Section({ title, image, children }) {
   )
 }
 
-function Discover() {
+function Executive() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section title="Executive & High-Net-Worth Protection" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We initiate a thorough understanding of your specific needs, risks, and objectives. This stage begins with an in-depth consultation, where we listen closely to understand your concerns and gather essential information. By fostering {' '}<strong className="font-semibold text-neutral-950">open communication</strong>{' '}, we ensure that no aspect of your security needs is overlooked, and we begin to build a foundation of trust and clarity that guides our entire process.
+          Zerofour provides discreet, intelligence-driven protective services for executives, principals, public figures, and high-net-worth individuals operating in complex or elevated-risk environments. Our approach emphasizes advance planning, threat awareness, and professional execution rather than overt presence. Each engagement begins with a comprehensive risk assessment that evaluates travel patterns, public exposure, operating locations, and personal routines, allowing our teams to develop protection strategies that are effective without being intrusive.
         </p>
         <p>
-          Our team of experts then conducts a detailed assessment, analyzing both current and potential risks that could impact your safety, assets, or operations. Utilizing sophisticated intelligence tools, data analysis, and insights from our global network, we identify vulnerabilities and opportunities, allowing us to gain a nuanced {' '}<strong className="font-semibold text-neutral-950">perspective</strong>{' '} of your environment and the unique challenges you face. This deep dive enables us to design a strategy specifically aligned with your objectives.
-        </p>
+          Our protection personnel are drawn from current and former law enforcement and military backgrounds, bringing real-world experience in close protection, dignitary security, and high-risk operations. Teams are trained to maintain constant situational awareness while blending seamlessly into the client’s environment. Services may include advance work and site surveys, secure transportation coordination, route planning, liaison with local authorities when appropriate, and residential protection support. Zerofour emphasizes adaptability, ensuring our teams can respond quickly to evolving threat conditions or client requirements.        </p>
         <p>
-          With a complete picture of your needs, our team {' '}<strong className="font-semibold text-neutral-950">collaborates</strong>{' '} to refine the scope of your security strategy. By the end of the Discover phase, we present you with a comprehensive overview of our findings and preliminary recommendations. This proactive approach enables you to feel confident that your security requirements are fully understood and that our solutions will be precisely tailored to address them.
+          Every executive protection assignment is tailored to the client’s lifestyle, risk tolerance, and operational priorities. Whether supporting short-term travel, ongoing personal security, or family protection requirements, our focus remains on minimizing disruption while maximizing safety. Clients benefit from experienced leadership, clear communication, and protection strategies designed to preserve privacy, reputation, and continuity of daily operations.
         </p>
       </div>
 
@@ -73,18 +72,18 @@ function Discover() {
   )
 }
 
-function Build() {
+function Residential() {
   return (
-    <Section title="Plan" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Residential & Community Security" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
-        <p>
-          Our team formulates a customized strategy based on the detailed insights and data gathered during the Discover phase. Every element of your security solution is carefully designed to address the specific risks, assets, and operational needs identified in the initial assessment. We prioritize a balanced approach, creating a plan that is robust yet adaptable, ensuring you are equipped to handle evolving challenges with confidence.
+         <p>
+       Zerofour delivers professional residential and community security services designed to safeguard people, property, and shared spaces while maintaining a secure and welcoming environment. We support condominiums, apartment complexes, gated communities, and private estates with security solutions that balance visibility, deterrence, and discretion. Each engagement is informed by site-specific assessments that evaluate access points, traffic patterns, resident needs, and potential vulnerabilities.
         </p>
         <p>
-          The planning process involves collaboration among our in-house experts, who bring specialized knowledge in fields such as cybersecurity, physical security, and risk mitigation. Together, we develop a multi-layered approach that combines cutting-edge technology, intelligence analysis, and industry best practices to form a cohesive and efficient security framework. This stage includes a comprehensive review to confirm that every potential scenario and contingency is accounted for.
-        </p>
+Our residential security personnel are carefully selected and trained to serve as both a protective presence and a trusted point of contact for residents and property management. Services include access control and visitor management, patrol operations, incident response, and coordination with emergency services when required. Zerofour places strong emphasis on professionalism, consistency, and accountability, ensuring personnel represent the property appropriately and interact with residents respectfully.
+</p>
         <p>
-          Once the plan is established, we present it to you in detail, outlining each component of the strategy and how it aligns with your objectives. Your feedback is crucial at this stage, and we work closely with you to refine any elements, ensuring that the final plan is fully aligned with your expectations. This collaborative approach provides clarity, allowing you to feel assured that your security strategy is well-conceived, actionable, and tailored precisely to your needs.
+By integrating security operations into the daily rhythm of a residential environment, Zerofour enhances safety without compromising quality of life. Our teams work closely with property managers and homeowner associations to align security coverage with community expectations and operational requirements. The result is a dependable security presence that deters threats, responds effectively to incidents, and reinforces confidence among residents and stakeholders.
         </p>
       </div>
 
@@ -98,18 +97,16 @@ function Build() {
   )
 }
 
-function Deliver() {
+function Construction() {
   return (
-    <Section title="Execute" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Construction Site Security" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-       This is where our strategy comes to life. With careful precision, we implement each element of the plan developed in the previous stages, ensuring a {' '}<strong className="font-semibold text-neutral-950">seamless integration</strong>{' '} of security measures across all identified areas. Our experienced teams work in tandem to monitor, respond, and adapt, providing a dynamic, layered security presence that aligns with your ongoing operations. By deploying resources strategically, we maximize effectiveness and maintain a low profile, safeguarding your environment without disruption.
-         </p>
-        <p>
-          During this phase, we rely on real-time data and {' '}<strong className="font-semibold text-neutral-950">continuous monitoring</strong>{' '} to assess the effectiveness of our security measures. Our advanced intelligence systems allow us to stay one step ahead, responding swiftly to any developing threats or unexpected changes. Should adjustments be necessary, our team adapts rapidly, recalibrating our approach to ensure that each layer of protection remains effective and that no gaps emerge in your security framework.
-        </p>
-        <p>
-          Throughout the execution process, communication with our clients remains a priority. We keep you informed of our actions, findings, and any updates to your security posture. By maintaining this {' '}<strong className="font-semibold text-neutral-950">open line of communication</strong>{' }'}, we ensure that you remain confident in the protection you receive, and we’re always ready to address any concerns that may arise. This collaborative, proactive approach enables us to deliver security solutions that are as resilient as they are responsive.
+       Construction projects present unique security challenges, including valuable materials, heavy equipment, open perimeters, and constantly changing site conditions. Zerofour provides construction site security services designed to reduce theft, vandalism, and unauthorized access throughout all phases of development. Our teams understand the operational realities of active construction environments and tailor coverage accordingly, from early ground-break through project completion.
+        </p><p>
+Security services may include perimeter control, controlled entry and exit points, mobile patrols, after-hours coverage, and incident reporting. Zerofour personnel are trained to identify suspicious activity, enforce site access policies, and respond quickly to security incidents without interfering with construction workflows. We coordinate closely with project managers and contractors to ensure security measures align with site safety protocols and schedules.
+</p><p>
+By proactively addressing security risks, Zerofour helps clients protect assets, minimize losses, and maintain project timelines. Our construction site security services provide both deterrence and accountability, supported by clear documentation and consistent supervision. Clients benefit from reliable coverage and security solutions that scale as project needs evolve.
         </p>
       </div>
 
@@ -131,6 +128,34 @@ function Deliver() {
   )
 }
 
+function Retail() {
+  return (
+    <Section title="Retail & Commercial Security" image={{ src: imageWhiteboard }}>
+      <div className="space-y-6 text-base text-neutral-600">
+        <p>
+          Zerofour provides professional security services for retail and commercial properties, supporting safe environments for customers, employees, and tenants. Our approach focuses on loss prevention, incident management, and visible deterrence while maintaining a professional presence aligned with brand standards and business operations. Each assignment begins with an assessment of site layout, operating hours, foot traffic patterns, and identified risks.
+        </p><p>
+Our security personnel are trained to manage a wide range of situations, from access control and patrol operations to customer assistance and incident response. Zerofour emphasizes communication, situational awareness, and measured response, ensuring personnel can de-escalate issues when possible and act decisively when necessary. Services are delivered in a manner that supports daily operations rather than disrupting them.
+</p><p>
+Zerofour’s retail and commercial security solutions are scalable and adaptable, supporting single locations or multi-site portfolios. We work closely with property owners, managers, and corporate stakeholders to ensure consistent standards and reporting across all locations. The result is a dependable security presence that protects assets, supports business continuity, and reinforces a safe, professional environment.
+        </p>
+      </div>
+
+      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+        Included in this phase
+      </h3>
+      <TagList className="mt-4">
+        <TagListItem>Assessment</TagListItem>
+        <TagListItem>Analysis</TagListItem>
+        <TagListItem>Insight</TagListItem>
+        <TagListItem>Consultation</TagListItem>
+        <TagListItem>Intelligence</TagListItem>
+        <TagListItem>Understanding</TagListItem>
+      </TagList>
+    </Section>
+  )
+}
+
 function Values() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
@@ -142,33 +167,33 @@ function Values() {
       </div>
 
       <SectionIntro
-        eyebrow="Our core principles"
-        title="Balancing reliability and innovation"
+        eyebrow="Why Zerofour?"
+        title="Security is only as strong as the people behind it"
       >
         <p>
-         At our agency, we commit to the highest standards of professionalism, confidentiality, and integrity. Each member of our team is dedicated to safeguarding and empowering our clients worldwide through innovative, discreet, and reliable security solutions.
+         At Zerofour, we believe effective security starts with people, preparation, and accountability. Every client and every location has unique requirements, risks, and operational realities. Our approach is built on understanding those differences and delivering security solutions shaped by experience, discipline, and sound judgment, not templates or shortcuts.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Integrity">
-            We operate with unwavering honesty and ethics, ensuring every decision prioritizes transparency and the highest moral standards.
+          <GridListItem title="Experience">
+            Access to current and former law enforcement and military professionals with real-world backgrounds in protective operations, threat assessment, and incident response.
           </GridListItem>
-          <GridListItem title="Discretion">
-            We uphold absolute confidentiality, handling all information with the utmost sensitivity to protect our clients’ interests.
+          <GridListItem title="Professionalism">
+           Thoroughly vetted, trained, and disciplined security personnel who operate with discretion, consistency, and accountability.
           </GridListItem>
-          <GridListItem title="Reliability">
-           Our team is steadfastly dependable, providing consistent, trusted solutions that our clients can count on in every situation.
+          <GridListItem title="Customization">
+          Proactive risk assessment and tailored security planning designed around each client’s environment, objectives, and risk profile.
           </GridListItem>
-          <GridListItem title="Vigilance">
-           We maintain a proactive stance, constantly monitoring and assessing risks to anticipate challenges and provide preemptive solutions.
+          <GridListItem title="Standards">
+          Clearly defined operational protocols supported by experienced supervision and transparent reporting.
           </GridListItem>
-          <GridListItem title="Innovation">
-           We embrace cutting-edge technology and creative problem-solving, staying ahead of emerging threats to safeguard our clients effectively.
+          <GridListItem title="Responsiveness">
+         Adaptive service delivery that allows our teams to adjust quickly to changing conditions, emerging threats, or evolving client needs.
           </GridListItem>
-          <GridListItem title="Commitment">
-            TWe are deeply devoted to every mission, applying unwavering dedication to achieving the best outcomes for our clients’ security and peace of mind.
+          <GridListItem title="Trust">
+          A reputation built on reliability, discretion, and long-term partnerships across diverse operating environments.
           </GridListItem>
         </GridList>
       </Container>
@@ -177,24 +202,28 @@ function Values() {
 }
 
 export const metadata = {
-  title: 'Our Process',
+  title: 'Security',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Professional Security. Absolute Discretion.',
 }
 
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <PageIntro eyebrow="Security" title="Professional Security. Absolute Discretion.">
         <p>
-          Our approach is grounded in precision, confidentiality, and tailored strategies to ensure each client’s unique security needs are met. By leveraging cutting-edge intelligence and proactive security measures, we deliver robust solutions that safeguard assets, people, and information worldwide.
-        </p>
+          Zerofour delivers intelligence-led security services for organizations and individuals operating in complex, high-risk, and sensitive environments. Our approach is grounded in operational discipline, discretion, and real-world experience.
+
+          Our teams include current and former law enforcement professionals and former military personnel with extensive backgrounds in protective operations, access control, and threat mitigation. Every engagement is designed to anticipate risk, deter threats, and safeguard people, property, and critical assets—without unnecessary visibility or disruption.
+
+          From executive protection to residential, commercial, and site security, Zerofour provides reliable, professional coverage tailored to each client’s operating environment and risk profile.
       </PageIntro>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
-        <Discover />
-        <Build />
-        <Deliver />
+        <Executive />
+        <Residential />
+        <Construction />
+        <Retail />
       </div>
 
       <Values />
