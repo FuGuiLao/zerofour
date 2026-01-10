@@ -217,7 +217,8 @@ export default function Process() {
           Our teams include current and former law enforcement professionals and former military personnel with extensive backgrounds in protective operations, access control, and threat mitigation. Every engagement is designed to anticipate risk, deter threats, and safeguard people, property, and critical assets—without unnecessary visibility or disruption.
 
           From executive protection to residential, commercial, and site security, Zerofour provides reliable, professional coverage tailored to each client’s operating environment and risk profile.
-      </PageIntro>
+        </p>
+        </PageIntro>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Executive />
