@@ -85,8 +85,8 @@ function ContactForm() {
           Let&#39;s work together
         </Button>
 
-        {/* CTA Section replaced with "Our offices" text and Contact Us button */}
-        <div className="mt-12">
+        {/* Top CTA: Our offices under the main button */}
+        <div className="mt-12 rounded-4xl bg-neutral-950 px-6 py-12">
           <h3 className="font-display text-base font-semibold text-white">
             Our offices
           </h3>
