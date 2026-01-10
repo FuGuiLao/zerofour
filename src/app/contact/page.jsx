@@ -85,13 +85,13 @@ function ContactForm() {
           Let’s work together
         </Button>
 
-        {/* Replaced previous CTA and email input with "Our offices" section */}
+        {/* CTA Section replaced with "Our offices" text and Contact Us button */}
         <div className="mt-12 rounded-4xl bg-neutral-950 px-6 py-12">
           <h3 className="font-display text-base font-semibold text-white">
             Our offices
           </h3>
           <p className="mt-6 text-base text-white/80">
-            Prefer doing things in person? We respond to our clients' needs and have a number of ways to connect with us across the globe.
+            Prefer doing things in person? We respond to our clients&#39; needs and have a number of ways to connect with us across the globe.
           </p>
           <div className="mt-6">
             <Button href="/contact" invert>
@@ -100,7 +100,6 @@ function ContactForm() {
           </div>
         </div>
 
-        {/* Removed email input box entirely, replaced with button only */}
       </form>
     </FadeIn>
   )
@@ -113,7 +112,7 @@ function ContactDetails() {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We respond to our clients&apos; needs and
+        Prefer doing things in person? We respond to our clients&#39; needs and
         have a number of ways to connect with us across the globe.
       </p>
 
