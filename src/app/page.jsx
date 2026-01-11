@@ -198,7 +198,7 @@ export default async function Home() {
   </p>
 
   <cite className="mt-4 block text-sm not-italic text-neutral-500 before:content-none after:content-none">
-    — Confidential, Corporate Security Director
+    — Confidential, CCorporate Security Director
   </cite>
 </Testimonial>
 
