@@ -209,7 +209,7 @@ export const metadata = {
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Risk Management & Crisis Response" title="Risk Management & Crisis Response - Preparedness and decisive support">
+      <PageIntro eyebrow="Risk Management & Crisis Response" title="Preparedness and decisive support">
         <p>
           Zerofour provides risk management and advisory services to facilitate our clients’ business operations and support their decision-making processes. We help organizations evaluate complex risk, strengthen readiness, and operate with confidence in dynamic environments.
         </p><p><p>&nbsp;</p>
