@@ -25,7 +25,7 @@ function CaseStudies({ caseStudies }) {
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Case studies
+          Case Studies
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
@@ -143,7 +143,7 @@ export default async function Work() {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
+        eyebrow="Our Work"
         title="Proven solutions for real-world problems."
       >
         <p>
