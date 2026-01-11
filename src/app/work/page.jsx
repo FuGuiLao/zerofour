@@ -167,7 +167,7 @@ export default async function Work() {
       </>
     ),
     attribution: (
-      <>— Confidential, Corporate Security Director</>
+      <>— Confidential, Property Management Company</>
     ),
   }}
 </Testimonial>
