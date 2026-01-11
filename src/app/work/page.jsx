@@ -69,9 +69,9 @@ function CaseStudies({ caseStudies }) {
                   <div className="mt-8 flex">
                     <Button
                       href={caseStudy.href}
-                      aria-label={`Read case study: ${caseStudy.client}`}
+                      aria-label={`Read Case Study: ${caseStudy.client}`}
                     >
-                      Read case study
+                      Read Case Study
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
