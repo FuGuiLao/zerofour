@@ -85,7 +85,7 @@ function ContactForm() {
           Let&#39;s work together
         </Button>
 
-        <div className="mt-12">
+      /*  <div className="mt-12">
             <ScheduleConsultationCard
             framed
             buttonColor=""
@@ -93,7 +93,7 @@ function ContactForm() {
             descriptionClassName="text-neutral-600"
             
             />
-        </div>
+        </div> */
         
       </form>
     </FadeIn>
