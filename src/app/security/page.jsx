@@ -9,9 +9,10 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageConstruction from '@/images/construction.jpg'
+import imageRetail from '@/images/retail.jpg'
+import imageResidential from '@/images/residential.jpg'
+import imageExecutive from '@/images/executive.jpg'
 
 function Section({ title, image, children }) {
   return (
@@ -42,7 +43,7 @@ function Section({ title, image, children }) {
 
 function Executive() {
   return (
-    <Section title="Executive & High-Net-Worth Protection" image={{ src: imageWhiteboard }}>
+    <Section title="Executive & High-Net-Worth Protection" image={{ src: imageExecutive }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides discreet, intelligence-driven protective services for executives, principals, public figures, and high-net-worth individuals operating in complex or elevated-risk environments. Our approach emphasizes advance planning, threat awareness, and professional execution rather than overt presence. Each engagement begins with a comprehensive risk assessment that evaluates travel patterns, public exposure, operating locations, and personal routines, allowing our teams to develop protection strategies that are effective without being intrusive.
@@ -71,7 +72,7 @@ function Executive() {
 
 function Residential() {
   return (
-    <Section title="Residential & Community Security" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Residential & Community Security" image={{ src: imageResidential, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
          <p>
        Zerofour delivers professional residential and community security services designed to safeguard people, property, and shared spaces while maintaining a secure and welcoming environment. We support condominiums, apartment complexes, gated communities, and private estates with security solutions that balance visibility, deterrence, and discretion. Each engagement is informed by site-specific assessments that evaluate access points, traffic patterns, resident needs, and potential vulnerabilities.
@@ -101,7 +102,7 @@ By integrating security operations into the daily rhythm of a residential enviro
 
 function Construction() {
   return (
-    <Section title="Construction Site Security" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Construction Site Security" image={{ src: imageConstruction, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
        Construction projects present unique security challenges, including valuable materials, heavy equipment, open perimeters, and constantly changing site conditions. Zerofour provides construction site security services designed to reduce theft, vandalism, and unauthorized access throughout all phases of development. Our teams understand the operational realities of active construction environments and tailor coverage accordingly, from early ground-break through project completion.
@@ -129,7 +130,7 @@ By proactively addressing security risks, Zerofour helps clients protect assets,
 
 function Retail() {
   return (
-    <Section title="Retail & Commercial Security" image={{ src: imageWhiteboard }}>
+    <Section title="Retail & Commercial Security" image={{ src: imageRetail }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides professional security services for retail and commercial properties, supporting safe environments for customers, employees, and tenants. Our approach focuses on loss prevention, incident management, and visible deterrence while maintaining a professional presence aligned with brand standards and business operations. Each assignment begins with an assessment of site layout, operating hours, foot traffic patterns, and identified risks.
