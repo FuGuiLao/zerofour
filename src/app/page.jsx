@@ -189,7 +189,7 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-    <Testimonial
+   <Testimonial
   className="mt-24 sm:mt-32 lg:mt-40"
   client={{ name: 'Phobia', logo: logoPhobiaDark }}
 >
@@ -197,7 +197,7 @@ export default async function Home() {
     Thanks to Zerofour&#39;s unmatched expertise and discreet professionalism, our organization has successfully navigated complex security challenges worldwide, ensuring our people and assets remain protected.
   </p>
 
-  <cite className="mt-4 block text-sm not-italic text-neutral-500">
+  <cite className="mt-4 block text-sm not-italic text-neutral-500 before:content-none after:content-none">
     — Confidential, Corporate Security Director
   </cite>
 </Testimonial>
