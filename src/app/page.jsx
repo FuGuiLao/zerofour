@@ -126,6 +126,7 @@ function Services() {
           Our forward-thinking services span a broad range of synergistic solutions, including private security, investigations, social intelligence, advanced training capabilities, logistics and life support, UAV systems, global tracking technology, information security services, and crisis response mitigation.
         </p>
       </SectionIntro>
+
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
@@ -137,31 +138,85 @@ function Services() {
               />
             </FadeIn>
           </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Security">
-              Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
-            </ListItem>
-            <ListItem title="Risk Management & Crisis Response">
-              Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
-            </ListItem>
-            <ListItem title="Logistics & Support Services">
-             One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
-            </ListItem>
-            <ListItem title="Training">
-              Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors and consultants are skilled professionals with backgrounds in security management and diplomacy in post-conflict environments.
-            </ListItem>
-  					<ListItem title="Technology">
-              From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
-  					</ListItem>
-            <ListItem title="Humanitarian">
-              With strong operational experience, robust program management skills, rapid response capabilities, and a global network of local partners and expertise, Zerofour aids humanitarian objectives worldwide. We offer a broad spectrum of services to promote positive sustainable change.
-            </ListItem>
-          </List>
+
+          {/* Services list styled to match Case Study card hover + text treatment */}
+          <div className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+            <div className="space-y-8">
+              <Link href="/security" className="block">
+                <HoverServiceItem title="Security">
+                   Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
+                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                 </p>
+                </HoverServiceItem>
+              </Link>
+
+              <Link href="/security" className="block">
+                <HoverServiceItem title="Risk Management & Crisis Response">
+                  Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
+                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                    Learn More <span aria-hidden="true">&rarr;</span>
+                  </p>
+                </HoverServiceItem>
+              </Link>
+
+              <Link href="/security" className="block">
+                <HoverServiceItem title="Logistics & Support Services">
+                  One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
+                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                  </p>
+                </HoverServiceItem>
+              </Link>
+
+              <Link href="/security" className="block">
+                <HoverServiceItem title="Training">
+                  Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors and consultants are skilled professionals with backgrounds in security management and diplomacy in post-conflict environments.
+                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                  </p>
+                </HoverServiceItem>
+              </Link>
+
+              <Link href="/security" className="block">
+                <HoverServiceItem title="Technology">
+                  From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
+                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                  </p>
+                </HoverServiceItem>
+              </Link>
+
+              <Link href="/security" className="block">
+                <HoverServiceItem title="Humanitarian">
+                  With strong operational experience, robust program management skills, rapid response capabilities, and a global network of local partners and expertise, Zerofour aids humanitarian objectives worldwide. We offer a broad spectrum of services to promote positive sustainable change.
+                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                  Learn More <span aria-hidden="true">&rarr;</span>
+                  </p>
+                </HoverServiceItem>
+             </Link>
+
+            </div>
+          </div>
         </div>
       </Container>
     </>
   )
 }
+
+
+function HoverServiceItem({ title, children }) {
+  return (
+    <article className="relative rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8 cursor-pointer">
+      <p className="text-base leading-7 text-neutral-600">
+        <span className="font-semibold text-neutral-950">{title}.</span>{" "}
+        {children}
+      </p>
+    </article>
+  )
+}
+
+
 
 export const metadata = {
   description:
