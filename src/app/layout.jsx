@@ -1,6 +1,6 @@
-import { RootLayout } from '@/components/RootLayout'
 import Script from 'next/script'
 
+import { RootLayout } from '@/components/RootLayout'
 import '@/styles/tailwind.css'
 
 export const metadata = {
@@ -16,11 +16,21 @@ export default function Layout({ children }) {
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
 
-         {/*-- START Smith.ai ORIGIN / Investigation / Intelligence Chat -*/}
-    <script type="text/javascript">
-      window.SMITH={},window.SMITH.smithChatAccount="48464277-cea0-4c6d-93f1-6d09d07b1315",window.SMITH.baseUrl="https://app.smith.ai"; var script=document.createElement("script"); script.async=!0, script.type="text/javascript",script.src="https://app.smith.ai/chat/widget-latest.js",document.getElementsByTagName("HEAD").item(0).appendChild(script);
-    </script>
-    {/*!-- END Smith.ai ORIGIN / Investigation / Intelligence Chat --*/}
+        {/* START Smith.ai ORIGIN / Investigation / Intelligence Chat */}
+        <Script
+          id="smithai-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html:
+              'window.SMITH = window.SMITH || {}; window.SMITH.smithChatAccount = "48464277-cea0-4c6d-93f1-6d09d07b1315"; window.SMITH.baseUrl = "https://app.smith.ai";',
+          }}
+        />
+        <Script
+          id="smithai-widget"
+          src="https://app.smith.ai/chat/widget-latest.js"
+          strategy="afterInteractive"
+        />
+        {/* END Smith.ai ORIGIN / Investigation / Intelligence Chat */}
       </body>
     </html>
   )
