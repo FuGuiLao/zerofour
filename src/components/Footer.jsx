@@ -10,26 +10,30 @@ import ScheduleConsultationCard from '@/components/ScheduleConsultationCard'
 
 const navigation = [
   {
-    title: 'Work',
+    title: 'Services',
     links: [
-      { title: 'Healthcare', href: '/work/family-fund' },
-      { title: 'Media & Entertainment', href: '/work/unseal' },
-      { title: 'Manufacturing', href: '/work/phobia' },
-      {
+      { title: 'Security', href: '/security' },
+{ title: 'Risk Management & Crisis Response', href: '/risk-management-and-crisis-response' },
+{ title: 'Logistics & Support Services', href: '/logistics-and-support-services' },
+{ title: 'Training', href: '/training' },
+{ title: 'Technology', href: '/technology' },
+{ title: 'Humanitarian', href: '/humanitarian' },
+   /*   {
         title: (
           <>
             See all <span aria-hidden="true">&rarr;</span>
           </>
         ),
         href: '/work',
-      },
+      }, */
     ],
   },
   {
     title: 'Company',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
+      { title: 'About Us', href: '/about' },
+      { title: 'Our Process', href: '/process' },
+      { title: 'Our Work', href: '/work' },
       { title: 'Blog', href: '/blog' },
       { title: 'Contact Us', href: '/contact' },
     ],
