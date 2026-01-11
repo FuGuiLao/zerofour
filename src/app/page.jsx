@@ -165,7 +165,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    Zerofour is a global private security and intelligence agency.',
 }
 
 export default async function Home() {
@@ -189,12 +189,17 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-      client={{ name: 'Phobia', logo: logoPhobiaDark }}
-      >
-         Thanks to Zerofour&#39;s unmatched expertise and discreet professionalism, our organization has successfully navigated complex security challenges worldwide, ensuring our people and assets remain protected.
-      </Testimonial>
+    <Testimonial
+  className="mt-24 sm:mt-32 lg:mt-40"
+  client={{ name: 'Phobia', logo: logoPhobiaDark }}
+>
+  <p>
+    Thanks to Zerofour&#39;s unmatched expertise and discreet professionalism, our organization has successfully navigated complex security challenges worldwide, ensuring our people and assets remain protected.
+  </p>
+  <p className="mt-4 text-sm text-neutral-500">
+    — Corporate Security Director
+  </p>
+</Testimonial>
 
       <Services />
 
