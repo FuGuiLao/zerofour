@@ -7,25 +7,16 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 import { Button } from '@/components/Button'
 import ScheduleConsultationCard from '@/components/ScheduleConsultationCard'
 
-
 const navigation = [
   {
     title: 'Services',
     links: [
       { title: 'Security', href: '/security' },
-{ title: 'Risk Management & Crisis Response', href: '/risk-management-and-crisis-response' },
-{ title: 'Logistics & Support Services', href: '/logistics-and-support-services' },
-{ title: 'Training', href: '/training' },
-{ title: 'Technology', href: '/technology' },
-{ title: 'Humanitarian', href: '/humanitarian' },
-   /*   {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      }, */
+      { title: 'Risk Management & Crisis Response', href: '/risk-management-and-crisis-response' },
+      { title: 'Logistics & Support Services', href: '/logistics-and-support-services' },
+      { title: 'Training', href: '/training' },
+      { title: 'Technology', href: '/technology' },
+      { title: 'Humanitarian', href: '/humanitarian' },
     ],
   },
   {
@@ -43,9 +34,15 @@ const navigation = [
 function Navigation() {
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+      <ul
+        role="list"
+        className="grid grid-cols-2 gap-8 sm:grid-cols-4"
+      >
         {navigation.map((section, sectionIndex) => (
-          <li key={sectionIndex}>
+          <li
+            key={sectionIndex}
+            className={section.title === 'Services' ? 'sm:col-span-2' : ''}
+          >
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
               {section.title}
             </div>
@@ -84,13 +81,12 @@ function ArrowIcon(props) {
 function NewsletterForm() {
   return (
     <ScheduleConsultationCard
-  titleClassName="text-neutral-950"
-  descriptionClassName="text-neutral-600"
-  contentClassName="space-y-4"
-  buttonColor=""
-  buttonClassName="mt-0"
-/>
-
+      titleClassName="text-neutral-950"
+      descriptionClassName="text-neutral-600"
+      contentClassName="space-y-4"
+      buttonColor=""
+      buttonClassName="mt-0"
+    />
   )
 }
 
@@ -110,7 +106,9 @@ export function Footer() {
           </Link>
           <p className="text-sm text-neutral-700">
             © {new Date().getFullYear()} Zerofour Inc. All Rights Reserved.<br />
-             <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/data-security">Data Security</a>
+            <a href="/terms-of-use">Terms of Use</a> |{' '}
+            <a href="/privacy-policy">Privacy Policy</a> |{' '}
+            <a href="/data-security">Data Security</a>
           </p>
         </div>
       </FadeIn>
