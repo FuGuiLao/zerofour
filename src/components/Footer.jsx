@@ -85,7 +85,7 @@ function NewsletterForm() {
               <p className="mt-6 text-base text-neutral-600">
                 Change me! Change me! Change me!
               </p>
-              <div className="mt-6">
+              <div className="">
                 <Button type="submit" className="mt-10">
                   Schedule a Consultation Now
                 </Button>
