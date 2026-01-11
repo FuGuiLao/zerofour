@@ -93,12 +93,13 @@ function ContactForm() {
           <p className="mt-6 text-base text-neutral-600">
             Change me! Change me! Change me!
           </p>
+          </div>
           <div className="mt-6">
             <Button type="submit" className="mt-10">
               Schedule a Consultation Now
             </Button>
           </div>
-        </div>
+        
 
       </form>
     </FadeIn>
