@@ -31,23 +31,6 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
-function ArrowIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 6"
-      aria-hidden="true"
-      className="inline-block h-1.5 w-6 align-middle"
-      {...props}
-    >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 3 18 .5v2H0v1h18v2L24 3Z"
-      />
-    </svg>
-  )
-}
-
 function Clients() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
@@ -163,7 +146,7 @@ function Services() {
                 <HoverServiceItem title="Security">
                    Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
                   <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                  Learn More <ArrowIcon className="w-6 flex-none fill-current" />
+                   Learn More <span aria-hidden="true">&rarr;</span>
                  </p>
                 </HoverServiceItem>
               </Link>
