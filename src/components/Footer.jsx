@@ -78,7 +78,7 @@ function ArrowIcon(props) {
 
 function NewsletterForm() {
   return (
-    <div className="mt-12 rounded-2xl border border-neutral-300 bg-transparent px-6 py-12">
+    <div className="">
               <h3 className="font-display text-base font-semibold text-neutral-950">
                 Change Me!
               </h3>
