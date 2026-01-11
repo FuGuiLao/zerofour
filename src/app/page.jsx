@@ -196,9 +196,10 @@ export default async function Home() {
   <p>
     Thanks to Zerofour&#39;s unmatched expertise and discreet professionalism, our organization has successfully navigated complex security challenges worldwide, ensuring our people and assets remain protected.
   </p>
-  <p className="mt-4 text-sm text-neutral-500">
-    — Corporate Security Director
-  </p>
+
+  <cite className="mt-4 block text-sm not-italic text-neutral-500">
+    — Confidential, Corporate Security Director
+  </cite>
 </Testimonial>
 
       <Services />
