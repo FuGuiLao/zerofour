@@ -242,32 +242,19 @@ function RootLayoutInner({ children }) {
                    
 
 
-    <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-white">
-        Learn more about Zerofour
-      </h2>
-      <p className="mt-4 text-sm text-neutral-300">
-        Enter your email address and we will reach out to schedule a consultation.
-      </p>
-      <div className="relative mt-6">
-        <input
-          type="email"
-          placeholder="Email address"
-          autoComplete="email"
-          aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-300 ring-4 ring-transparent transition placeholder:text-neutral-300 focus:border-neutral-300 focus:outline-none focus:ring-neutral-300/5"
-        />
-        <div className="absolute inset-y-1 right-1 flex justify-end">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-white text-white transition hover:bg-white"
-          >
-            <ArrowIcon className="w-4" />
-          </button>
+    <div className="mt-12 rounded-2xl border border-neutral-300 bg-transparent px-6 py-12">
+          <h3 className="font-display text-base font-semibold text-neutral-950">
+            Change Me!
+          </h3>
+          <p className="mt-6 text-base text-neutral-600">
+            Change me! Change me! Change me!
+          </p>
+          <div className="mt-6">
+            <Button type="submit" className="mt-10">
+              Schedule a Consultation Now
+            </Button>
+          </div>
         </div>
-      </div>
-      </form>
 
 
                       
