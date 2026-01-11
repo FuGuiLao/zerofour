@@ -1,4 +1,5 @@
 import { RootLayout } from '@/components/RootLayout'
+import Script from 'next/script'
 
 import '@/styles/tailwind.css'
 
