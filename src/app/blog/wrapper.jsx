@@ -42,7 +42,7 @@ export default async function BlogArticleWrapper({ article, children }) {
       {moreArticles.length > 0 && (
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
-          title="More articles"
+          title="More Articles"
           pages={moreArticles}
         />
       )}
