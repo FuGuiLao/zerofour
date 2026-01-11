@@ -7,9 +7,9 @@ import CalendlySlideover from '@/components/CalendlySlideover'
 
 // ✅ Change text ONCE here
 const DEFAULT_COPY = {
-  title: 'Change Me!',
-  description: 'Change me! Change me! Change me!',
-  buttonText: 'Schedule a Consultation Now',
+  title: 'Begin With Intelligence',
+  description: 'Speak with our team to assess risk, objectives, and operational requirements.',
+  buttonText: 'Schedule a Consultation',
 }
 
 export default function ScheduleConsultationCard({
