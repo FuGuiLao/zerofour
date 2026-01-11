@@ -27,7 +27,7 @@ function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
+        eyebrow="Our Culture"
         title="Precision and decisive action, driven by trust and unwavering commitment."
         invert
       >
@@ -185,7 +185,7 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About Us" title="Our strength is collaboration">
         <p>
           We believe that our strength lies in our collaborative approach, which
           puts our clients at the center of everything we do.
@@ -209,6 +209,7 @@ export default async function About() {
       </Container>
 
       <Culture />
+      <Team />
 
     
 
