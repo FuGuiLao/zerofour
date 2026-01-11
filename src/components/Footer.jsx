@@ -5,6 +5,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 import { Button } from '@/components/Button'
+import ScheduleConsultationCard from '@/components/ScheduleConsultationCard'
 
 
 const navigation = [
@@ -78,19 +79,14 @@ function ArrowIcon(props) {
 
 function NewsletterForm() {
   return (
-    <div className="">
-              <h3 className="font-display text-base font-semibold text-neutral-950">
-                Change Me!
-              </h3>
-              <p className="mt-6 text-base text-neutral-600">
-                Change me! Change me! Change me!
-              </p>
-              <div className="">
-                <Button type="submit" className="mt-10">
-                  Schedule a Consultation Now
-                </Button>
-              </div>
-            </div>
+    <ScheduleConsultationCard
+  titleClassName="text-neutral-950"
+  descriptionClassName="text-neutral-600"
+  contentClassName="space-y-4"
+  buttonColor=""
+  buttonClassName="mt-0"
+/>
+
   )
 }
 

@@ -24,6 +24,11 @@ import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
 
+import CalendlySlideover from '@/components/CalendlySlideover'
+import ScheduleConsultationCard from '@/components/ScheduleConsultationCard'
+
+
+
 const RootLayoutContext = createContext(null)
 
 function XIcon(props) {
@@ -162,6 +167,8 @@ function RootLayoutInner({ children }) {
   let navRef = useRef(null)
   let shouldReduceMotion = useReducedMotion()
 
+  let [openSchedule, setOpenSchedule] = useState(false)
+
   useEffect(() => {
     function onClick(event) {
       if (
@@ -242,19 +249,14 @@ function RootLayoutInner({ children }) {
                    
 
 
-    <div className="">
-          <h3 className="font-display text-base font-semibold text-neutral-950">
-            Change Me!
-          </h3>
-          <p className="mt-6 text-base text-neutral-600">
-            Change me! Change me! Change me!
-          </p>
-          <div className="mt-6">
-            <Button type="submit" className="mt-10">
-              Schedule a Consultation Now
-            </Button>
-          </div>
-        </div>
+                      <ScheduleConsultationCard
+                        buttonInvert
+                        buttonColor=""
+                        titleClassName="text-white"
+                        descriptionClassName="text-neutral-300"
+                        onOpen={() => setExpanded(false)}
+                      />
+
 
 
                       
