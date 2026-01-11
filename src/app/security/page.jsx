@@ -55,15 +55,15 @@ function Executive() {
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+        Services Available
       </h3>
       <TagList className="mt-4">
-        <TagListItem>Assessment</TagListItem>
-        <TagListItem>Analysis</TagListItem>
-        <TagListItem>Insight</TagListItem>
-        <TagListItem>Consultation</TagListItem>
-        <TagListItem>Intelligence</TagListItem>
-        <TagListItem>Understanding</TagListItem>
+    <TagListItem>Protective Intelligence</TagListItem>
+<TagListItem>Close Protection</TagListItem>
+<TagListItem>Advance Planning</TagListItem>
+<TagListItem>Secure Transport</TagListItem>
+<TagListItem>Threat Assessment</TagListItem>
+<TagListItem>Discreet Operations</TagListItem>
       </TagList>
     </Section>
   )
@@ -84,12 +84,17 @@ By integrating security operations into the daily rhythm of a residential enviro
         </p>
       </div>
 
-      <Blockquote
-        author={{ name: 'Confidential', role: 'Corporate Security Director' }}
-        className="mt-12"
-      >
-        The planning phase was incredibly thorough and collaborative. They presented a well-structured, detailed approach that felt fully aligned with our needs. Their expertise and adaptability left us feeling secure and well-prepared for any eventuality.
-      </Blockquote>
+    <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+        Services Available
+      </h3>
+      <TagList className="mt-4">
+   <TagListItem>Access Control</TagListItem>
+<TagListItem>Patrol Operations</TagListItem>
+<TagListItem>Incident Response</TagListItem>
+<TagListItem>Visitor Management</TagListItem>
+<TagListItem>Visible Deterrence</TagListItem>
+<TagListItem>Community Safety</TagListItem>
+      </TagList>
     </Section>
   )
 }
@@ -107,20 +112,17 @@ By proactively addressing security risks, Zerofour helps clients protect assets,
         </p>
       </div>
 
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+     <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+        Services Available
       </h3>
-      <List className="mt-8">
-        <ListItem title="Deployment of Resources">
-          Trained teams and state-of-the-art technology are deployed strategically for maximum security impact.
-        </ListItem>
-        <ListItem title="Real-Time Monitoring">
-        Continuous surveillance and data analysis enable proactive responses to evolving threats.
-        </ListItem>
-        <ListItem title="Client Communication">
-          Regular updates keep you informed and assured that your security remains fully optimized.
-        </ListItem>
-      </List>
+      <TagList className="mt-4">
+   <TagListItem>Perimeter Control</TagListItem>
+<TagListItem>Asset Protection</TagListItem>
+<TagListItem>Theft Prevention</TagListItem>
+<TagListItem>Mobile Patrols</TagListItem>
+<TagListItem>After-Hours Coverage</TagListItem>
+<TagListItem>Site Access</TagListItem>
+      </TagList>
     </Section>
   )
 }
@@ -138,16 +140,16 @@ Zerofour’s retail and commercial security solutions are scalable and adaptable
         </p>
       </div>
 
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+     <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+        Services Available
       </h3>
       <TagList className="mt-4">
-        <TagListItem>Assessment</TagListItem>
-        <TagListItem>Analysis</TagListItem>
-        <TagListItem>Insight</TagListItem>
-        <TagListItem>Consultation</TagListItem>
-        <TagListItem>Intelligence</TagListItem>
-        <TagListItem>Understanding</TagListItem>
+   <TagListItem>Loss Prevention</TagListItem>
+<TagListItem>Customer Safety</TagListItem>
+<TagListItem>Incident Management</TagListItem>
+<TagListItem>Access Control</TagListItem>
+<TagListItem>De-escalation</TagListItem>
+<TagListItem>Property Protection</TagListItem>
       </TagList>
     </Section>
   )
