@@ -22,12 +22,15 @@ export function Testimonial({ children, client, className }) {
           <figure className="mx-auto max-w-4xl">
             <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
               <p className="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
-                {children}
+                {children?.quote}
               </p>
             </blockquote>
-            <figcaption className="mt-10">
-          
-            </figcaption>
+
+            {children?.attribution && (
+              <figcaption className="mt-6 text-sm text-neutral-500">
+                {children.attribution}
+              </figcaption>
+            )}
           </figure>
         </FadeIn>
       </Container>
