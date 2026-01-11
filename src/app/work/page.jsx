@@ -153,12 +153,23 @@ export default async function Work() {
 
       <CaseStudies caseStudies={caseStudies} />
 
+     
+
       <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
-      >
-      We approached Zerofour because their reputation is unmatched, and they delivered with precision and expertise, proving why they are the industry leaders.
-      </Testimonial>
+  className="mt-24 sm:mt-32 lg:mt-40"
+  client={{ name: 'Phobia', logo: logoPhobiaDark }}
+>
+  {{
+    quote: (
+      <>
+        We approached Zerofour because their reputation is unmatched, and they delivered with precision and expertise, proving why they are the industry leaders.
+      </>
+    ),
+    attribution: (
+      <>— Confidential, Corporate Security Director</>
+    ),
+  }}
+</Testimonial>
 
       <Clients />
 
