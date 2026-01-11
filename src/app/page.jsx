@@ -146,7 +146,7 @@ function Services() {
                 <HoverServiceItem title="Security">
                    Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
                   <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                  Learn More <span aria-hidden="true">&rarr;</span>
+                  Learn More <ArrowIcon className="w-6 flex-none fill-current" />
                  </p>
                 </HoverServiceItem>
               </Link>
