@@ -204,7 +204,7 @@ function Values() {
 export const metadata = {
   title: 'Security',
   description:
-    'Professional Security. Absolute Discretion.',
+    'Professional Security - Absolute Discretion',
 }
 
 export default function Process() {
@@ -213,9 +213,9 @@ export default function Process() {
       <PageIntro eyebrow="Security" title="Professional Security - Absolute Discretion">
         <p>
           Zerofour delivers intelligence-led security services for organizations and individuals operating in complex, high-risk, and sensitive environments. Our approach is grounded in operational discipline, discretion, and real-world experience.
-        </p><p><p>&nbsp</p>
+        </p><p><p> </p>
           Our teams include current and former law enforcement professionals and former military personnel with extensive backgrounds in protective operations, access control, and threat mitigation. Every engagement is designed to anticipate risk, deter threats, and safeguard people, property, and critical assets—without unnecessary visibility or disruption.
-</p><p><p>&nbsp</p>
+</p><p><p> </p>
           From executive protection to residential, commercial, and site security, Zerofour provides reliable, professional coverage tailored to each client’s operating environment and risk profile.
         </p>
         </PageIntro>
