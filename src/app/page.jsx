@@ -33,7 +33,12 @@ const clients = [
 
 function ArrowIcon(props) {
   return (
-    <svg viewBox="0 0 24 6" aria-hidden="true" {...props}>
+    <svg
+      viewBox="0 0 24 6"
+      aria-hidden="true"
+      className="inline-block h-1.5 w-6 align-middle"
+      {...props}
+    >
       <path
         fillRule="evenodd"
         clipRule="evenodd"
