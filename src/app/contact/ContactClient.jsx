@@ -56,7 +56,7 @@ function ContactForm() {
     <FadeIn className="lg:order-last">
       <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Work inquiries
+          Service inquiries
         </h2>
 
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
@@ -68,12 +68,14 @@ function ContactForm() {
 
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
+              <legend className="text-base/6 text-neutral-500">Service Needed</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
+                 <RadioInput label="Security" name="service" value="Security" />
+                 <RadioInput label="Risk Management & Crisis Response" name="service" value="Risk Management & Crisis Response" />
+                <RadioInput label="Logistics & Support Services" name="service" value="Logistics & Support Services" />
+                <RadioInput label="Training" name="service" value="Training" />
+                <RadioInput label="Technology" name="service" value="Technology" />
+                <RadioInput label="Humanitarian" name="service" value="Humanitarian" />
               </div>
             </fieldset>
           </div>
@@ -117,7 +119,9 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
+            ['Inquiries', 'inquiries@zerofour.org'],
             ['Careers', 'careers@zerofour.org'],
+            ['Legal', 'legal@zerofour.org'],
             ['Press', 'press@zerofour.org'],
           ].map(([label, email]) => (
             <div key={email}>
