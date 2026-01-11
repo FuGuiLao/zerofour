@@ -165,7 +165,7 @@ function Services() {
 
 export const metadata = {
   description:
-    Zerofour is a global private security and intelligence agency.',
+    'Zerofour is a global private security and intelligence agency.',
 }
 
 export default async function Home() {
