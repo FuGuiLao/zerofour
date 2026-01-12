@@ -142,7 +142,7 @@ function Values() {
       </div>
 
       <SectionIntro
-        eyebrow="Our core principles"
+        eyebrow="Our Core Principles"
         title="Balancing reliability and innovation"
       >
         <p>
@@ -185,7 +185,7 @@ export const metadata = {
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <PageIntro eyebrow="Our Process" title="How we work">
         <p>
           Our approach is grounded in precision, confidentiality, and tailored strategies to ensure each client’s unique security needs are met. By leveraging cutting-edge intelligence and proactive security measures, we deliver robust solutions that safeguard assets, people, and information worldwide.
         </p>
