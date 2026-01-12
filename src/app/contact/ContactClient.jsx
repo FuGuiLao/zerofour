@@ -71,8 +71,8 @@ function ContactForm() {
               <legend className="text-base/6 text-neutral-500">Service Needed</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
                  <RadioInput label="Security" name="service" value="Security" />
-                 <RadioInput label="Risk Management" name="service" value="Risk Mgmt & Crisis Response" />
-                <RadioInput label="Logistics" name="service" value="Logistics & Support Services" />
+                 <RadioInput label="Risk Mgmt & Crisis Response" name="service" value="Risk Mgmt & Crisis Response" />
+                <RadioInput label="Logistics & Support Services" name="service" value="Logistics & Support Services" />
                 <RadioInput label="Training" name="service" value="Training" />
                 <RadioInput label="Technology" name="service" value="Technology" />
                 <RadioInput label="Humanitarian" name="service" value="Humanitarian" />
