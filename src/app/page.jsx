@@ -136,6 +136,16 @@ function Services() {
   sizes="(min-width: 1024px) 41rem, 31rem"
   className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
 />
+              <StylizedImage
+  src={imageServices}
+  sizes="(min-width: 1024px) 41rem, 31rem"
+  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+/>
+              <StylizedImage
+  src={imageServices}
+  sizes="(min-width: 1024px) 41rem, 31rem"
+  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+/>
             </FadeIn>
           </div>
 
