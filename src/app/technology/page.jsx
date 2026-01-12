@@ -12,6 +12,10 @@ import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageDrone from '@/images/drone.jpg'
+import imageSocial from '@/images/social.jpg'
+import imageAsset from '@/images/asset.jpg'
+import imageSystem from '@/images/system.jpg'
 
 function Section({ title, image, children }) {
   return (
@@ -41,7 +45,7 @@ function Section({ title, image, children }) {
 
 function Executive() {
   return (
-    <Section title="Real-Time Tracking & Asset Visibility" image={{ src: imageWhiteboard }}>
+    <Section title="Real-Time Tracking & Asset Visibility" image={{ src: imageAsset }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour delivers technology services that improve real-time visibility over personnel, vehicles, and critical assets. Our solutions help clients maintain awareness across dispersed operations, reduce uncertainty during movement, and strengthen decision-making with reliable data. We focus on practical systems that integrate into day-to-day operations without unnecessary complexity.
@@ -71,7 +75,7 @@ function Executive() {
 
 function Residential() {
   return (
-    <Section title="Systems Integration & Infrastructure Security" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Systems Integration & Infrastructure Security" image={{ src: imageSystem, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour supports clients with systems integration that strengthens security, reliability, and operational performance. We help organizations connect tools and platforms across physical security, operations, and communications to reduce gaps, improve workflows, and increase visibility across critical functions.
@@ -101,7 +105,7 @@ function Residential() {
 
 function Construction() {
   return (
-    <Section title="Social Intelligence & Investigative Support" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Social Intelligence & Investigative Support" image={{ src: imageSocial, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides social intelligence and investigative technology support to help clients identify risks, monitor emerging issues, and protect personnel and reputation. We apply structured methods to collect, analyze, and contextualize open-source and social signals relevant to safety, security, and operational continuity.
@@ -131,7 +135,7 @@ function Construction() {
 
 function Retail() {
   return (
-    <Section title="Unmanned Systems & Remote Operations" image={{ src: imageWhiteboard }}>
+    <Section title="Unmanned Systems & Remote Operations" image={{ src: imageDrone }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour supports clients with unmanned systems and remote operations capabilities designed to improve coverage, reduce exposure, and strengthen situational awareness. These solutions are particularly valuable for monitoring critical infrastructure, supporting assessments, and providing visibility in environments where access is limited or risk is elevated.
