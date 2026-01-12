@@ -229,7 +229,7 @@ function Team() {
 
                     {/* TEXT BOX: more padding + pushed down to clear image radius */}
                     <div className="">
-                      <div className="p-6 sm:p-8">
+                      <div className="p-4 sm:p-8">
                         {/* <p className="font-display text-lg font-semibold text-neutral-950">
                           Zerofour only employs the most experienced operators
                         </p>*/}
