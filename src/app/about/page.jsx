@@ -231,16 +231,16 @@ function Team() {
 
                     {/* TEXT BOX: more padding + pushed down to clear image radius */}
                     <div className="">
-                      <div className="p-6 sm:p-8">
+                      <div className="pt-6 px-6 lg:pt-6 lg:px-0">
                         {/* <p className="font-display text-lg font-semibold text-neutral-950">
                           Zerofour only employs the most experienced operators
                         </p>*/}
 
-                        <p className="mt-4 text-base leading-7 text-neutral-600">
+                        <p className="text-base leading-7 text-neutral-600">
                           {person.blurb}
                         </p>
 
-                        <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                        <p className="mt-0 font-semibold text-neutral-950 underline underline-offset-4">
                         </p>
                       </div>
                     </div>
