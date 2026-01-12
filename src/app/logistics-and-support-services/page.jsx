@@ -12,6 +12,10 @@ import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageTransport from '@/images/transport.jpg'
+import imageLogistics from '@/images/logistics.jpg'
+import imageAdmin from '@/images/admin.jpg'
+import imageOps from '@/images/ops.jpg'
 
 function Section({ title, image, children }) {
   return (
@@ -41,7 +45,7 @@ function Section({ title, image, children }) {
 
 function Executive() {
   return (
-    <Section title="Operational Logistics Planning" image={{ src: imageWhiteboard }}>
+    <Section title="Operational Logistics Planning" image={{ src: imageLogistics }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides logistics planning services that support complex operations in dynamic and resource-constrained environments. We help clients design, coordinate, and manage logistical frameworks that enable personnel, equipment, and services to move efficiently and reliably across regions. Our planning is grounded in operational realities and aligned with mission objectives, timelines, and risk considerations.
@@ -71,7 +75,7 @@ function Executive() {
 
 function Residential() {
   return (
-    <Section title="Transportation & Mobility Support" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Transportation & Mobility Support" image={{ src: imageTransport, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour supports secure and reliable transportation for personnel, equipment, and sensitive assets operating in challenging environments. We help clients plan and manage mobility requirements that account for security conditions, infrastructure limitations, and operational tempo.
@@ -101,7 +105,7 @@ function Residential() {
 
 function Construction() {
   return (
-    <Section title="Field Operations Support" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Field Operations Support" image={{ src: imageOps, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides on-the-ground operational support to sustain field activities in remote, austere, or high-risk environments. We help clients establish and maintain the logistical backbone required to support personnel, equipment, and mission-critical functions.
@@ -131,7 +135,7 @@ function Construction() {
 
 function Retail() {
   return (
-    <Section title="Program & Administrative Support" image={{ src: imageWhiteboard }}>
+    <Section title="Program & Administrative Support" image={{ src: imageAdmin }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides administrative and program support services that strengthen operational control and visibility. We assist clients with coordination, documentation, reporting, and process management required to support complex, multi-location operations.
