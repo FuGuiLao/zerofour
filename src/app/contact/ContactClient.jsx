@@ -137,8 +137,8 @@ function ContactDetails() {
 export default function ContactClient() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let&#39;s work together">
-        <p>We can&#39;t wait to hear from you.</p>
+      <PageIntro eyebrow="Contact us" title="Informed engagement starts here">
+        <p>Connect with our team to discuss your objectives, assess risk, and determine how Zerofour can support your operational requirements with discretion and professionalism. We take a measured, intelligence-driven approach to every engagement, ensuring our recommendations are aligned with your environment, priorities, and constraints.</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
