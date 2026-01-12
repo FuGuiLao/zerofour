@@ -7,7 +7,7 @@ import CalendlySlideover from '@/components/CalendlySlideover'
 
 // ✅ Change text ONCE here
 const DEFAULT_COPY = {
-  title: 'Begin With Intelligence',
+  title: 'Begin With Actionable Intelligence',
   description: 'Speak with our team to discuss your risk profile, operational objectives, and environmental challenges. We’ll take the time to understand your requirements, assess potential threats, and outline how Zerofour’s services can be structured to support your mission effectively and discreetly.',
   buttonText: 'Schedule a Consultation',
 }
