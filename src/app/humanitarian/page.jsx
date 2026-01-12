@@ -12,6 +12,10 @@ import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageDelivery from '@/images/delivery.jpg'
+import imagePartner from '@/images/partner.jpg'
+import imageResponse from '@/images/response.jpg'
+import imageAccess from '@/images/access.jpg'
 
 function Section({ title, image, children }) {
   return (
@@ -41,7 +45,7 @@ function Section({ title, image, children }) {
 
 function Executive() {
   return (
-    <Section title="Rapid Response & Field Mobilization" image={{ src: imageWhiteboard }}>
+    <Section title="Rapid Response & Field Mobilization" image={{ src: imageResponse }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour supports humanitarian objectives with rapid response capabilities designed for complex, time-sensitive environments. We help organizations mobilize quickly, establish operational footing, and maintain continuity during crises that impact communities, infrastructure, and access. Our approach prioritizes speed, coordination, and disciplined execution in the first critical phases of response.
@@ -71,7 +75,7 @@ function Executive() {
 
 function Residential() {
   return (
-    <Section title="Program Management & Delivery Support" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Program Management & Delivery Support" image={{ src: imageDelivery, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides program management support that strengthens humanitarian delivery across planning, execution, and oversight. We help organizations structure programs for clarity and accountability, coordinate stakeholders, and maintain operational control across multi-location activities. Our role is to reduce administrative burden while improving consistency and performance.
@@ -101,7 +105,7 @@ function Residential() {
 
 function Construction() {
   return (
-    <Section title="Logistics & Access Enablement" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Logistics & Access Enablement" image={{ src: imageAccess, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour helps humanitarian organizations navigate logistical and access challenges that can limit delivery in fragile environments. We support movement planning, supply chain coordination, and field logistics that enable assistance to reach affected populations efficiently and reliably. Our approach is grounded in local realities and designed to function under disruption.
@@ -131,7 +135,7 @@ function Construction() {
 
 function Retail() {
   return (
-    <Section title="Local Partner Networks & Capacity Support" image={{ src: imageWhiteboard }}>
+    <Section title="Local Partner Networks & Capacity Support" image={{ src: imagePartner }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour supports humanitarian outcomes by leveraging strong local partner networks and regional expertise. We help organizations identify, engage, and coordinate with local stakeholders to improve reach, strengthen trust, and ensure delivery aligns with community dynamics. Local insight is essential for effective response and sustainable impact.
