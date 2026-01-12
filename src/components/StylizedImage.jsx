@@ -26,10 +26,10 @@ export function StylizedImage({ shape = 0, className, ...props }) {
 
   return (
     <div
-      className={clsx(
-        className,
-        'relative flex aspect-[719/680] w-full grayscale',
-      )}
+    className={clsx(
+  'relative flex aspect-[719/680] w-full grayscale',
+  className,
+)}
     >
       <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
         <g clipPath={`url(#${id}-clip)`} className="group">
