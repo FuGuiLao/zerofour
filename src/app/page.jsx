@@ -49,7 +49,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized className="mx-auto lg:max-w-[192px] xl:max-w-[224px]"/>
+                  <Image src={logo} alt={client} unoptimized className="mx-auto lg:max-w-[280px] xl:max-w-[320px]"/>
                 </FadeIn>
               </li>
             ))}
