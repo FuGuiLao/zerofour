@@ -241,9 +241,13 @@ function Team() {
                           Zerofour only employs the most experienced operators
                         </p>*/}
 
-                        <p className="text-base leading-7 text-neutral-600">
-                          {person.blurb}
-                        </p>
+                      <div className="text-base leading-7 text-neutral-600">
+  {person.blurb.split('\n\n').map((para, idx) => (
+    <p key={idx} className={idx === 0 ? '' : 'mt-4'}>
+      {para}
+    </p>
+  ))}
+</div>
 
                         <p className="mt-0 font-semibold text-neutral-950 underline underline-offset-4">
                         </p>
