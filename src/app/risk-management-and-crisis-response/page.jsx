@@ -12,6 +12,7 @@ import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageReputation from '@/images/reputation.jpg'
 
 function Section({ title, image, children }) {
   return (
@@ -129,7 +130,7 @@ Every crisis unfolds differently and requires adaptable response. Zerofour opera
 
 function Retail() {
   return (
-    <Section title="Reputation & Stakeholder Support" image={{ src: imageWhiteboard }}>
+    <Section title="Reputation & Stakeholder Support" image={{ src: imageReputation }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour supports organizations in managing reputational and stakeholder risk before, during, and after crisis events. We help clients anticipate how incidents may be perceived, identify key stakeholders, and align internal communications to ensure response actions remain consistent, credible, and defensible. Our role is to reduce confusion, maintain trust, and support disciplined decision-making when scrutiny is highest.
