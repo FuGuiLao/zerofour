@@ -144,16 +144,20 @@ function Services() {
             <div className="space-y-8">
               <Link href="/security" className="block">
                 <HoverServiceItem title="Security">
-                   Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
+                  <p>
+                    Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
+                  </p>
                   <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                   Learn More <span aria-hidden="true">&rarr;</span>
-                 </p>
+                    Learn More <span aria-hidden="true">&rarr;</span>
+                  </p>
                 </HoverServiceItem>
               </Link>
 
               <Link href="/risk-management-and-crisis-response" className="block">
                 <HoverServiceItem title="Risk Management & Crisis Response">
+                  <p>
                   Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
+                  </p>
                   <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
                     Learn More <span aria-hidden="true">&rarr;</span>
                   </p>
@@ -161,40 +165,49 @@ function Services() {
               </Link>
 
               <Link href="/logistics-and-support-services" className="block">
-                <HoverServiceItem title="Logistics & Support Services">
-                  One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
-                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                  Learn More <span aria-hidden="true">&rarr;</span>
-                  </p>
-                </HoverServiceItem>
-              </Link>
+                  <HoverServiceItem title="Logistics & Support Services">
+                    <p>
+                      One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
+                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                      Learn More <span aria-hidden="true">&rarr;</span>
+                    </p>
+                  </HoverServiceItem>
+                </Link>
 
-              <Link href="/training" className="block">
-                <HoverServiceItem title="Training">
-                  Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors and consultants are skilled professionals with backgrounds in security management and diplomacy in post-conflict environments.
-                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                  Learn More <span aria-hidden="true">&rarr;</span>
-                  </p>
-                </HoverServiceItem>
-              </Link>
+                <Link href="/training" className="block">
+                  <HoverServiceItem title="Training">
+                    <p>
+                      Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors and consultants are skilled professionals with backgrounds in security management and diplomacy in post-conflict environments.
+                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                      Learn More <span aria-hidden="true">&rarr;</span>
+                    </p>
+                  </HoverServiceItem>
+                </Link>
 
-              <Link href="/technology" className="block">
-                <HoverServiceItem title="Technology">
-                  From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
-                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                  Learn More <span aria-hidden="true">&rarr;</span>
-                  </p>
-                </HoverServiceItem>
-              </Link>
+                <Link href="/technology" className="block">
+                  <HoverServiceItem title="Technology">
+                    <p>
+                      From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
+                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                      Learn More <span aria-hidden="true">&rarr;</span>
+                    </p>
+                  </HoverServiceItem>
+                </Link>
 
-              <Link href="/humanitarian" className="block">
-                <HoverServiceItem title="Humanitarian">
-                  With strong operational experience, robust program management skills, rapid response capabilities, and a global network of local partners and expertise, Zerofour aids humanitarian objectives worldwide. We offer a broad spectrum of services to promote positive sustainable change.
-                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                  Learn More <span aria-hidden="true">&rarr;</span>
-                  </p>
-                </HoverServiceItem>
-             </Link>
+                <Link href="/humanitarian" className="block">
+                  <HoverServiceItem title="Humanitarian">
+                    <p>
+                      With strong operational experience, robust program management skills, rapid response capabilities, and a global network of local partners and expertise, Zerofour aids humanitarian objectives worldwide. We offer a broad spectrum of services to promote positive sustainable change.
+                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                      Learn More <span aria-hidden="true">&rarr;</span>
+                    </p>
+                  </HoverServiceItem>
+                </Link>
+
 
             </div>
           </div>
@@ -208,13 +221,19 @@ function Services() {
 function HoverServiceItem({ title, children }) {
   return (
     <article className="relative rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8 cursor-pointer">
-      <p className="text-base leading-7 text-neutral-600">
-        <span className="font-semibold text-neutral-950">{title}.</span>{" "}
-        {children}
-      </p>
+      <div className="text-base leading-7 text-neutral-600">
+        <p>
+          <span className="font-semibold text-neutral-950">{title}.</span>{' '}
+          {/* IMPORTANT: only render text here, not nested <p> */}
+        </p>
+
+        {/* children can include <p> safely now */}
+        <div className="mt-3">{children}</div>
+      </div>
     </article>
   )
 }
+
 
 
 

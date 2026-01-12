@@ -60,20 +60,23 @@ const team = [
         name: 'Leslie Alexander',
         role: 'Co-Founder / CEO',
         image: { src: imageLeslieAlexander },
+        blurb:
+          "Our network of special operators from the world's elite military units, combined with seasoned intelligence professionals, allows Zerofour to operate at the highest level to serve our clients.",
       },
       {
         name: 'Michael Foster',
         role: 'Co-Founder / CTO',
         image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
+        blurb:
+          "Zerofour leverages advanced technology, systems integration, and intelligence-driven platforms to protect critical infrastructure, optimize asset visibility, and enable decisive action in complex environments.",
       },
     ],
-  },
-  {
+  }
+]
+ /* =========================
+   TEAM SECTION (COMMENTED OUT)
+   ========================= 
+ {
     title: 'Team',
     people: [
       {
@@ -124,7 +127,13 @@ const team = [
     ],
   },
 ]
-
+        =========================
+   TEAM SECTION (COMMENTED OUT)
+   ========================= */
+  
+ /* =========================
+   TEAM SECTION (COMMENTED OUT)
+   ========================= 
 function Team() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
@@ -173,6 +182,79 @@ function Team() {
     </Container>
   )
 }
+     =========================
+   TEAM SECTION (COMMENTED OUT)
+   ========================= */
+
+function Team() {
+  const group = team[0]
+  if (!group?.people?.length) return null
+
+  return (
+    <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <FadeInStagger>
+        <Border as={FadeIn} />
+
+        <div className="pt-12 sm:pt-16">
+          <FadeIn>
+            <h2 className="font-display text-2xl font-semibold text-neutral-950">
+              {group.title}
+            </h2>
+          </FadeIn>
+
+          <div className="mt-10 space-y-8">
+            {group.people.map((person) => (
+              <FadeIn key={person.name}>
+                {/* OUTER BOX: outline always visible + subtle darken on hover */}
+                <article className="group relative rounded-3xl border border-neutral-200 bg-neutral-50 p-6 hover:bg-neutral-100 transition sm:p-8">
+                  {/* DOUBLE the horizontal space between image and text */}
+                  <div className="lg:flex lg:items-start lg:gap-12">
+                    {/* IMAGE BOX (keeps zoom on hover) */}
+                    <div className="flex justify-center lg:w-[22rem] lg:flex-none">
+                      <div className=" relative w-full overflow-hidden rounded-3xl bg-neutral-100">
+                        <Image
+                          alt=""
+                          {...person.image}
+                          className="h-80 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black to-black/0 to-40%" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-6">
+                          <p className="font-display text-base/6 font-semibold tracking-wide text-white">
+                            {person.name}
+                          </p>
+                          <p className="mt-2 text-sm text-white">{person.role}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* TEXT BOX: more padding + pushed down to clear image radius */}
+                    <div className="">
+                      <div className="p-6 sm:p-8">
+                        <p className="font-display text-lg font-semibold text-neutral-950">
+                          Zerofour only employs the most experienced operators
+                        </p>
+
+                        <p className="mt-4 text-base leading-7 text-neutral-600">
+                          {person.blurb}
+                        </p>
+
+                        <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </FadeInStagger>
+    </Container>
+  )
+}
+
+
+
 
 export const metadata = {
   title: 'About Us',
