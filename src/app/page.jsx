@@ -31,6 +31,18 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
+function ArrowIcon(props) {
+  return (
+    <svg viewBox="0 0 24 6" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24 3 18 .5v2H0v1h18v2L24 3Z"
+      />
+    </svg>
+  )
+}
+
 function Clients() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
@@ -169,7 +181,7 @@ function Services() {
                   Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
                   </p>
                   <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                    Learn More <span aria-hidden="true">&rarr;</span>
+                    Learn More <span aria-hidden="true">  <ArrowIcon className="w-6 flex-none fill-current" /></span>
                   </p>
                 </HoverServiceItem>
               </Link>
