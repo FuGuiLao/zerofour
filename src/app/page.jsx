@@ -131,11 +131,11 @@ function Services() {
     <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
-                src={imageServices}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
-              />
+             <StylizedImage
+  src={imageServices}
+  sizes="(min-width: 1024px) 41rem, 31rem"
+  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+/>
             </FadeIn>
           </div>
 
