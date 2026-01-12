@@ -56,7 +56,7 @@ function ContactForm() {
     <FadeIn className="lg:order-last">
       <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Service inquiries
+          Service Inquiries
         </h2>
 
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
@@ -71,8 +71,8 @@ function ContactForm() {
               <legend className="text-base/6 text-neutral-500">Service Needed</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
                  <RadioInput label="Security" name="service" value="Security" />
-                 <RadioInput label="Risk Management & Crisis Response" name="service" value="Risk Management & Crisis Response" />
-                <RadioInput label="Logistics & Support Services" name="service" value="Logistics & Support Services" />
+                 <RadioInput label="Risk Management" name="service" value="Risk Mgmt & Crisis Response" />
+                <RadioInput label="Logistics" name="service" value="Logistics & Support Services" />
                 <RadioInput label="Training" name="service" value="Training" />
                 <RadioInput label="Technology" name="service" value="Technology" />
                 <RadioInput label="Humanitarian" name="service" value="Humanitarian" />
@@ -82,7 +82,7 @@ function ContactForm() {
         </div>
 
         <Button type="submit" className="mt-10">
-          Let&#39;s work together
+          Get Started
         </Button>
 
     
@@ -96,7 +96,7 @@ function ContactDetails() {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
+        Our Offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
         Prefer doing things in person? We respond to our clients&#39; needs and
