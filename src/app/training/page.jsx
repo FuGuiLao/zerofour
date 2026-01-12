@@ -12,6 +12,10 @@ import { TagList, TagListItem } from '@/components/TagList'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import imageSecurity from '@/images/security.jpg'
+import imageScenario from '@/images/scenario.jpg'
+import imageInstruction from '@/images/instruction.jpg'
+import imageCrisis from '@/images/crisis.jpg'
 
 function Section({ title, image, children }) {
   return (
@@ -41,7 +45,7 @@ function Section({ title, image, children }) {
 
 function Executive() {
   return (
-    <Section title="Security & Risk Training" image={{ src: imageWhiteboard }}>
+    <Section title="Security & Risk Training" image={{ src: imageSecurity }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour delivers security and risk-focused training programs designed to prepare personnel for operations in complex and high-risk environments. Our training emphasizes practical decision-making, situational awareness, and disciplined execution under pressure. Programs are built to strengthen individual capability while reinforcing organizational standards and operating procedures.
@@ -71,7 +75,7 @@ function Executive() {
 
 function Residential() {
   return (
-    <Section title="Crisis & Incident Training" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Crisis & Incident Training" image={{ src: imageCrisis, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour provides crisis and incident response training designed to improve organizational preparedness and performance during critical events. We help teams understand roles, escalation paths, and response priorities so actions remain coordinated and effective under stress.
@@ -101,7 +105,7 @@ function Residential() {
 
 function Construction() {
   return (
-    <Section title="Capacity Development & Instruction" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Capacity Development & Instruction" image={{ src: imageInstruction, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour delivers capacity development programs that strengthen institutional capability across security, risk, and operational functions. We work with government, military, law enforcement, and commercial organizations to build sustainable skills and processes.
@@ -131,7 +135,7 @@ function Construction() {
 
 function Retail() {
   return (
-    <Section title="Exercises & Scenario-Based Training" image={{ src: imageWhiteboard }}>
+    <Section title="Exercises & Scenario-Based Training" image={{ src: imageScenario }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Zerofour designs and delivers scenario-based exercises that allow teams to practice decision-making in realistic, high-pressure situations. These exercises help identify gaps, reinforce coordination, and improve confidence across leadership and operational personnel.
