@@ -63,10 +63,8 @@ const team = [
         role: 'Director / Operations',
         image: { src: imageJaydenBrant },
         blurb:
-         "Throughout his career, Jayden has worked for the United States federal government in law enforcement and intelligence capacities.\n\n" +
-          "Jayden previously served as a Deputy Sheriff with the Los Angeles County Sheriff's Department, where he worked in field operations, custody, training bureau, and special assignments.\n\n" +
-          "He has extensive knowledge, training, and experience in criminal investigation, interrogation, undercover surveillance, case management, evidence handling, and California and federal law.\n\n" +
-          "Jayden attained California Peace Officer Standards and Training (POST) Certification and completed Advanced Officer Training while with the LASD, which he continues to maintain. He also completed the coursework for POST Specialized Investigator Certification.\n\n" +
+         "Throughout his career, Jayden has worked for the United States federal government in law enforcement and intelligence capacities. Jayden previously served as a Deputy Sheriff with the Los Angeles County Sheriff's Department, where he worked in field operations, custody, training bureau, and special assignments.\n\n" +
+          "He has extensive knowledge, training, and experience in criminal investigation, interrogation, undercover surveillance, case management, evidence handling, and California and federal law. Jayden attained California Peace Officer Standards and Training (POST) Certification and completed Advanced Officer Training while with the LASD, which he continues to maintain. He also completed the coursework for POST Specialized Investigator Certification.\n\n" +
           "During his career, Jayden has worked alongside agencies including LASD, LAPD, the U.S. Marshals Service, Diplomatic Security Service, U.S. Secret Service, FBI, Department of Homeland Security, ICE, and the Superior Court of California.\n\n" +
           "In addition to government service, Jayden has held leadership roles in the financial services industry, overseeing regulated operations, corporate due diligence, and fraud investigations. He has also provided regulatory compliance, security, and legal consulting for individuals and companies across multiple industries. Jayden studied computer engineering at Claremont McKenna College.",
       },
