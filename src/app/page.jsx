@@ -223,7 +223,7 @@ function HoverServiceItem({ title, children }) {
     <article className="relative rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8 cursor-pointer">
       <div className="text-base leading-7 text-neutral-600">
         <p>
-          <span className="font-semibold text-neutral-950">{title}.</span>{' '}
+          <span className="font-semibold text-neutral-950">{title}</span>{' '}
           {/* IMPORTANT: only render text here, not nested <p> */}
         </p>
 
