@@ -21,6 +21,8 @@ import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+import imageJaydenBrant from '@/images/team/jayden-brant.jpg'
+import imageBrettMontgomery from '@/images/team/brett-montgomery.jpg'
 import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
@@ -59,14 +61,14 @@ const team = [
       {
         name: 'Jayden Brant',
         role: 'Director / Operations',
-        image: { src: imageLeslieAlexander },
+        image: { src: imageJaydenBrant },
         blurb:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       },
       {
         name: 'Brett Montgomery',
         role: 'Director / Administration',
-        image: { src: imageMichaelFoster },
+        image: { src: imageBrettMontgomery },
         blurb:
           "Zerofour leverages advanced technology, systems integration, and intelligence-driven platforms to protect critical infrastructure, optimize asset visibility, and enable decisive action in complex environments.",
       },
@@ -234,7 +236,7 @@ function Team() {
                           Zerofour only employs the most experienced operators
                         </p>*/}
 
-                        <p className="mt-2 text-base leading-7 text-neutral-600">
+                        <p className="mt-4 text-base leading-7 text-neutral-600">
                           {person.blurb}
                         </p>
 
