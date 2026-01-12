@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
-import CalendlySlideover from '@/components/CalendlySlideover'
+import ApolloSlideover from '@/components/ApolloSlideover'
 
 // ✅ Change text ONCE here
 const DEFAULT_COPY = {
@@ -13,7 +13,6 @@ const DEFAULT_COPY = {
 }
 
 export default function ScheduleConsultationCard({
-  // ✅ Optional overrides if you ever need them, but you usually won’t pass these now
   title = DEFAULT_COPY.title,
   description = DEFAULT_COPY.description,
   buttonText = DEFAULT_COPY.buttonText,
@@ -42,9 +41,7 @@ export default function ScheduleConsultationCard({
         {title}
       </h3>
 
-      <p className={clsx('mt-6 text-base', descriptionClassName)}>
-        {description}
-      </p>
+      <p className={clsx('mt-6 text-base', descriptionClassName)}>{description}</p>
     </div>
   )
 
@@ -97,7 +94,8 @@ export default function ScheduleConsultationCard({
         </div>
       )}
 
-      <CalendlySlideover
+      {/* ✅ Apollo Slideover replaces CalendlySlideover */}
+      <ApolloSlideover
         open={open}
         onClose={() => {
           onClose?.()
