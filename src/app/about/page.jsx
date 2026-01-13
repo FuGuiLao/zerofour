@@ -234,7 +234,7 @@ function Team() {
 
                     {/* TEXT BOX: more padding + pushed down to clear image radius */}
                     <div className="">
-                      <div className="pt-0 px-6 lg:pt-6 lg:px-0">
+                      <div className="pt-6 px-6 lg:pt-2 lg:px-0">
                         {/* <p className="font-display text-lg font-semibold text-neutral-950">
                           Zerofour only employs the most experienced operators
                         </p>*/}
