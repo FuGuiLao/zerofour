@@ -159,8 +159,11 @@ function Services() {
                   <p>
                     Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
                   </p>
-                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                    Learn More <span aria-hidden="true">&rarr;</span>
+                  <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                    Learn More
+                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
+                     </span>
                   </p>
                 </HoverServiceItem>
               </Link>
@@ -171,11 +174,11 @@ function Services() {
                   Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
                   </p>
                   <p className="mt-4 font-semibold text-neutral-950">
-  <span className="inline-flex items-center gap-1">
-    Learn More
-    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
-  </span>
-</p>
+                    <span className="inline-flex items-center gap-1">
+                    Learn More
+                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
+                     </span>
+                  </p>
                 </HoverServiceItem>
               </Link>
 
@@ -184,9 +187,12 @@ function Services() {
                     <p>
                       One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
                     </p>
-                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                      Learn More <span aria-hidden="true">&rarr;</span>
-                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                    Learn More
+                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
+                     </span>
+                  </p>
                   </HoverServiceItem>
                 </Link>
 
@@ -195,9 +201,12 @@ function Services() {
                     <p>
                       Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors and consultants are skilled professionals with backgrounds in security management and diplomacy in post-conflict environments.
                     </p>
-                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                      Learn More <span aria-hidden="true">&rarr;</span>
-                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                    Learn More
+                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
+                     </span>
+                  </p>
                   </HoverServiceItem>
                 </Link>
 
@@ -206,9 +215,12 @@ function Services() {
                     <p>
                       From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
                     </p>
-                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                      Learn More <span aria-hidden="true">&rarr;</span>
-                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                    Learn More
+                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
+                     </span>
+                  </p>
                   </HoverServiceItem>
                 </Link>
 
@@ -217,9 +229,12 @@ function Services() {
                     <p>
                       With strong operational experience, robust program management skills, rapid response capabilities, and a global network of local partners and expertise, Zerofour aids humanitarian objectives worldwide. We offer a broad spectrum of services to promote positive sustainable change.
                     </p>
-                    <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                      Learn More <span aria-hidden="true">&rarr;</span>
-                    </p>
+                    <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                    Learn More
+                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
+                     </span>
+                  </p>
                   </HoverServiceItem>
                 </Link>
 
