@@ -136,59 +136,71 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          Our forward-thinking services span a broad range of synergistic solutions, including private security, investigations, social intelligence, advanced training capabilities, logistics and life support, UAV systems, global tracking technology, information security services, and crisis response mitigation.
+          Our forward-thinking services span a broad range of synergistic
+          solutions, including private security, investigations, social
+          intelligence, advanced training capabilities, logistics and life
+          support, UAV systems, global tracking technology, information security
+          services, and crisis response mitigation.
         </p>
       </SectionIntro>
 
       <Container className="mt-16">
-        
-<div className="lg:flex lg:items-stretch lg:justify-end">   
-<div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12 lg:h-full">
-<FadeIn className="w-[33.75rem] flex-none lg:w-[45rem] lg:h-full">
-  
-{/* Mobile only */}
-<div className="block lg:hidden">
-  <StylizedImage
-    src={imageServicesA}
-    sizes="(min-width: 1024px) 41rem, 31rem"
-    className="justify-center"
-  />
-</div>
+        {/* ROW 1: Image LEFT, first three services RIGHT */}
+        <div className="lg:flex lg:items-stretch lg:justify-end">
+          {/* Image column (left) */}
+          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12 lg:h-full">
+            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem] lg:h-full">
+              {/* Mobile only (one image) */}
+              <div className="block lg:hidden">
+                <StylizedImage
+                  src={imageServicesA}
+                  sizes="(min-width: 1024px) 41rem, 31rem"
+                  className="justify-center"
+                />
+              </div>
 
-{/* Desktop only */}
-<div className="hidden lg:block">
-  <StylizedImage
-    src={imageServicesA}
-    shape={1}
-    sizes="(min-width: 1024px) 41rem, 31rem"
-    className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-  />
-</div>
+              {/* Desktop only (two images) */}
+              <div className="hidden lg:block">
+                <StylizedImage
+                  src={imageServicesA}
+                  shape={1}
+                  sizes="(min-width: 1024px) 41rem, 31rem"
+                  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+                />
+              </div>
 
-<div className="hidden lg:block">
-  <StylizedImage
-    src={imageServicesB}
-    shape={2}
-    sizes="(min-width: 1024px) 41rem, 31rem"
-    className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-  />
-</div>
+              <div className="hidden lg:block">
+                <StylizedImage
+                  src={imageServicesB}
+                  shape={2}
+                  sizes="(min-width: 1024px) 41rem, 31rem"
+                  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+                />
+              </div>
             </FadeIn>
           </div>
 
-          {/* Services list styled to match Case Study card hover + text treatment */}
+          {/* Services column (right) — first 3 */}
           <div className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <div className="space-y-8">
               <Link href="/security" className="block">
                 <HoverServiceItem title="Security">
                   <p>
-                    Zerofour is a trusted and experienced provider of comprehensive security services in high-risk environments, remote areas, and emerging markets. We deliver quality-driven, professional services to safeguard personnel, infrastructure, and other valuable assets and investments.
+                    Zerofour is a trusted and experienced provider of
+                    comprehensive security services in high-risk environments,
+                    remote areas, and emerging markets. We deliver
+                    quality-driven, professional services to safeguard
+                    personnel, infrastructure, and other valuable assets and
+                    investments.
                   </p>
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
-                    Learn More
-                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
-                     </span>
+                      Learn More
+                      <ArrowIcon
+                        className="w-6 fill-current"
+                        aria-hidden="true"
+                      />
+                    </span>
                   </p>
                 </HoverServiceItem>
               </Link>
@@ -196,75 +208,142 @@ function Services() {
               <Link href="/risk-management-and-crisis-response" className="block">
                 <HoverServiceItem title="Risk Management & Crisis Response">
                   <p>
-                  Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
+                    Zerofour provides risk management and advisory services to
+                    facilitate our clients&#39; business operations and support
+                    their decision-making processes. We assist clients in
+                    preparing for and responding to crisis events that could
+                    jeopardize the safety of their personnel, assets, and
+                    reputation.
                   </p>
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
-                    Learn More
-                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
-                     </span>
+                      Learn More
+                      <ArrowIcon
+                        className="w-6 fill-current"
+                        aria-hidden="true"
+                      />
+                    </span>
                   </p>
                 </HoverServiceItem>
               </Link>
 
               <Link href="/logistics-and-support-services" className="block">
-                  <HoverServiceItem title="Logistics & Support Services">
-                    <p>
-                      One of the greatest challenges for organizations operating on a global scale is the ability to seamlessly navigate a constantly changing business environment. Zerofour can deliver agile, scalable, and cost-effective logistics and support solutions that easily integrate into our clients&#39; day-to-day operations.
-                    </p>
-                    <p className="mt-4 font-semibold text-neutral-950">
-                    <span className="inline-flex items-center gap-1">
-                    Learn More
-                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
-                     </span>
+                <HoverServiceItem title="Logistics & Support Services">
+                  <p>
+                    One of the greatest challenges for organizations operating
+                    on a global scale is the ability to seamlessly navigate a
+                    constantly changing business environment. Zerofour can
+                    deliver agile, scalable, and cost-effective logistics and
+                    support solutions that easily integrate into our
+                    clients&#39; day-to-day operations.
                   </p>
-                  </HoverServiceItem>
-                </Link>
-
-                <Link href="/training" className="block">
-                  <HoverServiceItem title="Training">
-                    <p>
-                      Zerofour offers a broad spectrum of training and capacity development services to government, military, law enforcement, and commercial customers across the globe. Our instructors and consultants are skilled professionals with backgrounds in security management and diplomacy in post-conflict environments.
-                    </p>
-                    <p className="mt-4 font-semibold text-neutral-950">
+                  <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
-                    Learn More
-                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
-                     </span>
+                      Learn More
+                      <ArrowIcon
+                        className="w-6 fill-current"
+                        aria-hidden="true"
+                      />
+                    </span>
                   </p>
-                  </HoverServiceItem>
-                </Link>
-
-                <Link href="/technology" className="block">
-                  <HoverServiceItem title="Technology">
-                    <p>
-                      From real-time tracking software and social intelligence investigative techniques to systems integration and unmanned aircraft operations, Zerofour&#39;s technology services are designed to protect critical infrastructure, optimize asset management, and improve performance enterprise-wide.
-                    </p>
-                    <p className="mt-4 font-semibold text-neutral-950">
-                    <span className="inline-flex items-center gap-1">
-                    Learn More
-                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
-                     </span>
-                  </p>
-                  </HoverServiceItem>
-                </Link>
-
-                <Link href="/humanitarian" className="block">
-                  <HoverServiceItem title="Humanitarian">
-                    <p>
-                      With strong operational experience, robust program management skills, rapid response capabilities, and a global network of local partners and expertise, Zerofour aids humanitarian objectives worldwide. We offer a broad spectrum of services to promote positive sustainable change.
-                    </p>
-                    <p className="mt-4 font-semibold text-neutral-950">
-                    <span className="inline-flex items-center gap-1">
-                    Learn More
-                    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
-                     </span>
-                  </p>
-                  </HoverServiceItem>
-                </Link>
-
-
+                </HoverServiceItem>
+              </Link>
             </div>
+          </div>
+        </div>
+
+        {/* ROW 2: Services LEFT, last three services LEFT + Image RIGHT */}
+        <div className="mt-16 lg:mt-24 lg:flex lg:items-stretch lg:justify-end">
+          {/* Services column (left) — last 3 */}
+          <div className="lg:w-1/2 lg:min-w-[33rem] lg:pr-4">
+            <div className="space-y-8">
+              <Link href="/training" className="block">
+                <HoverServiceItem title="Training">
+                  <p>
+                    Zerofour offers a broad spectrum of training and capacity
+                    development services to government, military, law
+                    enforcement, and commercial customers across the globe. Our
+                    instructors and consultants are skilled professionals with
+                    backgrounds in security management and diplomacy in
+                    post-conflict environments.
+                  </p>
+                  <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                      Learn More
+                      <ArrowIcon
+                        className="w-6 fill-current"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </p>
+                </HoverServiceItem>
+              </Link>
+
+              <Link href="/technology" className="block">
+                <HoverServiceItem title="Technology">
+                  <p>
+                    From real-time tracking software and social intelligence
+                    investigative techniques to systems integration and unmanned
+                    aircraft operations, Zerofour&#39;s technology services are
+                    designed to protect critical infrastructure, optimize asset
+                    management, and improve performance enterprise-wide.
+                  </p>
+                  <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                      Learn More
+                      <ArrowIcon
+                        className="w-6 fill-current"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </p>
+                </HoverServiceItem>
+              </Link>
+
+              <Link href="/humanitarian" className="block">
+                <HoverServiceItem title="Humanitarian">
+                  <p>
+                    With strong operational experience, robust program
+                    management skills, rapid response capabilities, and a global
+                    network of local partners and expertise, Zerofour aids
+                    humanitarian objectives worldwide. We offer a broad spectrum
+                    of services to promote positive sustainable change.
+                  </p>
+                  <p className="mt-4 font-semibold text-neutral-950">
+                    <span className="inline-flex items-center gap-1">
+                      Learn More
+                      <ArrowIcon
+                        className="w-6 fill-current"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </p>
+                </HoverServiceItem>
+              </Link>
+            </div>
+          </div>
+
+          {/* Image column (right) — desktop only */}
+          <div className="mt-16 flex justify-center lg:mt-0 lg:w-1/2 lg:justify-start lg:pl-12 lg:h-full">
+            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem] lg:h-full">
+              <div className="hidden lg:block">
+                <StylizedImage
+                  src={imageServicesA}
+                  shape={1}
+                  sizes="(min-width: 1024px) 41rem, 31rem"
+                  className="justify-center lg:justify-start lg:aspect-[4/5] xl:aspect-[3/4]"
+                />
+              </div>
+
+              <div className="hidden lg:block">
+                <StylizedImage
+                  src={imageServicesB}
+                  shape={2}
+                  sizes="(min-width: 1024px) 41rem, 31rem"
+                  className="justify-center lg:justify-start lg:aspect-[4/5] xl:aspect-[3/4]"
+                />
+              </div>
+            </FadeIn>
           </div>
         </div>
       </Container>
