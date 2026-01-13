@@ -158,6 +158,7 @@ function Services() {
 <div className="hidden lg:block">
   <StylizedImage
     src={imageServices}
+    shape={1}
     sizes="(min-width: 1024px) 41rem, 31rem"
     className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
   />
@@ -166,6 +167,7 @@ function Services() {
 <div className="hidden lg:block">
   <StylizedImage
     src={imageServices}
+    shape={2}
     sizes="(min-width: 1024px) 41rem, 31rem"
     className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
   />
