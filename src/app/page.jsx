@@ -18,7 +18,7 @@ import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageServicesA from '@/images/services-a.jpg'
-import imageServicesA from '@/images/services-b.jpg'
+import imageServicesB from '@/images/services-b.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
