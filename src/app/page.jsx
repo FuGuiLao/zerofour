@@ -143,16 +143,6 @@ function Services() {
     <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-            <StylizedImage
-  src={imageServices}
-  sizes="(min-width: 1024px) 41rem, 31rem"
-  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-/>
-              <StylizedImage
-  src={imageServices}
-  sizes="(min-width: 1024px) 41rem, 31rem"
-  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-/>
               <StylizedImage
   src={imageServices}
   sizes="(min-width: 1024px) 41rem, 31rem"
@@ -180,9 +170,12 @@ function Services() {
                   <p>
                   Zerofour provides risk management and advisory services to facilitate our clients&#39; business operations and support their decision-making processes. We assist clients in preparing for and responding to crisis events that could jeopardize the safety of their personnel, assets, and reputation.
                   </p>
-                  <p className="mt-4 font-semibold text-neutral-950 underline underline-offset-4">
-                    Learn More <span aria-hidden="true">  <ArrowIcon className="w-6 flex-none fill-current" /></span>
-                  </p>
+                  <p className="mt-4 font-semibold text-neutral-950">
+  <span className="inline-flex items-center gap-1">
+    Learn More
+    <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
+  </span>
+</p>
                 </HoverServiceItem>
               </Link>
 
