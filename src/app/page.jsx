@@ -150,33 +150,13 @@ function Services() {
           {/* Image column (left) */}
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12 lg:h-full">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem] lg:h-full">
-              {/* Mobile only (one image) */}
-              <div className="block lg:hidden">
-                <StylizedImage
-                  src={imageServicesA}
-                  sizes="(min-width: 1024px) 41rem, 31rem"
-                  className="justify-center"
-                />
-              </div>
-
-              {/* Desktop only (two images) */}
-              <div className="hidden lg:block">
-                <StylizedImage
-                  src={imageServicesA}
-                  shape={1}
-                  sizes="(min-width: 1024px) 41rem, 31rem"
-                  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-                />
-              </div>
-
-              <div className="hidden lg:block">
-                <StylizedImage
-                  src={imageServicesB}
-                  shape={2}
-                  sizes="(min-width: 1024px) 41rem, 31rem"
-                  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-                />
-              </div>
+              {/* Mobile + Desktop: ONE image (Services A) */}
+              <StylizedImage
+                src={imageServicesA}
+                shape={1}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+              />
             </FadeIn>
           </div>
 
@@ -196,10 +176,7 @@ function Services() {
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
                       Learn More
-                      <ArrowIcon
-                        className="w-6 fill-current"
-                        aria-hidden="true"
-                      />
+                      <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
                     </span>
                   </p>
                 </HoverServiceItem>
@@ -218,10 +195,7 @@ function Services() {
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
                       Learn More
-                      <ArrowIcon
-                        className="w-6 fill-current"
-                        aria-hidden="true"
-                      />
+                      <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
                     </span>
                   </p>
                 </HoverServiceItem>
@@ -240,10 +214,7 @@ function Services() {
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
                       Learn More
-                      <ArrowIcon
-                        className="w-6 fill-current"
-                        aria-hidden="true"
-                      />
+                      <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
                     </span>
                   </p>
                 </HoverServiceItem>
@@ -252,7 +223,7 @@ function Services() {
           </div>
         </div>
 
-        {/* ROW 2: Services LEFT, last three services LEFT + Image RIGHT */}
+        {/* ROW 2: Services LEFT, Image RIGHT (desktop only) */}
         <div className="mt-16 lg:mt-24 lg:flex lg:items-stretch lg:justify-end">
           {/* Services column (left) — last 3 */}
           <div className="lg:w-1/2 lg:min-w-[33rem] lg:pr-4">
@@ -270,10 +241,7 @@ function Services() {
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
                       Learn More
-                      <ArrowIcon
-                        className="w-6 fill-current"
-                        aria-hidden="true"
-                      />
+                      <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
                     </span>
                   </p>
                 </HoverServiceItem>
@@ -291,10 +259,7 @@ function Services() {
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
                       Learn More
-                      <ArrowIcon
-                        className="w-6 fill-current"
-                        aria-hidden="true"
-                      />
+                      <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
                     </span>
                   </p>
                 </HoverServiceItem>
@@ -312,10 +277,7 @@ function Services() {
                   <p className="mt-4 font-semibold text-neutral-950">
                     <span className="inline-flex items-center gap-1">
                       Learn More
-                      <ArrowIcon
-                        className="w-6 fill-current"
-                        aria-hidden="true"
-                      />
+                      <ArrowIcon className="w-6 fill-current" aria-hidden="true" />
                     </span>
                   </p>
                 </HoverServiceItem>
@@ -323,26 +285,15 @@ function Services() {
             </div>
           </div>
 
-          {/* Image column (right) — desktop only */}
-          <div className="mt-16 flex justify-center lg:mt-0 lg:w-1/2 lg:justify-start lg:pl-12 lg:h-full">
+          {/* Image column (right) — DESKTOP ONLY (Services B) */}
+          <div className="mt-16 hidden justify-center lg:mt-0 lg:flex lg:w-1/2 lg:justify-start lg:pl-12 lg:h-full">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem] lg:h-full">
-              <div className="hidden lg:block">
-                <StylizedImage
-                  src={imageServicesA}
-                  shape={1}
-                  sizes="(min-width: 1024px) 41rem, 31rem"
-                  className="justify-center lg:justify-start lg:aspect-[4/5] xl:aspect-[3/4]"
-                />
-              </div>
-
-              <div className="hidden lg:block">
-                <StylizedImage
-                  src={imageServicesB}
-                  shape={2}
-                  sizes="(min-width: 1024px) 41rem, 31rem"
-                  className="justify-center lg:justify-start lg:aspect-[4/5] xl:aspect-[3/4]"
-                />
-              </div>
+              <StylizedImage
+                src={imageServicesB}
+                shape={2}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="justify-center lg:justify-start lg:aspect-[4/5] xl:aspect-[3/4]"
+              />
             </FadeIn>
           </div>
         </div>
