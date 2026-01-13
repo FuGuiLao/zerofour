@@ -140,10 +140,12 @@ function Services() {
       </SectionIntro>
 
       <Container className="mt-16">
-    <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
+        
+<div className="lg:flex lg:items-stretch lg:justify-end">   
+<div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12 lg:h-full">
+<FadeIn className="w-[33.75rem] flex-none lg:w-[45rem] lg:h-full">
+  
+  <StylizedImage
   src={imageServices}
   sizes="(min-width: 1024px) 41rem, 31rem"
   className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
