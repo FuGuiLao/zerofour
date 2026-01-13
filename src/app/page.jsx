@@ -145,16 +145,31 @@ function Services() {
 <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12 lg:h-full">
 <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem] lg:h-full">
   
+{/* Mobile only */}
+<div className="block lg:hidden">
   <StylizedImage
-  src={imageServices}
-  sizes="(min-width: 1024px) 41rem, 31rem"
-  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-/>
+    src={imageServices}
+    sizes="(min-width: 1024px) 41rem, 31rem"
+    className="justify-center"
+  />
+</div>
+
+{/* Desktop only */}
+<div className="hidden lg:block">
   <StylizedImage
-  src={imageServices}
-  sizes="(min-width: 1024px) 41rem, 31rem"
-  className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
-/>
+    src={imageServices}
+    sizes="(min-width: 1024px) 41rem, 31rem"
+    className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+  />
+</div>
+
+<div className="hidden lg:block">
+  <StylizedImage
+    src={imageServices}
+    sizes="(min-width: 1024px) 41rem, 31rem"
+    className="justify-center lg:justify-end lg:aspect-[4/5] xl:aspect-[3/4]"
+  />
+</div>
             </FadeIn>
           </div>
 
