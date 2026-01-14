@@ -164,10 +164,10 @@ function Navigation() {
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-b border-neutral-800 py-4">
             <SubNavLink href="/security">Services</SubNavLink>
             <SubNavLink href="/risk-management-and-crisis-response">Risk Management & Crisis Response</SubNavLink>
-            <SubNavLink href="/careers">Logistics & Support Services</SubNavLink>
-            <SubNavLink href="/insights">Training</SubNavLink>
-            <SubNavLink href="/contact">Technology</SubNavLink>
-            <SubNavLink href="/privacy">Humanitarian</SubNavLink>
+            <SubNavLink href="/logistics-and-support-services">Logistics & Support Services</SubNavLink>
+            <SubNavLink href="/training">Training</SubNavLink>
+            <SubNavLink href="/technology">Technology</SubNavLink>
+            <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
           </div>
         </Container>
       </div>
