@@ -19,12 +19,8 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
-
 import CalendlySlideover from '@/components/CalendlySlideover'
 import ScheduleConsultationCard from '@/components/ScheduleConsultationCard'
-
-
-
 const RootLayoutContext = createContext(null)
 
 function XIcon(props) {
