@@ -158,11 +158,26 @@ function SubNavLink({ href, children }) {
 function Navigation() {
   return (
     <>
-      {/* SERVICES NAV — full-width, spaced out, dot separators */}
+      {/* SERVICES NAV */}
       <div className="bg-neutral-950">
         <Container>
-          <div className="border-b border-neutral-800 py-5">
-            <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6">
+          <div className="border-b border-neutral-800 py-4 sm:py-5">
+            {/* Mobile: wrapped, no separators */}
+            <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:hidden">
+              <SubNavLink href="/security">Security</SubNavLink>
+              <SubNavLink href="/risk-management-and-crisis-response">
+                Risk Management & Crisis Response
+              </SubNavLink>
+              <SubNavLink href="/logistics-and-support-services">
+                Logistics & Support Services
+              </SubNavLink>
+              <SubNavLink href="/training">Training</SubNavLink>
+              <SubNavLink href="/technology">Technology</SubNavLink>
+              <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
+            </div>
+
+            {/* Desktop: single row, wide, dot separators */}
+            <div className="hidden sm:flex sm:items-center sm:justify-between sm:gap-6 sm:mx-auto sm:w-full sm:max-w-6xl">
               <SubNavLink href="/security">Security</SubNavLink>
               <span className="text-white/25">·</span>
 
