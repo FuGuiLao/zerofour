@@ -162,7 +162,7 @@ function Navigation() {
       <div className="bg-neutral-950">
         <Container>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-b border-neutral-800 py-4">
-            <SubNavLink href="/security">Services</SubNavLink>
+            <SubNavLink href="/security">Security</SubNavLink>
             <SubNavLink href="/risk-management-and-crisis-response">Risk Management & Crisis Response</SubNavLink>
             <SubNavLink href="/logistics-and-support-services">Logistics & Support Services</SubNavLink>
             <SubNavLink href="/training">Training</SubNavLink>
