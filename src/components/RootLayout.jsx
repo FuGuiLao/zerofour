@@ -144,11 +144,24 @@ function NavigationItem({ href, children }) {
   )
 }
 
+import Link from 'next/link'
+
+function SubNavLink({ href, children }) {
+  return (
+    <Link
+      href={href}
+      className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/55 hover:text-white transition"
+    >
+      {children}
+    </Link>
+  )
+}
+
 function Navigation() {
   return (
-    <nav className="mt-px font-display text-white">
-      {/* Primary navigation */}
-      <div className="text-5xl font-medium tracking-tight">
+    <>
+      {/* PRIMARY NAV — unchanged grid */}
+      <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
         <NavigationRow>
           <NavigationItem href="/work">Our Work</NavigationItem>
           <NavigationItem href="/about">About Us</NavigationItem>
@@ -157,23 +170,25 @@ function Navigation() {
           <NavigationItem href="/process">Our Process</NavigationItem>
           <NavigationItem href="/blog">Blog</NavigationItem>
         </NavigationRow>
-      </div>
+      </nav>
 
-      {/* Secondary navigation */}
-      <div className="mt-10 flex items-center justify-center gap-4 text-xs uppercase tracking-widest text-white/60">
-        <NavigationItem href="/services">Services</NavigationItem>
-        <span className="opacity-40">•</span>
-        <NavigationItem href="/team">Team</NavigationItem>
-        <span className="opacity-40">•</span>
-        <NavigationItem href="/careers">Careers</NavigationItem>
-        <span className="opacity-40">•</span>
-        <NavigationItem href="/insights">Insights</NavigationItem>
-        <span className="opacity-40">•</span>
-        <NavigationItem href="/contact">Contact</NavigationItem>
-        <span className="opacity-40">•</span>
-        <NavigationItem href="/privacy">Privacy</NavigationItem>
+      {/* SECONDARY NAV — completely separate */}
+      <div className="relative z-10 border-t border-white/10 bg-neutral-900/60">
+        <div className="mx-auto flex max-w-7xl items-center justify-center gap-6 py-4">
+          <SubNavLink href="/services">Services</SubNavLink>
+          <span className="text-white/20">•</span>
+          <SubNavLink href="/team">Team</SubNavLink>
+          <span className="text-white/20">•</span>
+          <SubNavLink href="/careers">Careers</SubNavLink>
+          <span className="text-white/20">•</span>
+          <SubNavLink href="/insights">Insights</SubNavLink>
+          <span className="text-white/20">•</span>
+          <SubNavLink href="/contact">Contact</SubNavLink>
+          <span className="text-white/20">•</span>
+          <SubNavLink href="/privacy">Privacy</SubNavLink>
+        </div>
       </div>
-    </nav>
+    </>
   )
 }
 
