@@ -148,7 +148,7 @@ function SubNavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/55 hover:text-white/85 transition"
+      className="text-[11px] font-medium uppercase tracking-[0.2em] text-white hover:text-white/85 transition"
     >
       {children}
     </Link>
