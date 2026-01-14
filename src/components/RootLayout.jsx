@@ -148,7 +148,7 @@ function SubNavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="text-[11px] font-medium uppercase tracking-[0.2em] text-white hover:text-white/85 transition"
+      className="text-[11px] font-medium uppercase tracking-[0.22em] text-white transition hover:text-white/70"
     >
       {children}
     </Link>
@@ -158,21 +158,28 @@ function SubNavLink({ href, children }) {
 function Navigation() {
   return (
     <>
-      {/* SECONDARY NAV — small utility links (TOP) */}
+      {/* SECONDARY NAV — wide spacing + dot separators */}
       <div className="bg-neutral-950">
         <Container>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-b border-neutral-800 py-4">
-            <SubNavLink href="/security">Security</SubNavLink>
-            <SubNavLink href="/risk-management-and-crisis-response">Risk Management & Crisis Response</SubNavLink>
-            <SubNavLink href="/logistics-and-support-services">Logistics & Support Services</SubNavLink>
-            <SubNavLink href="/training">Training</SubNavLink>
-            <SubNavLink href="/technology">Technology</SubNavLink>
-            <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
+          <div className="flex items-center justify-center border-b border-neutral-800 py-5">
+            <div className="flex items-center gap-8">
+              <SubNavLink href="/services">Services</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/team">Team</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/careers">Careers</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/insights">Insights</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/contact">Contact</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/privacy">Privacy</SubNavLink>
+            </div>
           </div>
         </Container>
       </div>
 
-      {/* PRIMARY NAV — 2×2 grid (unchanged) */}
+      {/* PRIMARY NAV — unchanged */}
       <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
         <NavigationRow>
           <NavigationItem href="/work">Our Work</NavigationItem>
