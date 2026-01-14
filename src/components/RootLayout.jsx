@@ -158,7 +158,21 @@ function SubNavLink({ href, children }) {
 function Navigation() {
   return (
     <>
-      {/* Primary navigation (existing) */}
+      {/* SECONDARY NAV — small utility links (TOP) */}
+      <div className="bg-neutral-950">
+        <Container>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-b border-neutral-800 py-4">
+            <SubNavLink href="/services">Services</SubNavLink>
+            <SubNavLink href="/team">Team</SubNavLink>
+            <SubNavLink href="/careers">Careers</SubNavLink>
+            <SubNavLink href="/insights">Insights</SubNavLink>
+            <SubNavLink href="/contact">Contact</SubNavLink>
+            <SubNavLink href="/privacy">Privacy</SubNavLink>
+          </div>
+        </Container>
+      </div>
+
+      {/* PRIMARY NAV — 2×2 grid (unchanged) */}
       <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
         <NavigationRow>
           <NavigationItem href="/work">Our Work</NavigationItem>
@@ -169,20 +183,6 @@ function Navigation() {
           <NavigationItem href="/blog">Blog</NavigationItem>
         </NavigationRow>
       </nav>
-
-      {/* Secondary navigation (new, single row, NOT using NavigationRow/NavigationItem) */}
-      <div className="bg-neutral-950">
-        <Container>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-t border-neutral-800 py-4">
-            <SubNavLink href="/services">Services</SubNavLink>
-            <SubNavLink href="/team">Team</SubNavLink>
-            <SubNavLink href="/careers">Careers</SubNavLink>
-            <SubNavLink href="/insights">Insights</SubNavLink>
-            <SubNavLink href="/contact">Contact</SubNavLink>
-            <SubNavLink href="/privacy">Privacy</SubNavLink>
-          </div>
-        </Container>
-      </div>
     </>
   )
 }
