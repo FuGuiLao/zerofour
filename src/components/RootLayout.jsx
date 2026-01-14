@@ -148,7 +148,7 @@ function SubNavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="text-[11px] font-medium uppercase tracking-[0.22em] text-white transition hover:text-white/70"
+      className="text-[11px] font-medium uppercase tracking-[0.22em] text-white transition hover:text-white/70 whitespace-nowrap"
     >
       {children}
     </Link>
@@ -158,22 +158,31 @@ function SubNavLink({ href, children }) {
 function Navigation() {
   return (
     <>
-      {/* SECONDARY NAV — wide spacing + dot separators */}
+      {/* SERVICES NAV — full-width, spaced out, dot separators */}
       <div className="bg-neutral-950">
         <Container>
-          <div className="flex items-center justify-center border-b border-neutral-800 py-5">
-            <div className="flex items-center gap-8">
-              <SubNavLink href="/services">Services</SubNavLink>
+          <div className="border-b border-neutral-800 py-5">
+            <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6">
+              <SubNavLink href="/security">Security</SubNavLink>
               <span className="text-white/25">·</span>
-              <SubNavLink href="/team">Team</SubNavLink>
+
+              <SubNavLink href="/risk-management-and-crisis-response">
+                Risk Management & Crisis Response
+              </SubNavLink>
               <span className="text-white/25">·</span>
-              <SubNavLink href="/careers">Careers</SubNavLink>
+
+              <SubNavLink href="/logistics-and-support-services">
+                Logistics & Support Services
+              </SubNavLink>
               <span className="text-white/25">·</span>
-              <SubNavLink href="/insights">Insights</SubNavLink>
+
+              <SubNavLink href="/training">Training</SubNavLink>
               <span className="text-white/25">·</span>
-              <SubNavLink href="/contact">Contact</SubNavLink>
+
+              <SubNavLink href="/technology">Technology</SubNavLink>
               <span className="text-white/25">·</span>
-              <SubNavLink href="/privacy">Privacy</SubNavLink>
+
+              <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
             </div>
           </div>
         </Container>
