@@ -147,7 +147,7 @@ function NavigationItem({ href, children }) {
 function Navigation() {
   return (
     <nav className="mt-px font-display text-white">
-      {/* Primary navigation (existing) */}
+      {/* Primary navigation */}
       <div className="text-5xl font-medium tracking-tight">
         <NavigationRow>
           <NavigationItem href="/work">Our Work</NavigationItem>
@@ -159,13 +159,18 @@ function Navigation() {
         </NavigationRow>
       </div>
 
-      {/* Secondary navigation (new, smaller, single row) */}
-      <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium tracking-normal text-white/70">
+      {/* Secondary navigation */}
+      <div className="mt-10 flex items-center justify-center gap-4 text-xs uppercase tracking-widest text-white/60">
         <NavigationItem href="/services">Services</NavigationItem>
+        <span className="opacity-40">•</span>
         <NavigationItem href="/team">Team</NavigationItem>
+        <span className="opacity-40">•</span>
         <NavigationItem href="/careers">Careers</NavigationItem>
+        <span className="opacity-40">•</span>
         <NavigationItem href="/insights">Insights</NavigationItem>
+        <span className="opacity-40">•</span>
         <NavigationItem href="/contact">Contact</NavigationItem>
+        <span className="opacity-40">•</span>
         <NavigationItem href="/privacy">Privacy</NavigationItem>
       </div>
     </nav>
