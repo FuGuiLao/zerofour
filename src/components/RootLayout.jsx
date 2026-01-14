@@ -146,15 +146,28 @@ function NavigationItem({ href, children }) {
 
 function Navigation() {
   return (
-    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
-      <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us1</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow>
+    <nav className="mt-px font-display text-white">
+      {/* Primary navigation (existing) */}
+      <div className="text-5xl font-medium tracking-tight">
+        <NavigationRow>
+          <NavigationItem href="/work">Our Work</NavigationItem>
+          <NavigationItem href="/about">About Us</NavigationItem>
+        </NavigationRow>
+        <NavigationRow>
+          <NavigationItem href="/process">Our Process</NavigationItem>
+          <NavigationItem href="/blog">Blog</NavigationItem>
+        </NavigationRow>
+      </div>
+
+      {/* Secondary navigation (new, smaller, single row) */}
+      <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium tracking-normal text-white/70">
+        <NavigationItem href="/services">Services</NavigationItem>
+        <NavigationItem href="/team">Team</NavigationItem>
+        <NavigationItem href="/careers">Careers</NavigationItem>
+        <NavigationItem href="/insights">Insights</NavigationItem>
+        <NavigationItem href="/contact">Contact</NavigationItem>
+        <NavigationItem href="/privacy">Privacy</NavigationItem>
+      </div>
     </nav>
   )
 }
