@@ -212,11 +212,11 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Security" title="Professional Security - Absolute Discretion">
         <p>
-          Zerofour delivers intelligence-led security services for organizations and individuals operating in complex, high-risk, and sensitive environments. Our approach is grounded in operational discipline, discretion, and real-world experience.
-        </p><p><p>&nbsp;</p>
-          Our teams include current and former law enforcement professionals and former military personnel with extensive backgrounds in protective operations, access control, and threat mitigation. Every engagement is designed to anticipate risk, deter threats, and safeguard people, property, and critical assets—without unnecessary visibility or disruption.
+Zerofour delivers intelligence-led security services for organizations and individuals operating in complex, high-risk, and sensitive environments. Our approach is grounded in operational discipline, discretion, and real-world experience, ensuring security solutions are effective without unnecessary visibility or disruption.
+          </p><p><p>&nbsp;</p>
+Our teams include current and former law enforcement professionals and former military personnel with extensive backgrounds in protective operations, access control, and threat mitigation. We provide Executive & High-Net-Worth Protection for principals requiring discreet close protection, Residential & Community Security for private estates and residential properties, Construction Site Security to safeguard materials, equipment, and personnel, and Retail & Commercial Security focused on loss prevention, customer safety, and incident management.
 </p><p><p>&nbsp;</p>
-          From executive protection to residential, commercial, and site security, Zerofour provides reliable, professional coverage tailored to each client’s operating environment and risk profile.
+Every engagement is tailored to the client’s operating environment and risk profile, with security coverage designed to anticipate risk, deter threats, and protect people, property, and critical assets with professionalism, consistency, and accountability.
         </p>
         </PageIntro>
 
