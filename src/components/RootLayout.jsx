@@ -144,8 +144,6 @@ function NavigationItem({ href, children }) {
   )
 }
 
-import Link from 'next/link'
-
 function SubNavLink({ href, children }) {
   return (
     <Link
