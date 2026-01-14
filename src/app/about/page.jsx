@@ -222,7 +222,7 @@ function Team() {
                         <Image
                           alt=""
                           {...person.image}
-                          className="h-80 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                          className="h-80 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black to-black/0 to-40%" />
                         <div className="absolute inset-0 flex flex-col justify-end p-6">
