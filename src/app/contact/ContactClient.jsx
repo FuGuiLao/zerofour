@@ -17,7 +17,7 @@ const FORM_ID = 'service-inquiry-form'
 
 /* -------------------- Inputs -------------------- */
 
-function TextInput({ label, type = 'text', ...props }) {
+function TextInput({ label, type = 'text', required = false, ...props }) {
   const id = useId()
 
   return (
@@ -25,6 +25,7 @@ function TextInput({ label, type = 'text', ...props }) {
       <input
         id={id}
         type={type}
+        required={required}
         {...props}
         placeholder=" "
         className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
@@ -37,22 +38,27 @@ function TextInput({ label, type = 'text', ...props }) {
                    peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950"
       >
         {label}
+        {required ? ' *' : ''}
       </label>
     </div>
   )
 }
 
-function RadioInput({ label, ...props }) {
+function RadioInput({ label, required = false, ...props }) {
   return (
     <label className="flex gap-x-3">
       <input
         type="radio"
+        required={required}
         {...props}
         className="h-6 w-6 flex-none appearance-none rounded-full border border-neutral-950/20 outline-none
                    checked:border-[0.5rem] checked:border-neutral-950
                    focus-visible:ring-1 focus-visible:ring-neutral-950 focus-visible:ring-offset-2"
       />
-      <span className="text-base/6 text-neutral-950">{label}</span>
+      <span className="text-base/6 text-neutral-950">
+        {label}
+        {required ? ' *' : ''}
+      </span>
     </label>
   )
 }
@@ -66,6 +72,14 @@ function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault()
     if (status === 'submitting') return
+
+    const formEl = e.currentTarget
+
+    // Native HTML validation
+    if (!formEl.checkValidity()) {
+      formEl.reportValidity()
+      return
+    }
 
     if (!window.ApolloMeetings?.submit) {
       console.error('[Apollo] ApolloMeetings.submit not available')
@@ -95,36 +109,71 @@ function ContactForm() {
 
   return (
     <FadeIn className="lg:order-last">
-      <form id={FORM_ID} ref={formRef} onSubmit={handleSubmit}>
+      <form id={FORM_ID} ref={formRef} onSubmit={handleSubmit} noValidate>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Service Inquiries
         </h2>
 
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
-          <TextInput label="Email" type="email" name="email" autoComplete="email" />
-          <TextInput label="Company" name="company" autoComplete="organization" />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
+          <TextInput label="Name" name="name" autoComplete="name" required />
+          <TextInput
+            label="Email"
+            type="email"
+            name="email"
+            autoComplete="email"
+            required
+          />
+          <TextInput
+            label="Company"
+            name="company"
+            autoComplete="organization"
+          />
+          <TextInput
+            label="Phone"
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+            required
+          />
           <TextInput label="Message" name="message" />
 
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-neutral-500">Service Needed</legend>
+              <legend className="text-base/6 text-neutral-500">
+                Service Needed <span className="text-neutral-500">*</span>
+              </legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="Security" name="service" value="Security" />
+                <RadioInput label="Security" name="service" value="Security" required />
                 <RadioInput
                   label="Risk Mgmt & Crisis Response"
                   name="service"
                   value="Risk Mgmt & Crisis Response"
+                  
                 />
                 <RadioInput
                   label="Logistics & Support Services"
                   name="service"
                   value="Logistics & Support Services"
+                  
                 />
-                <RadioInput label="Training" name="service" value="Training" />
-                <RadioInput label="Technology" name="service" value="Technology" />
-                <RadioInput label="Humanitarian" name="service" value="Humanitarian" />
+                <RadioInput
+                  label="Training"
+                  name="service"
+                  value="Training"
+                  
+                />
+                <RadioInput
+                  label="Technology"
+                  name="service"
+                  value="Technology"
+                  
+                />
+                <RadioInput
+                  label="Humanitarian"
+                  name="service"
+                  value="Humanitarian"
+                  
+                />
               </div>
             </fieldset>
           </div>
@@ -144,6 +193,8 @@ function ContactForm() {
               Submission successful. We&#39;ll follow up shortly.
             </p>
           )}
+
+          <p className="mt-3 text-xs text-neutral-500">* Required</p>
         </div>
       </form>
     </FadeIn>
@@ -229,4 +280,3 @@ export default function ContactClient() {
     </>
   )
 }
-// force update 2
