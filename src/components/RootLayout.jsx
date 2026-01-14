@@ -153,8 +153,8 @@ function Navigation() {
       {/* SERVICES NAV */}
       <div className="bg-neutral-950">
         <Container>
-          <div className="border-b border-neutral-800 py-4 sm:py-5">
-            {/* Mobile: wrapped, no separators */}
+<div className="border-b border-neutral-800 pt-0 pb-4 sm:pb-5">
+  {/* Mobile: wrapped, no separators */}
             <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:hidden">
               <SubNavLink href="/security">Security</SubNavLink>
               <SubNavLink href="/risk-management-and-crisis-response">
