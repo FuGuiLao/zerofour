@@ -16,7 +16,7 @@ export default function Layout({ children }) {
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
 
-        {/* START Smith.ai ORIGIN / Investigation / Intelligence Chat */}
+        {/* START Smith.ai ZEROFOUR Chat */}
         <Script
           id="smithai-init"
           strategy="afterInteractive"
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
           src="https://app.smith.ai/chat/widget-latest.js"
           strategy="afterInteractive"
         />
-        {/* END Smith.ai ORIGIN / Investigation / Intelligence Chat */}
+        {/* END Smith.ai ZEROFOUR Chat */}
       </body>
     </html>
   )
