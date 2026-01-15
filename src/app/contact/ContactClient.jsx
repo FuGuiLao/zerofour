@@ -117,16 +117,16 @@ function ContactForm() {
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput label="Name" name="name" autoComplete="name" required />
           <TextInput
+            label="Organization"
+            name="company"
+            autoComplete="organization"
+          />
+          <TextInput
             label="Email"
             type="email"
             name="email"
             autoComplete="email"
             required
-          />
-          <TextInput
-            label="Company"
-            name="company"
-            autoComplete="organization"
           />
           <TextInput
             label="Phone"
@@ -137,47 +137,7 @@ function ContactForm() {
           />
           <TextInput label="Message" name="message" />
 
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-            <fieldset>
-              <legend className="text-base/6 text-neutral-500">
-                Service Needed <span className="text-neutral-500">*</span>
-              </legend>
-              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="Security" name="service" value="Security" required />
-                <RadioInput
-                  label="Risk Mgmt & Crisis Response"
-                  name="service"
-                  value="Risk Mgmt & Crisis Response"
-                  
-                />
-                <RadioInput
-                  label="Logistics & Support Services"
-                  name="service"
-                  value="Logistics & Support Services"
-                  
-                />
-                <RadioInput
-                  label="Training"
-                  name="service"
-                  value="Training"
-                  
-                />
-                <RadioInput
-                  label="Technology"
-                  name="service"
-                  value="Technology"
-                  
-                />
-                <RadioInput
-                  label="Humanitarian"
-                  name="service"
-                  value="Humanitarian"
-                  
-                />
-              </div>
-            </fieldset>
-          </div>
-        </div>
+      
 
         <div className="mt-10">
           <Button type="submit" disabled={status === 'submitting'}>
