@@ -135,7 +135,12 @@ function ContactForm() {
             autoComplete="tel"
             required
           />
-          <TextInput label="Message" name="message" />
+          <TextInput
+  label="Message"
+  name="message"
+  as="textarea"
+  rows={6}
+/>
 
         </div>
 
