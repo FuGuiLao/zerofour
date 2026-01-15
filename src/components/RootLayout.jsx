@@ -20,7 +20,6 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
-
 import ScheduleConsultationCard from '@/components/ScheduleConsultationCard'
 
 const RootLayoutContext = createContext(null)
@@ -134,18 +133,72 @@ function NavigationItem({ href, children }) {
   )
 }
 
+function SubNavLink({ href, children }) {
+  return (
+    <Link
+      href={href}
+      className="text-[11px] font-medium uppercase tracking-[0.22em] text-white transition hover:text-white/70 whitespace-nowrap"
+    >
+      {children}
+    </Link>
+  )
+}
+
 function Navigation() {
   return (
-    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
-      <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow>
-    </nav>
+    <>
+      {/* SERVICES NAV — full-width borders */}
+      <div className="bg-neutral-950 border-t border-neutral-800">
+        <Container>
+          <div className="border-b border-neutral-800 py-4 sm:py-5">
+            {/* Mobile */}
+            <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:hidden">
+              <SubNavLink href="/security">Security</SubNavLink>
+              <SubNavLink href="/risk-management-and-crisis-response">
+                Risk Management & Crisis Response
+              </SubNavLink>
+              <SubNavLink href="/logistics-and-support-services">
+                Logistics & Support Services
+              </SubNavLink>
+              <SubNavLink href="/training">Training</SubNavLink>
+              <SubNavLink href="/technology">Technology</SubNavLink>
+              <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
+            </div>
+
+            {/* Desktop */}
+            <div className="hidden sm:flex sm:items-center sm:justify-between sm:mx-auto sm:w-full sm:max-w-6xl">
+              <SubNavLink href="/security">Security</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/risk-management-and-crisis-response">
+                Risk Management & Crisis Response
+              </SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/logistics-and-support-services">
+                Logistics & Support Services
+              </SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/training">Training</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/technology">Technology</SubNavLink>
+              <span className="text-white/25">·</span>
+              <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      {/* PRIMARY NAV — unchanged */}
+      <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
+        <NavigationRow>
+          <NavigationItem href="/work">Our Work</NavigationItem>
+          <NavigationItem href="/about">About Us</NavigationItem>
+        </NavigationRow>
+        <NavigationRow>
+          <NavigationItem href="/process">Our Process</NavigationItem>
+          <NavigationItem href="/blog">Blog</NavigationItem>
+        </NavigationRow>
+      </nav>
+    </>
   )
 }
 

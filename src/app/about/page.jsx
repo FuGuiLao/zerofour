@@ -73,8 +73,10 @@ const team = [
         role: 'Director / Administration',
         image: { src: imageBrettMontgomery },
         blurb:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-      },
+          "Brett earned his undergraduate degree in Electrical Engineering from Boston University and went on to serve as an officer in the United States Air Force. He later received a Master of Business Administration from the University of Southern California and built a career spanning more than 20 years in operations and supply chain leadership, working with organizations ranging from early-stage startups to multi-billion-dollar Fortune 500 companies.\n\n" +
+          "Throughout his career, Brett has extensive experience building and leading teams at scale, hiring and developing hundreds of professionals, from factory and warehouse personnel to vice presidents and senior division leaders. His background includes rapidly launching new operations, standing up facilities, and designing site surveillance, layouts, and staffing models for national organizations.\n\n" +
+          "Brett has also led security and safety organizations for a wide range of commercial enterprises, overseeing physical facilities as well as domestic and international transportation operations. His combined technical, operational, and leadership experience enables him to deliver scalable, secure, and efficient solutions across complex environments.",
+          },
     ],
   }
 ]
@@ -220,7 +222,7 @@ function Team() {
                         <Image
                           alt=""
                           {...person.image}
-                          className="h-80 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                          className="h-80 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black to-black/0 to-40%" />
                         <div className="absolute inset-0 flex flex-col justify-end p-6">

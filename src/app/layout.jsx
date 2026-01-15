@@ -16,13 +16,13 @@ export default function Layout({ children }) {
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
 
-        {/* START Smith.ai ORIGIN / Investigation / Intelligence Chat */}
+        {/* START Smith.ai ZEROFOUR Chat */}
         <Script
           id="smithai-init"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html:
-              'window.SMITH = window.SMITH || {}; window.SMITH.smithChatAccount = "48464277-cea0-4c6d-93f1-6d09d07b1315"; window.SMITH.baseUrl = "https://app.smith.ai";',
+              'window.SMITH = window.SMITH || {}; window.SMITH.smithChatAccount = "efdf8edf-7e95-482d-bf28-3969651603f6"; window.SMITH.baseUrl = "https://app.smith.ai";',
           }}
         />
         <Script
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
           src="https://app.smith.ai/chat/widget-latest.js"
           strategy="afterInteractive"
         />
-        {/* END Smith.ai ORIGIN / Investigation / Intelligence Chat */}
+        {/* END Smith.ai ZEROFOUR Chat */}
       </body>
     </html>
   )
