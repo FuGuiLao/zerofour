@@ -136,7 +136,7 @@ function ContactForm() {
     autoComplete="tel"
     required
   />
-  <TextArea label="Message" name="message" rows={5} />
+  <TextArea label="Message" name="message" rows={4} />
 </div>
 
 <div className="mt-10">
