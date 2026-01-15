@@ -139,7 +139,7 @@ function ContactForm() {
   <TextArea label="Message" name="message" rows={5} />
 </div>
 
-<div className="mt-10">
+<div className="mt-8">
   <Button type="submit" disabled={status === 'submitting'}>
     {status === 'submitting'
       ? 'Submitting…'
