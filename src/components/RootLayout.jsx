@@ -1,3 +1,4 @@
+// src/components/RootLayout.jsx  (or wherever this file lives in your project)
 'use client'
 
 import {
@@ -13,21 +14,14 @@ import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
 
-
-
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
-import { SocialMedia } from '@/components/SocialMedia'
 
-import CalendlySlideover from '@/components/CalendlySlideover'
 import ScheduleConsultationCard from '@/components/ScheduleConsultationCard'
-
-
 
 const RootLayoutContext = createContext(null)
 
@@ -80,11 +74,7 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
-            className="h-14 sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          />
+          <Logomark className="h-14 sm:hidden" invert={invert} filled={logoHovered} />
           <Logo
             className="hidden h-14 sm:h-14 md:h-16 lg:h-28 xl:h-36 2xl:h-36 sm:block"
             invert={invert}
@@ -167,8 +157,6 @@ function RootLayoutInner({ children }) {
   let navRef = useRef(null)
   let shouldReduceMotion = useReducedMotion()
 
-  let [openSchedule, setOpenSchedule] = useState(false)
-
   useEffect(() => {
     function onClick(event) {
       if (
@@ -180,10 +168,7 @@ function RootLayoutInner({ children }) {
     }
 
     window.addEventListener('click', onClick)
-
-    return () => {
-      window.removeEventListener('click', onClick)
-    }
+    return () => window.removeEventListener('click', onClick)
   }, [])
 
   return (
@@ -232,7 +217,9 @@ function RootLayoutInner({ children }) {
                 }}
               />
             </div>
+
             <Navigation />
+
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
@@ -245,23 +232,15 @@ function RootLayoutInner({ children }) {
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
+
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
-                   
-
-
-                      <ScheduleConsultationCard
-                        buttonInvert
-                        buttonColor=""
-                        titleClassName="text-white"
-                        descriptionClassName="text-neutral-300"
-                        onOpen={() => setExpanded(false)}
-                      />
-
-
-
-                      
-                 
-                    
+                    <ScheduleConsultationCard
+                      buttonInvert
+                      buttonColor=""
+                      titleClassName="text-white"
+                      descriptionClassName="text-neutral-300"
+                      onOpen={() => setExpanded(false)}
+                    />
                   </div>
                 </div>
               </Container>
@@ -275,10 +254,7 @@ function RootLayoutInner({ children }) {
         style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
         className="relative flex flex-auto overflow-hidden bg-white pt-14"
       >
-        <motion.div
-          layout
-          className="relative isolate flex w-full flex-col pt-9"
-        >
+        <motion.div layout className="relative isolate flex w-full flex-col pt-9">
           <GridPattern
             className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
             yOffset={-96}

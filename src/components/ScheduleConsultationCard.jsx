@@ -4,6 +4,8 @@ import { useState } from 'react'
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import ApolloSlideover from '@/components/ApolloSlideover'
+import CalendlySlideover from '@/components/CalendlySlideover'
+
 
 // ✅ Change text ONCE here
 const DEFAULT_COPY = {
@@ -95,7 +97,7 @@ export default function ScheduleConsultationCard({
       )}
 
       {/* ✅ Apollo Slideover replaces CalendlySlideover */}
-      <ApolloSlideover
+       <CalendlySlideover
         open={open}
         onClose={() => {
           onClose?.()

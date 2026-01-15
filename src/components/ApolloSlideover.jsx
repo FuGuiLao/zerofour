@@ -1,6 +1,6 @@
 'use client'
 
-import { Fragment, useEffect, useId, useRef, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import Script from 'next/script'
 import { Dialog, Transition } from '@headlessui/react'
 import { Button } from '@/components/Button'
@@ -10,89 +10,84 @@ const APOLLO_APP_ID = '69649cd57062f40011499d39'
 const APOLLO_SCHEDULING_LINK = 'uoj-9sa-bd1'
 const APOLLO_SCRIPT_SRC = 'https://assets.apollo.io/js/meetings/meetings-widget.js'
 
+// Stable ID so Apollo can always find the exact form
+const FORM_ID = 'apollo-consultation-form'
+
 export default function ApolloSlideover({ open, onClose }) {
   const [scriptLoaded, setScriptLoaded] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
 
   const initializedRef = useRef(false)
-  const formId = useId().replace(/:/g, '')
 
-  // reset when opening
+  // Reset UI each time panel opens
   useEffect(() => {
     if (!open) return
     setSubmitting(false)
     setError('')
   }, [open])
 
-  const initApolloIfNeeded = () => {
+  // Initialize Apollo when the script is ready
+  useEffect(() => {
+    if (!scriptLoaded) return
     if (initializedRef.current) return
     if (!window.ApolloMeetings?.initWidget) return
 
-    window.ApolloMeetings.initWidget({
-      appId: APOLLO_APP_ID,
-      schedulingLink: APOLLO_SCHEDULING_LINK,
-    })
-
-    initializedRef.current = true
-  }
+    try {
+      window.ApolloMeetings.initWidget({
+        appId: APOLLO_APP_ID,
+        schedulingLink: APOLLO_SCHEDULING_LINK,
+      })
+      initializedRef.current = true
+      console.log('[Apollo] initWidget OK')
+    } catch (e) {
+      console.error('[Apollo] initWidget failed', e)
+      setError('Scheduler failed to initialize. Please refresh and try again.')
+    }
+  }, [scriptLoaded])
 
   const handleSubmit = (e) => {
     e.preventDefault()
     setError('')
 
-    if (!scriptLoaded) {
-      setError('Scheduler is still loading. Please try again in a moment.')
+    const formEl = document.getElementById(FORM_ID)
+    if (!formEl) {
+      setError('Form not found. Please refresh and try again.')
       return
     }
 
-    initApolloIfNeeded()
+    // Native validation
+    if (!formEl.checkValidity()) {
+      formEl.reportValidity()
+      return
+    }
 
-    if (!window.ApolloMeetings?.submit) {
-      setError('Apollo scheduler is not ready (submit missing).')
+    if (!scriptLoaded || !window.ApolloMeetings?.submit) {
+      setError('Scheduler is still loading. Please try again in a moment.')
       return
     }
 
     setSubmitting(true)
 
     try {
-      // ✅ This is the correct continuation step for Apollo’s widget flow
-      window.ApolloMeetings.submit({ formId })
+      console.log('[Apollo] submit', { formId: FORM_ID })
+
+      // Apollo captures inputs by `name=""` from this form
+      window.ApolloMeetings.submit({ formId: FORM_ID })
+
+      // ✅ CRITICAL: close slideover so Apollo overlay isn't hidden/blocked by Dialog/backdrop
+      setTimeout(() => {
+        onClose?.()
+      }, 50)
     } catch (err) {
-      console.error(err)
+      console.error('[Apollo] submit failed', err)
       setError('Could not launch the scheduler. Please try again.')
       setSubmitting(false)
       return
     }
 
-    // ✅ Keep the slideover open so the user never sees a blank screen.
-    // Optional: auto-close ONLY if Apollo actually opens a modal on top.
-    // (If it doesn't, the user can still see the form and try again.)
-    const t0 = Date.now()
-    const poll = setInterval(() => {
-      // Heuristic: Apollo widget usually injects an overlay/iframe into the DOM.
-      // We can’t rely on a documented selector, so we look for newly added iframes from apollo.io.
-      const apolloIframe = Array.from(document.querySelectorAll('iframe')).find((f) =>
-        (f.src || '').includes('apollo.io'),
-      )
-
-      if (apolloIframe) {
-        clearInterval(poll)
-        setSubmitting(false)
-        // If you WANT it to close once Apollo modal is visible, uncomment next line:
-        // onClose?.()
-        return
-      }
-
-      if (Date.now() - t0 > 4000) {
-        clearInterval(poll)
-        setSubmitting(false)
-        // Keep open; show hint instead of blanking out
-        setError(
-          'Scheduler did not open automatically. Please check pop-up blockers, then click Continue again.',
-        )
-      }
-    }, 150)
+    // stop spinner quickly; Apollo UI takes over
+    setTimeout(() => setSubmitting(false), 800)
   }
 
   return (
@@ -101,7 +96,10 @@ export default function ApolloSlideover({ open, onClose }) {
         id="apollo-meetings-widget"
         src={APOLLO_SCRIPT_SRC}
         strategy="afterInteractive"
-        onLoad={() => setScriptLoaded(true)}
+        onLoad={() => {
+          console.log('[Apollo] meetings-widget.js loaded')
+          setScriptLoaded(true)
+        }}
       />
 
       <Transition.Root show={open} as={Fragment}>
@@ -132,12 +130,10 @@ export default function ApolloSlideover({ open, onClose }) {
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-3xl">
                     <div className="flex h-full flex-col bg-neutral-950 shadow-xl">
-                      {/* Header */}
                       <div className="flex items-center justify-between border-b border-neutral-800 px-6 py-4">
                         <Dialog.Title className="text-base font-semibold text-white">
                           Intake form details
                         </Dialog.Title>
-
                         <button
                           type="button"
                           onClick={onClose}
@@ -147,13 +143,12 @@ export default function ApolloSlideover({ open, onClose }) {
                         </button>
                       </div>
 
-                      {/* Body */}
                       <div className="flex-1 overflow-auto px-6 py-6">
-                        <form id={formId} onSubmit={handleSubmit} className="space-y-8">
+                        <form id={FORM_ID} onSubmit={handleSubmit} className="space-y-8" noValidate>
                           <Field label="Email" required>
                             <input
                               type="email"
-                              name="emailaddress"
+                              name="email"
                               required
                               className={inputClassName}
                               autoComplete="email"
@@ -163,7 +158,7 @@ export default function ApolloSlideover({ open, onClose }) {
                           <Field label="Full name" required>
                             <input
                               type="text"
-                              name="fullname"
+                              name="name"
                               required
                               className={inputClassName}
                               autoComplete="name"
@@ -172,25 +167,48 @@ export default function ApolloSlideover({ open, onClose }) {
 
                           <fieldset className="space-y-3">
                             <legend className={legendClassName}>Meeting Type</legend>
-                            <RadioRow name="meeting_type" value="Microsoft Teams" label="Microsoft Teams" />
-                            <RadioRow name="meeting_type" value="Phone Call" label="Phone Call" />
+                            <RadioRow
+                              name="meetingtype"
+                              value="Microsoft Teams"
+                              label="Microsoft Teams"
+                              defaultChecked
+                            />
+                            <RadioRow
+                              name="meetingtype"
+                              value="Phone Call"
+                              label="Phone Call"
+                            />
                           </fieldset>
 
                           <fieldset className="space-y-3">
                             <legend className={legendClassName}>Client Type</legend>
-                            <RadioRow name="client_type" value="Government" label="Government" />
-                            <RadioRow name="client_type" value="Corporation" label="Corporation" />
-                            <RadioRow name="client_type" value="Law Firm" label="Law Firm" />
-                            <RadioRow name="client_type" value="Insurance Company" label="Insurance Company" />
-                            <RadioRow name="client_type" value="Individual" label="Individual" />
+                            <RadioRow
+                              name="clienttype"
+                              value="Government"
+                              label="Government"
+                              defaultChecked
+                            />
+                            <RadioRow name="clienttype" value="Corporation" label="Corporation" />
+                            <RadioRow name="clienttype" value="Law Firm" label="Law Firm" />
+                            <RadioRow
+                              name="clienttype"
+                              value="Insurance Company"
+                              label="Insurance Company"
+                            />
+                            <RadioRow name="clienttype" value="Individual" label="Individual" />
                           </fieldset>
 
                           <Field label="Please share anything that will help prepare for our meeting. (Optional)">
-                            <textarea name="prep_notes" rows={5} className={textareaClassName} />
+                            <textarea name="description" rows={5} className={textareaClassName} />
                           </Field>
 
                           <Field label="Send text messages to (Optional)">
-                            <input type="tel" name="sms_number" className={inputClassName} autoComplete="tel" />
+                            <input
+                              type="tel"
+                              name="phone"
+                              className={inputClassName}
+                              autoComplete="tel"
+                            />
                           </Field>
 
                           <div className="pt-2">
@@ -201,7 +219,6 @@ export default function ApolloSlideover({ open, onClose }) {
                             {!scriptLoaded && (
                               <p className="mt-3 text-sm text-neutral-400">Loading scheduler…</p>
                             )}
-
                             {error && <p className="mt-3 text-sm text-red-400">{error}</p>}
                           </div>
                         </form>
@@ -235,11 +252,19 @@ function Field({ label, required = false, children }) {
   )
 }
 
-function RadioRow({ name, value, label }) {
+function RadioRow({ name, value, label, defaultChecked = false }) {
   const id = `${name}-${value}`.toLowerCase().replace(/\s+/g, '-')
   return (
     <div className="flex items-center gap-3">
-      <input id={id} type="radio" name={name} value={value} className="h-4 w-4" required />
+      <input
+        id={id}
+        type="radio"
+        name={name}
+        value={value}
+        className="h-4 w-4"
+        required
+        defaultChecked={defaultChecked}
+      />
       <label htmlFor={id} className="text-sm text-neutral-200">
         {label}
       </label>
