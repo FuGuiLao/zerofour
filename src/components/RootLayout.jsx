@@ -150,11 +150,11 @@ function SubNavLink({ href, children }) {
 function Navigation() {
   return (
     <>
-      {/* SERVICES NAV */}
-      <div className="bg-neutral-950">
+      {/* SERVICES NAV — full-width borders */}
+      <div className="bg-neutral-950 border-t border-neutral-800">
         <Container>
-<div className="border-y border-neutral-800 py-4 sm:py-5">
-  {/* Mobile: wrapped, no separators */}
+          <div className="border-b border-neutral-800 py-4 sm:py-5">
+            {/* Mobile */}
             <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 sm:hidden">
               <SubNavLink href="/security">Security</SubNavLink>
               <SubNavLink href="/risk-management-and-crisis-response">
@@ -168,27 +168,22 @@ function Navigation() {
               <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
             </div>
 
-            {/* Desktop: single row, wide, dot separators */}
-            <div className="hidden sm:flex sm:items-center sm:justify-between sm:gap-6 sm:mx-auto sm:w-full sm:max-w-6xl">
+            {/* Desktop */}
+            <div className="hidden sm:flex sm:items-center sm:justify-between sm:mx-auto sm:w-full sm:max-w-6xl">
               <SubNavLink href="/security">Security</SubNavLink>
               <span className="text-white/25">·</span>
-
               <SubNavLink href="/risk-management-and-crisis-response">
                 Risk Management & Crisis Response
               </SubNavLink>
               <span className="text-white/25">·</span>
-
               <SubNavLink href="/logistics-and-support-services">
                 Logistics & Support Services
               </SubNavLink>
               <span className="text-white/25">·</span>
-
               <SubNavLink href="/training">Training</SubNavLink>
               <span className="text-white/25">·</span>
-
               <SubNavLink href="/technology">Technology</SubNavLink>
               <span className="text-white/25">·</span>
-
               <SubNavLink href="/humanitarian">Humanitarian</SubNavLink>
             </div>
           </div>
@@ -198,8 +193,8 @@ function Navigation() {
       {/* PRIMARY NAV — unchanged */}
       <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
         <NavigationRow>
-          <NavigationItem href="/about">About Us</NavigationItem>
           <NavigationItem href="/work">Our Work</NavigationItem>
+          <NavigationItem href="/about">About Us</NavigationItem>
         </NavigationRow>
         <NavigationRow>
           <NavigationItem href="/process">Our Process</NavigationItem>
