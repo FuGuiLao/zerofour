@@ -154,7 +154,7 @@ function ContactForm() {
             </p>
           )}
 
-          <p className="mt-3 text-xs text-neutral-500">* Required</p>
+          <p className="mt-3 text-xs text-neutral-500"></p>
         </div>
       </form>
     </FadeIn>
@@ -182,7 +182,7 @@ function ContactDetails() {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ['Inquiries', 'inquiries@zerofour.org'],
+            ['General Inquiries', 'inquiries@zerofour.org'],
             ['Careers', 'careers@zerofour.org'],
             ['Legal', 'legal@zerofour.org'],
             ['Press', 'press@zerofour.org'],
