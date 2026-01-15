@@ -1,14 +1,16 @@
-export function TextArea({ label, rows = 6, ...props }) {
+import clsx from 'clsx'
+
+export function TextArea({ label, rows = 6, className, ...props }) {
   return (
-    <div>
-      <label className="block text-sm font-medium text-neutral-950">
-        {label}
-      </label>
-      <textarea
-        rows={rows}
-        className="mt-2 block w-full rounded-xl border border-neutral-300 px-4 py-3 text-base text-neutral-950 shadow-sm focus:border-neutral-950 focus:ring-neutral-950"
-        {...props}
-      />
-    </div>
+    <textarea
+      rows={rows}
+      placeholder={label}
+      className={clsx(
+        // Match the “clean input row” look
+        'block w-full resize-y bg-transparent px-6 py-6 text-base text-neutral-950 placeholder:text-neutral-500 focus:outline-none focus:ring-0',
+        className
+      )}
+      {...props}
+    />
   )
 }
