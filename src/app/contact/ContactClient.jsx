@@ -138,7 +138,7 @@ function ContactForm() {
           <TextInput
   label="Message"
   name="message"
-  as="textarea"
+  multiline
   rows={6}
 />
 
