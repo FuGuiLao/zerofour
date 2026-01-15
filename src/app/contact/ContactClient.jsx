@@ -225,9 +225,7 @@ export default function ContactClient() {
 
       <PageIntro eyebrow="Contact Us" title="Informed engagement starts here">
         <p>
-          Connect with our team to discuss your objectives, assess risk, and determine
-          how Zerofour can support your operational requirements with discretion and
-          professionalism.
+          Connect with our team to discuss your objectives, assess risk, and determine how Zerofour can support your operational requirements. Our consultations are handled with discretion and professionalism, allowing us to understand your environment, constraints, and priorities, then outline practical, mission-aligned solutions tailored to your needs, whether immediate or long-term.
         </p>
       </PageIntro>
 
