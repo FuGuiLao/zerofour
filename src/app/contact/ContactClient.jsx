@@ -10,26 +10,13 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
+import { TextArea } from '@/components/TextArea'
 
 const APOLLO_APP_ID = '6965ed14612741002111fb24'
 const APOLLO_SCHEDULING_LINK = '0bx-5lq-iph'
 const FORM_ID = 'service-inquiry-form'
 
 /* -------------------- Inputs -------------------- */
-export function TextArea({ label, rows = 6, ...props }) {
-  return (
-    <div>
-      <label className="block text-sm font-medium text-neutral-950">
-        {label}
-      </label>
-      <textarea
-        rows={rows}
-        className="mt-2 block w-full rounded-xl border border-neutral-300 px-4 py-3 text-base text-neutral-950 shadow-sm focus:border-neutral-950 focus:ring-neutral-950"
-        {...props}
-      />
-    </div>
-  )
-}
 
 function TextInput({ label, type = 'text', required = false, ...props }) {
   const id = useId()
