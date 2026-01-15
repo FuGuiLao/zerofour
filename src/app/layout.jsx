@@ -22,7 +22,7 @@ export default function Layout({ children }) {
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html:
-              'window.SMITH = window.SMITH || {}; window.SMITH.smithChatAccount = "48464277-cea0-4c6d-93f1-6d09d07b1315"; window.SMITH.baseUrl = "https://app.smith.ai";',
+              'window.SMITH = window.SMITH || {}; window.SMITH.smithChatAccount = "efdf8edf-7e95-482d-bf28-3969651603f6"; window.SMITH.baseUrl = "https://app.smith.ai";',
           }}
         />
         <Script
