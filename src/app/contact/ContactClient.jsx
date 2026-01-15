@@ -16,6 +16,20 @@ const APOLLO_SCHEDULING_LINK = '0bx-5lq-iph'
 const FORM_ID = 'service-inquiry-form'
 
 /* -------------------- Inputs -------------------- */
+export function TextArea({ label, rows = 6, ...props }) {
+  return (
+    <div>
+      <label className="block text-sm font-medium text-neutral-950">
+        {label}
+      </label>
+      <textarea
+        rows={rows}
+        className="mt-2 block w-full rounded-xl border border-neutral-300 px-4 py-3 text-base text-neutral-950 shadow-sm focus:border-neutral-950 focus:ring-neutral-950"
+        {...props}
+      />
+    </div>
+  )
+}
 
 function TextInput({ label, type = 'text', required = false, ...props }) {
   const id = useId()
@@ -135,12 +149,7 @@ function ContactForm() {
             autoComplete="tel"
             required
           />
-          <TextInput
-  label="Message"
-  name="message"
-  multiline
-  rows={6}
-/>
+         <TextArea label="Message" name="message" />
 
         </div>
 
