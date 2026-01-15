@@ -115,7 +115,7 @@ function ContactForm() {
           Service Inquiries
         </h2>
 
-        <div className="isolate mt-6 -space-y-px overflow-hidden rounded-2xl border border-neutral-200 bg-white/50">
+     <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
   <TextInput label="Name" name="name" autoComplete="name" required />
   <TextInput
     label="Organization"
