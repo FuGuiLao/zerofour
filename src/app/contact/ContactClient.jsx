@@ -115,43 +115,42 @@ function ContactForm() {
           Service Inquiries
         </h2>
 
-        <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" required />
-          <TextInput
-            label="Organization"
-            name="company"
-            autoComplete="organization"
-          />
-          <TextInput
-            label="Email"
-            type="email"
-            name="email"
-            autoComplete="email"
-            required
-          />
-          <TextInput
-            label="Phone"
-            type="tel"
-            name="phone"
-            autoComplete="tel"
-            required
-          />
-         <TextArea label="Message" name="message" />
+        <div className="isolate mt-6 -space-y-px overflow-hidden rounded-2xl border border-neutral-200 bg-white/50">
+  <TextInput label="Name" name="name" autoComplete="name" required />
+  <TextInput
+    label="Organization"
+    name="company"
+    autoComplete="organization"
+  />
+  <TextInput
+    label="Email"
+    type="email"
+    name="email"
+    autoComplete="email"
+    required
+  />
+  <TextInput
+    label="Phone"
+    type="tel"
+    name="phone"
+    autoComplete="tel"
+    required
+  />
+  <TextArea label="Message" name="message" rows={6} />
+</div>
 
-        </div>
-
-        <div className="mt-10">
-          <Button type="submit" disabled={status === 'submitting'}>
-            {status === 'submitting'
-              ? 'Submitting…'
-              : status === 'success'
-              ? 'Submitted ✓'
-              : 'Get Started'}
-          </Button>
+<div className="mt-10">
+  <Button type="submit" disabled={status === 'submitting'}>
+    {status === 'submitting'
+      ? 'Submitting…'
+      : status === 'success'
+      ? 'Submitted ✓'
+      : 'Get Started'}
+  </Button>
 
           {status === 'success' && (
             <p className="mt-3 text-sm text-neutral-600">
-              Submission successful. We&#39;ll follow up shortly.
+              Submission successful. We will follow up shortly. Thank you.
             </p>
           )}
 
