@@ -137,7 +137,7 @@ function ContactForm() {
           />
           <TextInput label="Message" name="message" />
 
-      
+        </div>
 
         <div className="mt-10">
           <Button type="submit" disabled={status === 'submitting'}>
