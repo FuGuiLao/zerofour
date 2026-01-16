@@ -108,7 +108,7 @@ function Deliver() {
           During this phase, we rely on real-time data and {' '}<strong className="font-semibold text-neutral-950">continuous monitoring</strong>{' '} to assess the effectiveness of our security measures. Our advanced intelligence systems allow us to stay one step ahead, responding swiftly to any developing threats or unexpected changes. Should adjustments be necessary, our team adapts rapidly, recalibrating our approach to ensure that each layer of protection remains effective and that no gaps emerge in your security framework.
         </p>
         <p>
-          Throughout the execution process, communication with our clients remains a priority. We keep you informed of our actions, findings, and any updates to your security posture. By maintaining this {' '}<strong className="font-semibold text-neutral-950">open line of communication</strong>{' }', we ensure that you remain confident in the protection you receive, and we’re always ready to address any concerns that may arise. This collaborative, proactive approach enables us to deliver security solutions that are as resilient as they are responsive.
+          Throughout the execution process, communication with our clients remains a priority. We keep you informed of our actions, findings, and any updates to your security posture. By maintaining this {' '}<strong className="font-semibold text-neutral-950">open line of communication</strong>{' '}, we ensure that you remain confident in the protection you receive, and we’re always ready to address any concerns that may arise. This collaborative, proactive approach enables us to deliver security solutions that are as resilient as they are responsive.
         </p>
       </div>
 
