@@ -12,7 +12,7 @@ import { TagList, TagListItem } from '@/components/TagList'
 import imageConstruction from '@/images/construction.jpg'
 import imageRetail from '@/images/retail.jpg'
 import imageResidential from '@/images/residential.jpg'
-import imageExecutive from '@/images/executive.jpg'
+import imageExecutive from '@/images/executive-protection.jpg'
 
 function Section({ title, image, children }) {
   return (
