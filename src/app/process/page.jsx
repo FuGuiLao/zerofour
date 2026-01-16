@@ -78,13 +78,12 @@ function Build() {
     <Section title="Plan" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Our team formulates a customized strategy based on the detailed insights and data gathered during the Discover phase. Every element of your security solution is carefully designed to address the specific risks, assets, and operational needs identified in the initial assessment. We prioritize a balanced approach, creating a plan that is robust yet adaptable, ensuring you are equipped to handle evolving challenges with confidence.
+          Our team formulates a customized strategy based on the detailed insights and data gathered during the Discover phase. Every element of your security solution is carefully designed to address the specific risks, assets, and operational needs identified in the initial assessment. We prioritize a balanced approach, creating a plan that is {' '}<strong className="font-semibold text-neutral-950">robust yet adaptable</strong>{' '}, ensuring you are equipped to handle evolving challenges with confidence.        </p>
+        <p>
+          The planning process involves collaboration among our in-house experts, who bring specialized knowledge in fields such as cybersecurity, physical security, and risk mitigation. Together, we develop a {' '}<strong className="font-semibold text-neutral-950">multi-layerd approach</strong>{' '} that combines cutting-edge technology, intelligence analysis, and industry best practices to form a cohesive and efficient security framework. This stage includes a comprehensive review to confirm that every potential scenario and contingency is accounted for.
         </p>
         <p>
-          The planning process involves collaboration among our in-house experts, who bring specialized knowledge in fields such as cybersecurity, physical security, and risk mitigation. Together, we develop a multi-layered approach that combines cutting-edge technology, intelligence analysis, and industry best practices to form a cohesive and efficient security framework. This stage includes a comprehensive review to confirm that every potential scenario and contingency is accounted for.
-        </p>
-        <p>
-          Once the plan is established, we present it to you in detail, outlining each component of the strategy and how it aligns with your objectives. Your feedback is crucial at this stage, and we work closely with you to refine any elements, ensuring that the final plan is fully aligned with your expectations. This collaborative approach provides clarity, allowing you to feel assured that your security strategy is well-conceived, actionable, and tailored precisely to your needs.
+          Once the plan is established, we present it to you in detail, outlining each component of the strategy and how it aligns with your objectives. Your feedback is crucial at this stage, and we work closely with you to refine any elements, ensuring that the final plan is {' '}<strong className="font-semibold text-neutral-950">fully aligned</strong>{' '} with your expectations. This collaborative approach provides clarity, allowing you to feel assured that your security strategy is well-conceived, actionable, and tailored precisely to your needs.
         </p>
       </div>
 
@@ -109,7 +108,7 @@ function Deliver() {
           During this phase, we rely on real-time data and {' '}<strong className="font-semibold text-neutral-950">continuous monitoring</strong>{' '} to assess the effectiveness of our security measures. Our advanced intelligence systems allow us to stay one step ahead, responding swiftly to any developing threats or unexpected changes. Should adjustments be necessary, our team adapts rapidly, recalibrating our approach to ensure that each layer of protection remains effective and that no gaps emerge in your security framework.
         </p>
         <p>
-          Throughout the execution process, communication with our clients remains a priority. We keep you informed of our actions, findings, and any updates to your security posture. By maintaining this {' '}<strong className="font-semibold text-neutral-950">open line of communication</strong>{' }'}, we ensure that you remain confident in the protection you receive, and we’re always ready to address any concerns that may arise. This collaborative, proactive approach enables us to deliver security solutions that are as resilient as they are responsive.
+          Throughout the execution process, communication with our clients remains a priority. We keep you informed of our actions, findings, and any updates to your security posture. By maintaining this {' '}<strong className="font-semibold text-neutral-950">open line of communication</strong>{' }', we ensure that you remain confident in the protection you receive, and we’re always ready to address any concerns that may arise. This collaborative, proactive approach enables us to deliver security solutions that are as resilient as they are responsive.
         </p>
       </div>
 
