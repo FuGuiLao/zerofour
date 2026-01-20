@@ -1,14 +1,24 @@
 'use client'
 
-
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
-const CalendlyWidget = dynamic(() => import('./CalendlyWidget'), { ssr: false });
+const CalendlyWidget = dynamic(() => import('./CalendlyWidget'), { ssr: false })
 
 const CalendlySlideover = ({ open, onClose }) => {
+  // ensures Calendly only mounts AFTER the panel is actually on-screen
+  const [mountWidget, setMountWidget] = useState(false)
+
+  // forces a clean re-mount each time you open
+  const [instanceKey, setInstanceKey] = useState(0)
+
+  useEffect(() => {
+    if (!open) setMountWidget(false)
+    if (open) setInstanceKey((k) => k + 1)
+  }, [open])
+
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-[100]" onClose={onClose}>
@@ -25,6 +35,8 @@ const CalendlySlideover = ({ open, onClose }) => {
                 leave="transform transition ease-in-out duration-1000 sm:duration-1000"
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
+                afterEnter={() => setMountWidget(true)}
+                beforeLeave={() => setMountWidget(false)}
               >
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-2xl">
                   <div className="flex h-full flex-col overflow-y-hidden bg-white py-6 border border-zinc-50 shadow-sm">
@@ -45,7 +57,8 @@ const CalendlySlideover = ({ open, onClose }) => {
                         </div>
                       </div>
                     </div>
-                    <CalendlyWidget />
+
+                    {mountWidget ? <CalendlyWidget key={instanceKey} /> : null}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
@@ -57,4 +70,4 @@ const CalendlySlideover = ({ open, onClose }) => {
   )
 }
 
-export default CalendlySlideover;
+export default CalendlySlideover
