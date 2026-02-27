@@ -111,7 +111,7 @@ const team = [
 
 function Team() {
   const leadership = team.find((g) => g.title === 'Leadership')
-  const staff = team.find((g) => g.title === 'Team')
+  const staff = team.find((g) => g.title === 'Organizational Structure')
 
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
