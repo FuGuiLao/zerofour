@@ -119,7 +119,7 @@ const team = [
         role: 'Director / Operations',
         image: { src: imageJaydenBrant },
         blurb:
-         "Throughout his career, Jayden has worked for the United States federal government in law enforcement and intelligence capacities. Jayden previously served as a Deputy Sheriff with the Los Angeles County Sheriff's Department, where he worked in field operations, custody, training bureau, and special assignments.\n\n" +
+          "Throughout his career, Jayden has worked for the United States federal government in law enforcement and intelligence capacities. Jayden previously served as a Deputy Sheriff with the Los Angeles County Sheriff's Department, where he worked in field operations, custody, training bureau, and special assignments.\n\n" +
           "He has extensive knowledge, training, and experience in criminal investigation, interrogation, undercover surveillance, case management, evidence handling, and California and federal law. Jayden attained California Peace Officer Standards and Training (POST) Certification and completed Advanced Officer Training while with the LASD, which he continues to maintain. He also completed the coursework for POST Specialized Investigator Certification.\n\n" +
           "During his career, Jayden has worked alongside agencies including LASD, LAPD, the U.S. Marshals Service, Diplomatic Security Service, U.S. Secret Service, FBI, Department of Homeland Security, ICE, and the Superior Court of California.\n\n" +
           "In addition to government service, Jayden has held leadership roles in the financial services industry, overseeing regulated operations, corporate due diligence, and fraud investigations. He has also provided regulatory compliance, security, and legal consulting for individuals and companies across multiple industries. Jayden studied computer engineering at Claremont McKenna College.",
@@ -132,59 +132,21 @@ const team = [
           "Brett earned his undergraduate degree in Electrical Engineering from Boston University and went on to serve as an officer in the United States Air Force. He later received a Master of Business Administration from the University of Southern California and built a career spanning more than 20 years in operations and supply chain leadership, working with organizations ranging from early-stage startups to multi-billion-dollar Fortune 500 companies.\n\n" +
           "Throughout his career, Brett has extensive experience building and leading teams at scale, hiring and developing hundreds of professionals, from factory and warehouse personnel to vice presidents and senior division leaders. His background includes rapidly launching new operations, standing up facilities, and designing site surveillance, layouts, and staffing models for national organizations.\n\n" +
           "Brett has also led security and safety organizations for a wide range of commercial enterprises, overseeing physical facilities as well as domestic and international transportation operations. His combined technical, operational, and leadership experience enables him to deliver scalable, secure, and efficient solutions across complex environments.",
-          },
+      },
     ],
-  }
-]
- 
- {
+  },
+  {
     title: 'Team',
     people: [
-      {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
-      },
-      {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
-      },
-      {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
-      },
-      {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
-      },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
-      },
+      { name: 'Chelsea Hagon', role: 'Senior Developer', image: { src: imageChelseaHagon } },
+      { name: 'Emma Dorsey', role: 'Senior Designer', image: { src: imageEmmaDorsey } },
+      { name: 'Leonard Krasner', role: 'VP, User Experience', image: { src: imageLeonardKrasner } },
+      { name: 'Blake Reid', role: 'Junior Copywriter', image: { src: imageBlakeReid } },
+      { name: 'Kathryn Murphy', role: 'VP, Human Resources', image: { src: imageKathrynMurphy } },
+      { name: 'Whitney Francis', role: 'Content Specialist', image: { src: imageWhitneyFrancis } },
+      { name: 'Jeffrey Webb', role: 'Account Coordinator', image: { src: imageJeffreyWebb } },
+      { name: 'Benjamin Russel', role: 'Senior Developer', image: { src: imageBenjaminRussel } },
+      { name: 'Angela Fisher', role: 'Front-end Developer', image: { src: imageAngelaFisher } },
     ],
   },
 ]
@@ -246,26 +208,73 @@ function Team() {
    ========================= */
 
 function Team() {
+  const leadership = team.find((g) => g.title === 'Leadership')
+  const staff = team.find((g) => g.title === 'Team')
+
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <div className="space-y-24">
-        {team.map((group) => (
-          <FadeInStagger key={group.title}>
+        {/* Leadership expanded cards */}
+        {leadership?.people?.length ? (
+          <FadeInStagger>
             <Border as={FadeIn} />
 
-            <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+            <div className="pt-12 sm:pt-16">
               <FadeIn>
                 <h2 className="font-display text-2xl font-semibold text-neutral-950">
-                  {group.title}
+                  {leadership.title}
                 </h2>
               </FadeIn>
 
-              <div className="lg:col-span-3">
-                <ul
-                  role="list"
-                  className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8"
-                >
-                  {group.people.map((person) => (
+              <div className="mt-10 space-y-8">
+                {leadership.people.map((person) => (
+                  <FadeIn key={person.name}>
+                    <article className="rounded-3xl border border-neutral-200 bg-neutral-50 p-8">
+                      <div className="lg:flex lg:gap-12">
+                        <div className="lg:w-[22rem] lg:flex-none">
+                          <div className="relative overflow-hidden rounded-3xl">
+                            <Image
+                              alt=""
+                              {...person.image}
+                              className="h-96 w-full object-cover"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="flex-1 pt-6 lg:pt-0">
+                          {(person.blurb ?? '')
+                            .split('\n\n')
+                            .filter(Boolean)
+                            .map((para, idx) => (
+                              <p key={idx} className={idx === 0 ? '' : 'mt-4'}>
+                                {para}
+                              </p>
+                            ))}
+                        </div>
+                      </div>
+                    </article>
+                  </FadeIn>
+                ))}
+              </div>
+            </div>
+          </FadeInStagger>
+        ) : null}
+
+        {/* Team simple grid cards */}
+        {staff?.people?.length ? (
+          <FadeInStagger>
+            <Border as={FadeIn} />
+
+            <div className="pt-12 sm:pt-16">
+              <FadeIn>
+                <h2 className="font-display text-2xl font-semibold text-neutral-950">
+                  {staff.title}
+                </h2>
+              </FadeIn>
+
+              <div className="mt-10">
+                <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
+                  {staff.people.map((person) => (
                     <li key={person.name}>
                       <FadeIn>
                         <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
@@ -288,7 +297,7 @@ function Team() {
               </div>
             </div>
           </FadeInStagger>
-        ))}
+        ) : null}
       </div>
     </Container>
   )
