@@ -97,7 +97,8 @@ const team = [
   {
     title: 'Team',
     people: [
-      { name: 'Chelsea Hagon', role: 'Senior Developer', image: { src: imageChelseaHagon } },
+      { name: 'Operations Command', role: 'SOversees field deployment, supervision, scheduling, and site compliance.
+', image: { src: imageChelseaHagon } },
       { name: 'Emma Dorsey', role: 'Senior Designer', image: { src: imageEmmaDorsey } },
       { name: 'Leonard Krasner', role: 'VP, User Experience', image: { src: imageLeonardKrasner } },
       { name: 'Blake Reid', role: 'Junior Copywriter', image: { src: imageBlakeReid } },
