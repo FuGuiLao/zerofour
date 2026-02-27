@@ -78,7 +78,7 @@ const team = [
           "Brett has also led security and safety organizations for a wide range of commercial enterprises, overseeing physical facilities as well as domestic and international transportation operations. His combined technical, operational, and leadership experience enables him to deliver scalable, secure, and efficient solutions across complex environments.",
           },
     ],
-  }
+  
 
 
  
