@@ -99,7 +99,7 @@ const team = [
     people: [
     { 
   name: 'Executive Operations', 
-  role: 'Provides strategic leadership, operational direction, and deployment oversight across all assigned properties. Establishes service standards, performance benchmarks, and accountability measures to ensure disciplined and consistent execution.', 
+  role: 'Provides strategic leadership, operational direction, and deployment oversight across all assignments. Establishes service standards, performance benchmarks, and accountability measures to ensure disciplined and consistent execution.', 
   image: { src: imageChelseaHagon } 
 },
 { 
@@ -113,7 +113,7 @@ const team = [
   image: { src: imageLeonardKrasner } 
 },
 { 
-  name: 'Risk Management', 
+  name: 'Risk Management & Compliance', 
   role: 'Maintains structured incident review processes, documentation integrity, and internal control measures designed to reduce liability exposure and protect client interests across all engagements.', 
   image: { src: imageBlakeReid } 
 },
