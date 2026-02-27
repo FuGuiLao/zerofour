@@ -75,7 +75,7 @@ const team = [
     people: [
       {
         name: 'Jayden Brant',
-        role: 'Director / Operations',
+        role: 'Founder & Chief Executive Officer',
         image: { src: imageJaydenBrant },
         blurb:
           "Throughout his career, Jayden has worked for the United States federal government in law enforcement and intelligence capacities. Jayden previously served as a Deputy Sheriff with the Los Angeles County Sheriff's Department, where he worked in field operations, custody, training bureau, and special assignments.\n\n" +
@@ -85,7 +85,7 @@ const team = [
       },
       {
         name: 'Brett Montgomery',
-        role: 'Director / Administration',
+        role: 'Chief Operating Officer',
         image: { src: imageBrettMontgomery },
         blurb:
           'Brett earned his undergraduate degree in Electrical Engineering from Boston University and went on to serve as an officer in the United States Air Force. He later received a Master of Business Administration from the University of Southern California and built a career spanning more than 20 years in operations and supply chain leadership, working with organizations ranging from early-stage startups to multi-billion-dollar Fortune 500 companies.\n\n' +
