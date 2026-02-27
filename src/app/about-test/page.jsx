@@ -97,14 +97,46 @@ const team = [
   {
     title: 'Organizational Structure',
     people: [
-      { name: 'Executive Operations', role: 'Provides strategic leadership, operational direction, and performance accountability across all assigned properties. Establishes deployment standards and ensures disciplined execution at every level of service.', image: { src: imageChelseaHagon } },
-      { name: 'Field Supervision & Site Management', role: 'Delivers direct oversight of site personnel, conducts supervisory reviews, enforces post orders, and maintains coordination with property managers and association boards.', image: { src: imageEmmaDorsey } },
-      { name: 'Training & Professional Standards', role: 'Oversees officer development, continuing education, report writing standards, and operational protocols to maintain consistent and defensible performance.', image: { src: imageLeonardKrasner } },
-      { name: 'Risk Management & Compliance', role: 'Ensures regulatory adherence, insurance defensibility, documentation integrity, and internal quality control across all engagements.', image: { src: imageBlakeReid } },
-      { name: 'Investigations & Intelligence', role: 'Conducts internal investigations, incident analysis, threat assessments, and specialized case support when matters require elevated review.', image: { src: imageKathrynMurphy } },
-      { name: 'Client Services & Reporting', role: 'Manages structured reporting, board communication, performance metrics, and service transparency to provide measurable oversight.', image: { src: imageWhitneyFrancis } },
-      { name: 'Technology & Systems Integration', role: 'Oversees security technology coordination, access control interfaces, digital reporting systems, and data infrastructure to support operational visibility.', image: { src: imageJeffreyWebb } },
-      { name: 'Personnel Standards & Administration', role: 'Manages recruitment, vetting, licensing compliance, onboarding procedures, scheduling controls, and workforce accountability to ensure qualified and disciplined staffing.', image: { src: imageBenjaminRussel } },
+    { 
+  name: 'Executive Operations', 
+  role: 'Provides strategic leadership, operational direction, and deployment oversight across all assigned properties. Establishes service standards, performance benchmarks, and accountability measures to ensure disciplined and consistent execution.', 
+  image: { src: imageChelseaHagon } 
+},
+{ 
+  name: 'Field Supervision & Site Management', 
+  role: 'Delivers direct on-site leadership, conducts supervisory audits, enforces post orders, and maintains active coordination with property managers and association boards to ensure daily operational alignment.', 
+  image: { src: imageEmmaDorsey } 
+},
+{ 
+  name: 'Training & Professional Standards', 
+  role: 'Oversees officer training, continuing education, report writing protocols, and performance expectations to ensure personnel operate within clearly defined procedures that support professionalism and defensible outcomes.', 
+  image: { src: imageLeonardKrasner } 
+},
+{ 
+  name: 'Risk Management', 
+  role: 'Maintains structured incident review processes, documentation integrity, and internal control measures designed to reduce liability exposure and protect client interests across all engagements.', 
+  image: { src: imageBlakeReid } 
+},
+{ 
+  name: 'Investigations & Intelligence', 
+  role: 'Conducts internal investigations, incident analysis, and threat assessments when matters require elevated review, structured evaluation, or specialized investigative support.', 
+  image: { src: imageKathrynMurphy } 
+},
+{ 
+  name: 'Client Services & Reporting', 
+  role: 'Manages structured reporting systems, performance metrics, and ongoing communication with property leadership to provide transparency and measurable service oversight.', 
+  image: { src: imageWhitneyFrancis } 
+},
+{ 
+  name: 'Technology & Systems Integration', 
+  role: 'Oversees coordination of security technology, access control systems, and digital reporting platforms to enhance operational visibility and support informed decision-making.', 
+  image: { src: imageJeffreyWebb } 
+},
+{ 
+  name: 'Workforce Administration', 
+  role: 'Manages recruitment, vetting, onboarding procedures, scheduling controls, and personnel oversight to maintain qualified staffing and disciplined workforce management.', 
+  image: { src: imageBenjaminRussel } 
+},
     ],
   },
 ]
