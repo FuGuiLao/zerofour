@@ -79,9 +79,9 @@ const team = [
           },
     ],
   }
-]
 
- {
+
+ 
     title: 'Team',
     people: [
       {
