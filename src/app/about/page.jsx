@@ -80,9 +80,7 @@ const team = [
     ],
   }
 ]
- /* =========================
-   TEAM SECTION (COMMENTED OUT)
-   ========================= 
+ 
  {
     title: 'Team',
     people: [
@@ -134,9 +132,7 @@ const team = [
     ],
   },
 ]
-        =========================
-   TEAM SECTION (COMMENTED OUT)
-   ========================= */
+  
   
  /* =========================
    TEAM SECTION (COMMENTED OUT)
