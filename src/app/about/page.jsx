@@ -80,9 +80,7 @@ const team = [
     ],
   }
 ]
- /* =========================
-   TEAM SECTION (COMMENTED OUT)
-   ========================= 
+
  {
     title: 'Team',
     people: [
@@ -134,13 +132,9 @@ const team = [
     ],
   },
 ]
-        =========================
-   TEAM SECTION (COMMENTED OUT)
-   ========================= */
   
- /* =========================
-   TEAM SECTION (COMMENTED OUT)
-   ========================= 
+  
+
 function Team() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
@@ -189,9 +183,7 @@ function Team() {
     </Container>
   )
 }
-     =========================
-   TEAM SECTION (COMMENTED OUT)
-   ========================= */
+    
 
 function Team() {
   const group = team[0]
