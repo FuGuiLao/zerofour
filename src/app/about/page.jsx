@@ -246,72 +246,50 @@ function Team() {
    ========================= */
 
 function Team() {
-  const group = team[0]
-  if (!group?.people?.length) return null
-
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeInStagger>
-        <Border as={FadeIn} />
+      <div className="space-y-24">
+        {team.map((group) => (
+          <FadeInStagger key={group.title}>
+            <Border as={FadeIn} />
 
-        <div className="pt-12 sm:pt-16">
-          <FadeIn>
-            <h2 className="font-display text-2xl font-semibold text-neutral-950">
-              {group.title}
-            </h2>
-          </FadeIn>
-
-          <div className="mt-10 space-y-8">
-            {group.people.map((person) => (
-              <FadeIn key={person.name}>
-                {/* OUTER BOX: outline always visible + subtle darken on hover */}
-                <article className="group relative rounded-3xl border border-neutral-200 bg-neutral-50 p-6 hover:bg-neutral-100 transition sm:p-8">
-                  {/* DOUBLE the horizontal space between image and text */}
-                  <div className="lg:flex lg:items-start lg:gap-12">
-                    {/* IMAGE BOX (keeps zoom on hover) */}
-                    <div className="flex justify-center lg:w-[22rem] lg:flex-none">
-                      <div className=" relative w-full overflow-hidden rounded-3xl bg-neutral-100">
-                        <Image
-                          alt=""
-                          {...person.image}
-                          className="h-100 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black to-black/0 to-40%" />
-                        <div className="absolute inset-0 flex flex-col justify-end p-6">
-                          <p className="font-display text-base/6 font-semibold tracking-wide text-white">
-                            {person.name}
-                          </p>
-                          <p className="mt-2 text-sm text-white">{person.role}</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* TEXT BOX: more padding + pushed down to clear image radius */}
-                    <div className="">
-                      <div className="pt-6 px-6 lg:pt-2 lg:px-0">
-                        {/* <p className="font-display text-lg font-semibold text-neutral-950">
-                          Zerofour only employs the most experienced operators
-                        </p>*/}
-
-                      <div className="text-base leading-7 text-neutral-600">
-  {person.blurb.split('\n\n').map((para, idx) => (
-    <p key={idx} className={idx === 0 ? '' : 'mt-4'}>
-      {para}
-    </p>
-  ))}
-</div>
-
-                        <p className="mt-0 font-semibold text-neutral-950 underline underline-offset-4">
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+            <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
+              <FadeIn>
+                <h2 className="font-display text-2xl font-semibold text-neutral-950">
+                  {group.title}
+                </h2>
               </FadeIn>
-            ))}
-          </div>
-        </div>
-      </FadeInStagger>
+
+              <div className="lg:col-span-3">
+                <ul
+                  role="list"
+                  className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8"
+                >
+                  {group.people.map((person) => (
+                    <li key={person.name}>
+                      <FadeIn>
+                        <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
+                          <Image
+                            alt=""
+                            {...person.image}
+                            className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                            <p className="font-display text-base/6 font-semibold tracking-wide text-white">
+                              {person.name}
+                            </p>
+                            <p className="mt-2 text-sm text-white">{person.role}</p>
+                          </div>
+                        </div>
+                      </FadeIn>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </FadeInStagger>
+        ))}
+      </div>
     </Container>
   )
 }
