@@ -10,15 +10,15 @@ import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
 
-import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
-import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+import imageexecutive from '@/images/team/executive.jpg'
+import imagefield from '@/images/team/field.jpg'
+import imagetraining from '@/images/team/training.jpg'
+import imagerisk from '@/images/team/risk.jpg'
+import imageinvestigation from '@/images/team/investigation.jpg'
+import imageclient from '@/images/team/client.jpg'
+import imagetechnology from '@/images/team/technology.jpg'
+import imageworkforce from '@/images/team/workforce.jpg'
+import imagegrowth from '@/images/team/growth.jpg'
 import imageJaydenBrant from '@/images/team/jayden-brant.jpg'
 import imageBrettMontgomery from '@/images/team/brett-montgomery.jpg'
 
@@ -100,47 +100,47 @@ const team = [
     { 
   name: 'Executive Operations', 
   role: 'Provides strategic leadership, operational direction, and deployment oversight across all assignments. Establishes service standards, performance benchmarks, and accountability measures to ensure disciplined and consistent execution.', 
-  image: { src: imageChelseaHagon } 
+  image: { src: imageexecutive } 
 },
 { 
   name: 'Field Supervision & Site Management', 
   role: 'Delivers direct on-site leadership, conducts supervisory audits, enforces post orders, and maintains active coordination with property managers and association boards to ensure daily operational alignment.', 
-  image: { src: imageEmmaDorsey } 
+  image: { src: imagefield } 
 },
 { 
   name: 'Training & Professional Standards', 
   role: 'Oversees officer training, continuing education, report writing protocols, and performance expectations to ensure personnel operate within clearly defined procedures that support professionalism and defensible outcomes.', 
-  image: { src: imageLeonardKrasner } 
+  image: { src: imagetraining } 
 },
 { 
   name: 'Risk Management & Compliance', 
   role: 'Maintains structured incident review processes, documentation integrity, and internal control measures designed to reduce liability exposure and protect client interests across all engagements.', 
-  image: { src: imageBlakeReid } 
+  image: { src: imagerisk } 
 },
 { 
   name: 'Investigations & Intelligence', 
   role: 'Conducts internal investigations, incident analysis, and threat assessments when matters require elevated review, structured evaluation, or specialized investigative support.', 
-  image: { src: imageKathrynMurphy } 
+  image: { src: imageinvestigation } 
 },
 { 
   name: 'Client Services & Reporting', 
   role: 'Manages structured reporting systems, performance metrics, and ongoing communication with property leadership to provide transparency and measurable service oversight.', 
-  image: { src: imageWhitneyFrancis } 
+  image: { src: imageclient } 
 },
 { 
   name: 'Strategic Growth & Partnerships', 
   role: 'Manages client acquisition, contract development, and strategic partnerships while identifying growth opportunities aligned with Zerofour’s operational standards.', 
-  image: { src: imageBenjaminRussel } 
+  image: { src: imagegrowth } 
 },
 { 
   name: 'Technology & Systems Integration', 
   role: 'Oversees coordination of security technology, access control systems, and digital reporting platforms to enhance operational visibility and support informed decision-making.', 
-  image: { src: imageJeffreyWebb } 
+  image: { src: imagetechnology } 
 },
 { 
   name: 'Workforce Administration', 
   role: 'Manages recruitment, vetting, onboarding procedures, scheduling controls, and personnel oversight to maintain qualified staffing and disciplined workforce management.', 
-  image: { src: imageBenjaminRussel } 
+  image: { src: imageworkforce } 
 },
     ],
   },
