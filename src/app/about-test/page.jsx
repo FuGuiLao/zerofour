@@ -128,6 +128,11 @@ const team = [
   image: { src: imageWhitneyFrancis } 
 },
 { 
+  name: 'Strategic Growth & Partnerships', 
+  role: 'Manages client acquisition, contract development, and strategic partnerships while identifying growth opportunities aligned with Zerofour’s operational standards.', 
+  image: { src: imageBenjaminRussel } 
+},
+{ 
   name: 'Technology & Systems Integration', 
   role: 'Oversees coordination of security technology, access control systems, and digital reporting platforms to enhance operational visibility and support informed decision-making.', 
   image: { src: imageJeffreyWebb } 
