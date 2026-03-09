@@ -22,6 +22,7 @@ import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
 import { loadArticles } from '@/lib/mdx'
+import Link from 'next/link'
 
 function Culture() {
   return (
@@ -195,7 +196,7 @@ categories exclude text messaging originator opt-in data and consent; this infor
 with any third parties. Nonetheless, we reserve the right always to disclose any information as necessary to
 satisfy any law, regulation or governmental request, to avoid liability, or to protect our rights or property.
 This Text Message Service Privacy Policy applies to your use of the Text Message Service and isn't intended
-to modify our general Privacy Policy, which may govern the relationship between you and us in other
+to modify our general <Link href="https://www.zerofour.org/privacy-policy" className="underline">Privacy Policy</Link>, which may govern the relationship between you and us in other
 contexts.</p>
           
 <p>We do not charge you for the messages you send and receive via this text message service. But message and
