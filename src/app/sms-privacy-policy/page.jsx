@@ -212,6 +212,11 @@ to generate more text messages from us (such as by sending a HELP request).</p>
 REVOKE, OPT OUT, CANCEL, or UNSUBSCRIBE. As a person-to-person communication service, opt-
 out requests are specific to each conversation between you and one of our employees and their associated
 phone number. After unsubscribing, we may send you confirmation of your opt-out via text message.</p>
+
+  <p><strong>Contact Us</strong><br />
+  admin@zerofour.org<br />
+  (213) 634-4114
+  </p>
           
           <p>To give notice, or if you have any questions or comments about our terms and conditions, please contact us in writing.</p>
         <br />
