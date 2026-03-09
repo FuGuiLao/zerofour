@@ -188,30 +188,32 @@ export default async function About() {
     <>
       <PageIntro eyebrow="SMS Terms of Use" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>We respect your privacy. We only use information you provide through this service to transmit your mobile
-messages and respond to you. This includes, but isn&#39;t limited to, sharing information with platform
-providers, phone companies, and other vendors who assist us in the delivery of mobile messages. Mobile
-information will not be shared with third parties/affiliates for marketing/promotional purposes. All the above
-categories exclude text messaging originator opt-in data and consent; this information will not be shared
-with any third parties. Nonetheless, we reserve the right always to disclose any information as necessary to
-satisfy any law, regulation or governmental request, to avoid liability, or to protect our rights or property.
-This Text Message Service Privacy Policy applies to your use of the Text Message Service and isn&#39;t intended
-to modify our general <Link href="https://www.zerofour.org/privacy-policy" className="underline">Privacy Policy</Link>, which may govern the relationship between you and us in other
-contexts.</p>
+          <p>By "Opting In" to or using a “Text Message Service” (as defined below) from Zerofour Inc., you accept
+these Terms of Use. Zerofour Inc. or one of its affiliates. All references to " Zerofour Inc.," "we," "our," or "us" refer to Zerofour
+Inc., 515 S. Flower Street 18th Floor Los Angeles, CA 90071.</p>
           
-<p>We do not charge you for the messages you send and receive via this text message service. But message and
-data rates may apply, so depending on your plan with your wireless or other applicable provider, you may
-be charged by your carrier or other applicable provider.</p>
+<p><strong>Definitions</strong><br />"Opting In," "Opt In," and "Opt-In" refer to requesting, joining, agreeing to, enrolling in, signing up for,
+acknowledging, responding to, or otherwise consenting to receive one or more text messages. "Text Message Service" includes any arrangement or situation in which we send one or more messages
+addressed to your mobile phone number, including text messages (such as SMS, MMS, or successor
+protocols or technologies).</p>
           
-<p>This Text Messaging Service is for conversational person-to-person communication between you and our
+<p><strong>Frequency of Text Messages</strong><br />This Text Messaging Service is for conversational person-to-person communication between you and our
 employees. We may send you an initial message providing details about the service. After that, the number
 of text messages you receive will vary depending on how you use our services and whether you take steps
 to generate more text messages from us (such as by sending a HELP request).</p>
 
-  <p>If you no longer want to receive text messages, you may reply to any text message with STOP, QUIT, END,
-REVOKE, OPT OUT, CANCEL, or UNSUBSCRIBE. As a person-to-person communication service, opt-
-out requests are specific to each conversation between you and one of our employees and their associated
-phone number. After unsubscribing, we may send you confirmation of your opt-out via text message.</p>
+  <p><strong>Consenting to Text Messages</strong><br />By consenting to receive text messages from us, you agreed to these SMS Terms of Use and the following,
+incorporated herein by reference:<br />
+  <Link href="https://www.zerofour.org/sms-privacy-policy" className="underline">SMS Privacy Policy</Link><br />
+<Link href="https://www.zerofour.org/terms-of-use" className="underline">Terms of Use</Link><br />
+<Link href="https://www.zerofour.org/privacy-policy" className="underline">Privacy Policy</Link>
+  </p>
+
+<p><strong>Contact Us</strong><br />
+  admin@zerofour.org<br />
+  (213) 634-4114
+  </p>
+  
           
           <p>To give notice, or if you have any questions or comments about our terms and conditions, please contact us in writing.</p>
         <br />
