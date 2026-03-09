@@ -199,16 +199,16 @@ This Text Message Service Privacy Policy applies to your use of the Text Message
 to modify our general <Link href="https://www.zerofour.org/privacy-policy" className="underline">Privacy Policy</Link>, which may govern the relationship between you and us in other
 contexts.</p>
           
-<p>We do not charge you for the messages you send and receive via this text message service. But message and
+<p><strong>Costs of Text Messages</strong><br />We do not charge you for the messages you send and receive via this text message service. But message and
 data rates may apply, so depending on your plan with your wireless or other applicable provider, you may
 be charged by your carrier or other applicable provider.</p>
           
-<p>This Text Messaging Service is for conversational person-to-person communication between you and our
+<p><strong>Frequency of Text Messages</strong><br />This Text Messaging Service is for conversational person-to-person communication between you and our
 employees. We may send you an initial message providing details about the service. After that, the number
 of text messages you receive will vary depending on how you use our services and whether you take steps
 to generate more text messages from us (such as by sending a HELP request).</p>
 
-  <p>If you no longer want to receive text messages, you may reply to any text message with STOP, QUIT, END,
+  <p><strong>Opting Out of Text Messages</strong><br />If you no longer want to receive text messages, you may reply to any text message with STOP, QUIT, END,
 REVOKE, OPT OUT, CANCEL, or UNSUBSCRIBE. As a person-to-person communication service, opt-
 out requests are specific to each conversation between you and one of our employees and their associated
 phone number. After unsubscribing, we may send you confirmation of your opt-out via text message.</p>
