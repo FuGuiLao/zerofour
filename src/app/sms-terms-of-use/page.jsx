@@ -188,14 +188,13 @@ export default async function About() {
     <>
       <PageIntro eyebrow="SMS Terms of Use" title="">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>By "Opting In" to or using a “Text Message Service” (as defined below) from Zerofour Inc., you accept
-these Terms of Use. Zerofour Inc. or one of its affiliates. All references to " Zerofour Inc.," "we," "our," or "us" refer to Zerofour
+          <p>By &quot;Opting In&quot; to or using a &quot;Text Message Service&quot; (as defined below) from Zerofour Inc., you accept
+these Terms of Use. Zerofour Inc. or one of its affiliates. All references to &quot;Zerofour Inc.,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot; refer to Zerofour
 Inc., 515 S. Flower Street 18th Floor Los Angeles, CA 90071.</p>
           
-<p><strong>Definitions</strong><br />"Opting In," "Opt In," and "Opt-In" refer to requesting, joining, agreeing to, enrolling in, signing up for,
-acknowledging, responding to, or otherwise consenting to receive one or more text messages. "Text Message Service" includes any arrangement or situation in which we send one or more messages
-addressed to your mobile phone number, including text messages (such as SMS, MMS, or successor
-protocols or technologies).</p>
+<p><strong>Definitions</strong><br />&quot;Opting In,&quot; &quot;Opt In,&quot; and &quot;Opt-In&quot; refer to requesting, joining, agreeing to, enrolling in, signing up for,
+acknowledging, responding to, or otherwise consenting to receive one or more text messages. &quot;Text Message Service&quot; includes any arrangement or situation in which we send one or more messages
+addressed to your mobile phone number, including text messages (such as SMS, MMS, or successor protocols or technologies).</p>
           
 <p><strong>Frequency of Text Messages</strong><br />This Text Messaging Service is for conversational person-to-person communication between you and our
 employees. We may send you an initial message providing details about the service. After that, the number
