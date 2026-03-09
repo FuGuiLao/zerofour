@@ -201,6 +201,8 @@ employees. We may send you an initial message providing details about the servic
 of text messages you receive will vary depending on how you use our services and whether you take steps
 to generate more text messages from us (such as by sending a HELP request).</p>
 
+          <p><strong>Opting Out of Text Messages</strong><br />If you no longer want to receive text messages, you may reply to any text message with STOP, QUIT, END, REVOKE, OPT OUT, CANCEL, or UNSUBSCRIBE. As a person-to-person communication service, opt-out requests are specific to each conversation between you and one of our employees and their associated phone number. After unsubscribing, we may send you confirmation of your opt-out via text message.</p>
+
   <p><strong>Consenting to Text Messages</strong><br />By consenting to receive text messages from us, you agreed to these SMS Terms of Use and the following,
 incorporated herein by reference:<br />
   <Link href="https://www.zerofour.org/sms-privacy-policy" className="underline">SMS Privacy Policy</Link><br />
