@@ -16,21 +16,7 @@ export default function Layout({ children }) {
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
 
-        {/* START Smith.ai ZEROFOUR Chat */}
-        <Script
-          id="smithai-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html:
-              'window.SMITH = window.SMITH || {}; window.SMITH.smithChatAccount = "efdf8edf-7e95-482d-bf28-3969651603f6"; window.SMITH.baseUrl = "https://app.smith.ai";',
-          }}
-        />
-        <Script
-          id="smithai-widget"
-          src="https://app.smith.ai/chat/widget-latest.js"
-          strategy="afterInteractive"
-        />
-        {/* END Smith.ai ZEROFOUR Chat */}
+        <elevenlabs-convai agent-id="agent_2901kq2wmkgtfb0tyef4z38bpc50"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
       </body>
     </html>
   )
