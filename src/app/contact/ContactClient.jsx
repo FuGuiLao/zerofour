@@ -112,7 +112,7 @@ function ContactForm() {
     <FadeIn className="lg:order-last">
       <form id={FORM_ID} ref={formRef} onSubmit={handleSubmit} noValidate>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Service Inquiries
+          General Inquiries
         </h2>
 
      <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
